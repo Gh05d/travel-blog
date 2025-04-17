@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+.post {
+  margin-bottom: 2rem;
+}
+.post-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.post-excerpt {
+  color: #666;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
