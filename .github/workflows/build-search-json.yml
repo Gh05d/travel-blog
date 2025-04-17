@@ -39,4 +39,4 @@ jobs:
           author_name: 'github-actions[bot]'
           author_email: 'github-actions[bot]@users.noreply.github.com'
           message: 'chore: update search.json index'
-          add: 'search.json'    :contentReference[oaicite:2]{index=2}
+          add: 'search.json'
