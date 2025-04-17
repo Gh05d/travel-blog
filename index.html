@@ -6,44 +6,46 @@
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <h1>Audio Travel Guide</h1>
-    <input type="text" id="search" placeholder="Search posts..." />
+    <main>
+      <h1>Audio Travel Guide</h1>
+      <input type="text" id="search" placeholder="Search posts..." />
 
-    <div id="posts"></div>
+      <div id="posts"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
-    <script>
-      async function fetchPosts() {
-        const res = await fetch("search.json");
-        const posts = await res.json();
-        renderPosts(posts);
-        setupSearch(posts);
-      }
+      <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+      <script>
+        async function fetchPosts() {
+          const res = await fetch("search.json");
+          const posts = await res.json();
+          renderPosts(posts);
+          setupSearch(posts);
+        }
 
-      function renderPosts(posts) {
-        const container = document.getElementById("posts");
-        container.innerHTML = "";
-        posts.forEach((post) => {
-          const div = document.createElement("div");
-          div.className = "post";
-          div.innerHTML = `
+        function renderPosts(posts) {
+          const container = document.getElementById("posts");
+          container.innerHTML = "";
+          posts.forEach((post) => {
+            const div = document.createElement("div");
+            div.className = "post";
+            div.innerHTML = `
           <a class="post-title" href="${post.url}">${post.title}</a>
           <div class="post-excerpt">${post.excerpt}</div>
         `;
-          container.appendChild(div);
-        });
-      }
+            container.appendChild(div);
+          });
+        }
 
-      function setupSearch(posts) {
-        const fuse = new Fuse(posts, { keys: ["title", "excerpt"] });
-        document.getElementById("search").addEventListener("input", (e) => {
-          const results = fuse.search(e.target.value);
-          const matched = e.target.value ? results.map((r) => r.item) : posts;
-          renderPosts(matched);
-        });
-      }
+        function setupSearch(posts) {
+          const fuse = new Fuse(posts, { keys: ["title", "excerpt"] });
+          document.getElementById("search").addEventListener("input", (e) => {
+            const results = fuse.search(e.target.value);
+            const matched = e.target.value ? results.map((r) => r.item) : posts;
+            renderPosts(matched);
+          });
+        }
 
-      fetchPosts();
-    </script>
+        fetchPosts();
+      </script>
+    </main>
   </body>
 </html>
