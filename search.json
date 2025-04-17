@@ -1,12 +1,17 @@
 [
-    {
-        "title": "Eco-Friendly Traveling How to See the World Sustainably",
-        "excerpt": "Discover practical tips on eco-friendly traveling and embark on sustainable journeys that significantly reduce your environmental footprint.",
-        "url": "articles/eco-friendly-traveling-world-sustainably.html"
-    },
-    {
-        "title": "Traveling with a Twist – Unique Festivals Around the Globe",
-        "excerpt": "Discover unique and quirky festivals around the globe, adding unforgettable experiences to your travel adventures.",
-        "url": "articles/traveling-twist-unique-festivals-globe.html"
-    }
+  {
+    "title": "Eco-Friendly Traveling How to See the World Sustainably",
+    "excerpt": "Discover practical tips on eco-friendly traveling and embark on sustainable journeys that significantly reduce your environmental footprint.",
+    "url": "articles/eco-friendly-traveling-world-sustainably.html"
+  },
+  {
+    "title": "Traveling with a Twist – Unique Festivals Around the Globe",
+    "excerpt": "Discover unique and quirky festivals around the globe, adding unforgettable experiences to your travel adventures.",
+    "url": "articles/traveling-twist-unique-festivals-globe.html"
+  },
+  {
+    "title": "Hidden Gems Uncharted Travel Destinations Around the World",
+    "excerpt": "Explore spectacular hidden gems around the globe and uncover amazing lesser-known destinations beyond usual tourist spots.",
+    "url": "articles/hidden-gems-uncharted-travel-destinations.html"
+  }
 ]
