@@ -42,3 +42,10 @@ jobs:
           branch: automated/sitemap-update
           delete-branch: true
 
+      - name: Enable Auto‑Merge
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          merge-method: merge
+
