@@ -1,4 +1,4 @@
-name: Update Sitemap
+name: update-sitemap
 
 on:
   push:
