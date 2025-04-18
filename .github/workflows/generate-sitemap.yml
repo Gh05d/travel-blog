@@ -19,7 +19,7 @@ jobs:
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: https://audiotravelguide.eu/
-          path-to-root: articles       # <-- string, not array
+          path-to-root: .       # <-- string, not array
           include-pdf: false           # optionally exclude PDFs
           drop-html-extension: true    # remove .html in URLs
           date-only: true              # lastmod as date only
