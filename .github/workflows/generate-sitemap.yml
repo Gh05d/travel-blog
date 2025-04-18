@@ -34,7 +34,7 @@ jobs:
           # The one correct input to stage your file(s):
           add-paths: sitemap.xml
           # Your commit message
-          commit-message: chore: update sitemap.xml
+          commit-message: "chore: update sitemap.xml"
           # PR title and body
           title: "chore: automated sitemap update"
           body: "This PR updates sitemap.xml with all current articles."
