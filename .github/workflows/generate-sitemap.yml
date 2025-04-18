@@ -42,6 +42,14 @@ jobs:
           branch: automated/sitemap-update
           delete-branch: true
 
+      - name: Verify branch existence
+        run: |
+          git fetch origin
+          if ! git show-ref --verify --quiet refs/heads/automated/sitemap-update; then
+            echo "Branch automated/sitemap-update does not exist, pushing..."
+            git push origin automated/sitemap-update
+          fi
+
       - name: Enable Auto‑Merge
         uses: peter-evans/enable-pull-request-automerge@v3
         with:
