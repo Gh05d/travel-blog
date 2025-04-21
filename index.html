@@ -5,7 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Discover the best articles in the world about traveling."
+      content="Your ultimate travel companion for exploring the world with guides, tips, and inspiration."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
     />
     <link
       rel="icon"
@@ -21,52 +33,65 @@
       href="/assets/apple-touch-icon.png"
     />
     <meta name="apple-mobile-web-app-title" content="audiotravelguide.eu" />
-    <link rel="manifest" href="/assets/site.webmanifest" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <title>Audio Travel Guide</title>
     <link rel="stylesheet" href="assets/style.css" />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"
+    ></script>
+    <script type="module">
+      (async function fetchPosts() {
+        const res = await fetch("assets/search.json");
+        const posts = await res.json();
+        renderPosts(posts);
+        setupSearch(posts);
+      })();
+
+      function renderPosts(posts) {
+        const container = document.getElementById("posts");
+        container.innerHTML = "";
+        posts.forEach((post) => {
+          const div = document.createElement("div");
+          div.className = "post";
+          div.innerHTML = `
+         <a class="post-title" href="${post.url}">${post.title}</a>
+         <div class="post-excerpt">${post.excerpt}</div>
+       `;
+          container.appendChild(div);
+        });
+      }
+
+      function setupSearch(posts) {
+        const fuse = new Fuse(posts, { keys: ["title", "excerpt"] });
+        document.getElementById("search").addEventListener("input", (e) => {
+          document.getElementById("loading").style.display = "initial";
+
+          const results = fuse.search(e.target.value);
+          const matched = e.target.value ? results.map((r) => r.item) : posts;
+          document.getElementById("loading").style.display = "none";
+          renderPosts(matched);
+        });
+      }
+
+      (async function fetchPosts() {
+        const res = await fetch("assets/search.json");
+        const posts = await res.json();
+        renderPosts(posts);
+        setupSearch(posts);
+        document.getElementById("loading").style.display = "none";
+      })();
+    </script>
   </head>
   <body>
     <main>
       <h1>Audio Travel Guide</h1>
       <input type="text" id="search" placeholder="Search posts..." />
 
+      <div id="loading">Loading...</div>
       <div id="posts"></div>
-
-      <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
-      <script>
-        async function fetchPosts() {
-          const res = await fetch("search.json");
-          const posts = await res.json();
-          renderPosts(posts);
-          setupSearch(posts);
-        }
-
-        function renderPosts(posts) {
-          const container = document.getElementById("posts");
-          container.innerHTML = "";
-          posts.forEach((post) => {
-            const div = document.createElement("div");
-            div.className = "post";
-            div.innerHTML = `
-          <a class="post-title" href="${post.url}">${post.title}</a>
-          <div class="post-excerpt">${post.excerpt}</div>
-        `;
-            container.appendChild(div);
-          });
-        }
-
-        function setupSearch(posts) {
-          const fuse = new Fuse(posts, { keys: ["title", "excerpt"] });
-          document.getElementById("search").addEventListener("input", (e) => {
-            const results = fuse.search(e.target.value);
-            const matched = e.target.value ? results.map((r) => r.item) : posts;
-            renderPosts(matched);
-          });
-        }
-
-        fetchPosts();
-      </script>
     </main>
   </body>
 </html>
