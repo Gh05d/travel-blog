@@ -5,12 +5,31 @@
   --line-height-base: 1.6;
   --color-text: #212529;
   --color-bg: #e4d7d7;
+  --color-primary: #005fcc;
   --space: 1rem;
 }
 
 :focus-visible {
-  outline: 2px dashed #005fcc;
-  outline-offset: 2px;
+  outline: 2px solid var(--color-primary);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: #007bff;
+  }
+
+  &:active {
+    color: #0056b3;
+  }
+
+  &:visited {
+    color: #6c757d;
+  }
 }
 
 html {
@@ -98,4 +117,35 @@ figcaption {
 
 .post-excerpt {
   color: #666;
+}
+
+#loading {
+  position: relative;
+  padding-left: 1.8em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: -0.6em;
+    border: 3px solid var(--color-bg);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #loading::before {
+    animation: none;
+  }
 }

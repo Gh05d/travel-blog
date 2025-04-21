@@ -2,7 +2,7 @@
     "name": "Audio Travel Guide",
     "short_name": "TravelGuide",
     "start_url": "/index.html",
-    "description": "Your ultimate travel companion for exploring the world with audio guides, tips, and inspiration.",
+    "description": "Your ultimate travel companion for exploring the world with guides, tips, and inspiration.",
     "dir": "ltr",
     "lang": "en-US",
     "orientation": "portrait",
