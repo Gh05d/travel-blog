@@ -26,17 +26,12 @@ jobs:
 
       - name: Install xmlstarlet
         run: |
-          sudo apt-get update
-          sudo apt-get install -y xmlstarlet
-
-      - name: Overwrite lastmod via xmlstarlet
-        run: |
           for html in articles/*.html; do
-            pub=$(xmlstarlet sel -t -v '//time/@datetime' "$html")
+            datetime=$(grep -oP '<time[^>]*datetime="\K[^"]+' "$html")
             slug=$(basename "$html" .html)
             xmlstarlet ed -L \
               -u "/urlset/url[loc='https://audiotravelguide.eu/articles/$slug']/lastmod" \
-              -v "$pub" sitemap.xml
+              -v "$datetime" sitemap.xml
           done
 
       - name: Create Pull Request
