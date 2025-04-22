@@ -22,7 +22,21 @@ jobs:
           path-to-root: .       
           include-pdf: false           
           drop-html-extension: true    
-          date-only: true              
+          date-only: true
+
+      - name: Overwrite lastmod via xmlstarlet
+        run: |
+          for html in articles/*.html; do
+            # Extract datetime from <time> in the HTML
+            pub=$(xmlstarlet sel -t -v '//time/@datetime' "$html")
+            # Extract matching URL path (drop .html)
+            slug=$(basename "$html" .html)
+            # Update <lastmod> in sitemap.xml
+            xmlstarlet ed -L \
+              -u "/urlset/url[loc='https://audiotravelguide.eu/articles/$slug']/lastmod" \
+              -v "$pub" \
+              sitemap.xml
+          done         
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
