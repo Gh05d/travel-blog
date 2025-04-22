@@ -1,4 +1,5 @@
 {
+    "id": "/index.html",
     "name": "Audio Travel Guide",
     "short_name": "TravelGuide",
     "start_url": "/index.html",
@@ -20,6 +21,22 @@
             "src": "/assets/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/assets/hero-desktop.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Audio Travel Guide on desktop"
+        },
+        {
+            "src": "/assets/hero-phone.png",
+            "sizes": "360x640",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Audio Travel Guide on mobile"
         }
     ]
 }
