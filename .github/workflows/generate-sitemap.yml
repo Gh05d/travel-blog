@@ -26,6 +26,11 @@ jobs:
 
       - name: Install xmlstarlet
         run: |
+          sudo apt-get update
+          sudo apt-get install -y xmlstarlet
+
+      - name: Update dates in sitemap
+        run: |
           for html in articles/*.html; do
             datetime=$(grep -oP '<time[^>]*datetime="\K[^"]+' "$html")
             slug=$(basename "$html" .html)
