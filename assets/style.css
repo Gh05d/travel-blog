@@ -1,18 +1,26 @@
-:focus-visible {
-  outline: 2px solid var(--color-primary);
-}
-
 html {
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, sans-serif;
   --font-size-base: clamp(1rem, 1.125rem + 0.1vw, 1.25rem);
   --line-height-base: 1.6;
-  --color-text: #212529;
-  --color-bg: #e4d7d7;
+  --color-text: #ccc;
+  --color-bg: #00274e;
   --color-primary: #005fcc;
+  --color-secondary: #ff5f42;
   --space: 0.5rem;
 
   scroll-behavior: smooth;
+  background: #eee;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
 body {
@@ -20,14 +28,20 @@ body {
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   color: var(--color-text);
-  background: var(--color-bg);
-  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-main {
+main,
+body > footer {
   max-width: 80ch;
   margin: 0 auto;
   padding: 0 calc(var(--space) * 2) calc(var(--space) * 2);
+}
+
+main {
+  background: var(--color-bg);
+  flex: 1 0 auto;
 }
 
 h1 {
@@ -51,30 +65,47 @@ h4 {
   line-height: 1.3rem;
 }
 
-body > header {
-  position: sticky;
-  top: 0;
-  background: var(--color-bg);
-  z-index: 1000;
-  padding-top: 1rem;
+body {
+  & > header {
+    position: sticky;
+    top: 0;
+    background: var(--color-bg);
+    z-index: 1000;
+    padding-top: 1rem;
+
+    & > hr {
+      margin-block-end: 0;
+    }
+  }
+
+  & > footer {
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    padding-block: 1rem;
+    flex-shrink: 0;
+  }
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   text-decoration: none;
   transition: color 0.2s ease-in-out;
+  --active: #f52d09;
+  --visited: #6c757d;
+  --hover: #cf2406;
 
   &:hover,
   &:focus {
-    color: #007bff;
+    color: var(--hover);
   }
 
   &:active {
-    color: #0056b3;
+    color: var(--active);
   }
 
   &:visited {
-    color: #6c757d;
+    color: var(--visited);
   }
 }
 
@@ -93,15 +124,17 @@ picture,
 img {
   display: block;
   width: 100%;
+  height: auto;
   max-height: 400px;
   object-fit: cover;
   object-position: center;
 }
 
 figcaption {
+  --color: #fff;
   margin-top: 1rem;
   font-size: 0.875rem;
-  color: #675;
+  color: var(--color);
 }
 
 #title {
@@ -165,7 +198,9 @@ figcaption {
 
 @media screen and (min-width: 50rem) {
   html {
+    --color-bg: #fff;
     --space: 1rem;
+    --color-text: #212529;
   }
 
   #title {
@@ -190,5 +225,24 @@ figcaption {
   h4 {
     font-size: 1.3em;
     line-height: 1.5em;
+  }
+
+  a {
+    color: var(--color-primary);
+    --active: #0056b3;
+    --visited: #6c757d;
+    --hover: #007bff;
+  }
+
+  figcaption {
+    --color: #675;
+  }
+
+  .footer-links {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
   }
 }
