@@ -6,13 +6,6 @@
   list-style: none;
 }
 
-.team-avatar {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  margin-bottom: 1rem;
-}
-
 .team-card {
   flex: 1 1 18rem;
   color: #666;
