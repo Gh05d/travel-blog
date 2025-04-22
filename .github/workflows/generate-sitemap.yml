@@ -32,12 +32,22 @@ jobs:
       - name: Update dates in sitemap
         run: |
           for html in articles/*.html; do
-            datetime=$(grep -oP '<time[^>]*datetime="\K[^"]+' "$html")
-            slug=$(basename "$html" .html)
-            xmlstarlet ed -L \
-              -u "/urlset/url[loc='https://audiotravelguide.eu/articles/$slug']/lastmod" \
-              -v "$datetime" sitemap.xml
-          done
+              datetime=$(grep -oP '<time[^>]*datetime="\K[^"]+' "$html")
+              slug=$(basename "$html" .html)
+              xmlstarlet ed -L \
+                -N sm="http://www.sitemaps.org/schemas/sitemap/0.9" \
+                -u "/sm:urlset/sm:url[sm:loc='https://audiotravelguide.eu/articles/$slug']/sm:lastmod" \
+                -v "$datetime" \
+                sitemap.xml
+            done
+
+      - name: Check if sitemap.xml is modified
+        id: check-modified
+        run: |
+          xmlstarlet sel -N sm="http://www.sitemaps.org/schemas/sitemap/0.9" \
+            -t -m "/sm:urlset/sm:url" \
+              -v "concat(sm:loc, ' → ', sm:lastmod)" -n \
+            sitemap.xml
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
