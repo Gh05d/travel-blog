@@ -1,4 +1,8 @@
-:root {
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+}
+
+html {
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, sans-serif;
   --font-size-base: clamp(1rem, 1.125rem + 0.1vw, 1.25rem);
@@ -6,33 +10,8 @@
   --color-text: #212529;
   --color-bg: #e4d7d7;
   --color-primary: #005fcc;
-  --space: 1rem;
-}
+  --space: 0.5rem;
 
-:focus-visible {
-  outline: 2px solid var(--color-primary);
-}
-
-a {
-  color: var(--color-primary);
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-
-  &:hover,
-  &:focus {
-    color: #007bff;
-  }
-
-  &:active {
-    color: #0056b3;
-  }
-
-  &:visited {
-    color: #6c757d;
-  }
-}
-
-html {
   scroll-behavior: smooth;
 }
 
@@ -53,8 +32,23 @@ main {
 
 h1 {
   text-transform: uppercase;
-  line-height: 2.5rem;
-  font-size: 2.5rem;
+  line-height: 1.7rem;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
 }
 
 body > header {
@@ -62,7 +56,26 @@ body > header {
   top: 0;
   background: var(--color-bg);
   z-index: 1000;
-  padding-block: 1rem;
+  padding-top: 1rem;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: #007bff;
+  }
+
+  &:active {
+    color: #0056b3;
+  }
+
+  &:visited {
+    color: #6c757d;
+  }
 }
 
 input[type="text"] {
@@ -92,7 +105,7 @@ figcaption {
 }
 
 #title {
-  font-size: 2rem;
+  font-size: 1.3rem;
   padding: 1rem;
   font-weight: bold;
   text-decoration: none;
@@ -147,5 +160,35 @@ figcaption {
 @media (prefers-reduced-motion: reduce) {
   #loading::before {
     animation: none;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  html {
+    --space: 1rem;
+  }
+
+  #title {
+    font-size: 2rem;
+  }
+
+  h1 {
+    line-height: 2.5rem;
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    line-height: 1.7em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+    line-height: 1.6em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+    line-height: 1.5em;
   }
 }
