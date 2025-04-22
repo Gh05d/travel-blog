@@ -63,7 +63,31 @@
   </head>
   <body>
     <header>
-      <a rel="home" href="/" id="title">🏠 Audio Travel Guide</a>
+      <nav aria-label="Main site navigation">
+        <a rel="home" href="/" id="title">🏠 Audio Travel Guide</a>
+        <ul class="site-nav">
+          <li>
+            <a href="/articles/cultural-immersion-experiences.html"
+              >Latest Article</a
+            >
+          </li>
+          <li>
+            <a href="/articles/exploring-worlds-historical-walking-routes.html"
+              >Most‑Read Article</a
+            >
+          </li>
+          <li>
+            <a href="/articles/top-10-hidden-gems-europe.html"
+              >Top Destinations</a
+            >
+          </li>
+          <li>
+            <a href="/articles/navigating-night-markets-food-lovers-guide.html"
+              >Editor’s Pick</a
+            >
+          </li>
+        </ul>
+      </nav>
       <hr />
     </header>
     <main>
@@ -73,8 +97,21 @@
             Discovering the Underwater World Best Snorkeling Spots Globally
           </h1>
           <div id="info">
-            <div>
-              Author:
+            <div id="author-container">
+              <span>Author:</span>
+              <a
+                aria-label="Image link"
+                href="http://www.freepik.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Profile photo of Danielle Eyebright, designed by Freepik"
+              >
+                <img
+                  src="/assets/team/danielle-eyebright.png"
+                  alt="Designed by Freepik - Danielle Eyebright"
+                  title="Designed by Freepik - Danielle Eyebright"
+                  class="team-avatar"
+              /></a>
               <span itemscope itemtype="http://schema.org/Person">
                 <b> <span itemprop="name">Danielle Eyebright</span> </b></span
               >
@@ -178,21 +215,15 @@
         <section>
           <h2>Top Snorkeling Destinations Around the World</h2>
           <p>
-            Among the most renowned snorkeling spots globally, the
-            <a
-              href="/articles/great-barrier-reef-australia.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Great Barrier Reef in Australia</a
-            >
-            stands out. Its vibrant marine biodiversity includes colorful
-            corals, tropical fish, and majestic reef sharks. Visibility often
-            exceeds 30 meters, providing clear underwater views that captivate
-            snorkelers. The best time to visit is during the southern
-            hemisphere's spring and early summer, from September to November,
-            when weather conditions are optimal. Regulations emphasize reef
-            protection, so visitors should follow local guidelines and avoid
-            touching marine life.
+            Among the most renowned snorkeling spots globally, the Great Barrier
+            Reef in Australia stands out. Its vibrant marine biodiversity
+            includes colorful corals, tropical fish, and majestic reef sharks.
+            Visibility often exceeds 30 meters, providing clear underwater views
+            that captivate snorkelers. The best time to visit is during the
+            southern hemisphere's spring and early summer, from September to
+            November, when weather conditions are optimal. Regulations emphasize
+            reef protection, so visitors should follow local guidelines and
+            avoid touching marine life.
           </p>
           <p>
             Hanauma Bay in <b>Hawaii</b> is another top destination famed for

@@ -73,9 +73,34 @@
   </head>
   <body>
     <header>
-      <a rel="home" href="/" id="title">🏠 Audio Travel Guide</a>
+      <nav aria-label="Main site navigation">
+        <a rel="home" href="/" id="title">🏠 Audio Travel Guide</a>
+        <ul class="site-nav">
+          <li>
+            <a href="/articles/cultural-immersion-experiences.html"
+              >Latest Article</a
+            >
+          </li>
+          <li>
+            <a href="/articles/exploring-worlds-historical-walking-routes.html"
+              >Most‑Read Article</a
+            >
+          </li>
+          <li>
+            <a href="/articles/top-10-hidden-gems-europe.html"
+              >Top Destinations</a
+            >
+          </li>
+          <li>
+            <a href="/articles/navigating-night-markets-food-lovers-guide.html"
+              >Editor’s Pick</a
+            >
+          </li>
+        </ul>
+      </nav>
       <hr />
     </header>
+
     <main>
       <article itemscope itemtype="http://schema.org/Article">
         <header>
@@ -83,8 +108,21 @@
             The African Safari Experience: A Journey into the Wild
           </h1>
           <div id="info">
-            <div>
-              Author:
+            <div id="author-container">
+              <span>Author:</span>
+              <a
+                aria-label="Image link"
+                href="http://www.freepik.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Profile photo of Frank Axton, designed by Freepik"
+              >
+                <img
+                  src="/assets/team/frank-axton.png"
+                  alt="Designed by Freepik - Frank Axton"
+                  title="Designed by Freepik - Frank Axton"
+                  class="team-avatar"
+              /></a>
               <span itemscope itemtype="http://schema.org/Person">
                 <b> <span itemprop="name">Frank Axton</span> </b></span
               >
