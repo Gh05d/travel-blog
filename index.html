@@ -47,14 +47,442 @@
   </head>
 
   <body>
-    <main>
-      <h1>Audio Travel Guide</h1>
-      <search>
-        <input type="search" id="search" placeholder="Search posts..." />
-      </search>
+    <header>
+      <div id="header-container">
+        <h1>Audio Travel Guide</h1>
+        <search>
+          <input type="search" id="search" placeholder="Search posts..." />
+        </search>
+      </div>
+      <hr />
+    </header>
 
-      <div id="loading">Loading...</div>
-      <div id="posts"></div>
+    <main>
+      <section id="top-story">
+        <h2>Top Story</h2>
+
+        <div class="card">
+          <a
+            aria-label="Riding the Waves"
+            href="/articles/top-surfing-destinations-world.html"
+          >
+            <picture>
+              <!-- Desktop: full‑width -->
+              <source
+                media="(min-width:1024px)"
+                srcset="
+                  https://images.unsplash.com/photo-1519229642444-2c6c164c3aa5?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzdXJmaW5nJTIwd2F2ZSUyMGNvYXN0bGluZXxlbnwwfHx8fDE3NDUzMzU0MzZ8MA&ixlib=rb-4.0.3&q=80&w=1080&h=400&dpr=2 2160w,
+                  https://images.unsplash.com/photo-1519229642444-2c6c164c3aa5?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzdXJmaW5nJTIwd2F2ZSUyMGNvYXN0bGluZXxlbnwwfHx8fDE3NDUzMzU0MzZ8MA&ixlib=rb-4.0.3&q=80&w=1080&h=400       1080w
+                "
+                sizes="(min-width:1024px) 1080px, 100vw"
+              />
+
+              <!-- Tablet -->
+              <source
+                media="(min-width:600px)"
+                srcset="
+                  https://images.unsplash.com/photo-1519229642444-2c6c164c3aa5?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzdXJmaW5nJTIwd2F2ZSUyMGNvYXN0bGluZXxlbnwwfHx8fDE3NDUzMzU0MzZ8MA&ixlib=rb-4.0.3&q=80&w=400h=150&dpr=2 800w,
+                  https://images.unsplash.com/photo-1519229642444-2c6c164c3aa5?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzdXJmaW5nJTIwd2F2ZSUyMGNvYXN0bGluZXxlbnwwfHx8fDE3NDUzMzU0MzZ8MA&ixlib=rb-4.0.3&q=80&w=400h=150       400w
+                "
+                sizes="(min-width:600px) 400px, 100vw"
+              />
+
+              <!-- Mobile fallback -->
+              <img
+                src="https://images.unsplash.com/photo-1519229642444-2c6c164c3aa5?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzdXJmaW5nJTIwd2F2ZSUyMGNvYXN0bGluZXxlbnwwfHx8fDE3NDUzMzU0MzZ8MA&ixlib=rb-4.0.3&q=80&w=200h=75"
+                srcset="
+                  https://images.unsplash.com/photo-1519229642444-2c6c164c3aa5?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzdXJmaW5nJTIwd2F2ZSUyMGNvYXN0bGluZXxlbnwwfHx8fDE3NDUzMzU0MzZ8MA&ixlib=rb-4.0.3&q=80&w=200h=75&dpr=2 400w,
+                  https://images.unsplash.com/photo-1519229642444-2c6c164c3aa5?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzdXJmaW5nJTIwd2F2ZSUyMGNvYXN0bGluZXxlbnwwfHx8fDE3NDUzMzU0MzZ8MA&ixlib=rb-4.0.3&q=80&w=200h=75       200w
+                "
+                sizes="100vw"
+                alt="aerial photography of seashore"
+                decoding="async"
+                width="1080"
+                height="400"
+                fetchpriority="high"
+              />
+            </picture>
+          </a>
+
+          <h3>
+            <a href="/articles/top-surfing-destinations-world.html"
+              >Riding the Waves: Top Surfing Destinations Around the World
+            </a>
+          </h3>
+
+          <p>
+            Surfing combines adrenaline, serenity, and a deep connection to
+            nature. Exploring top destinations worldwide reveals spots perfect
+            for every skill level, adventure, and beauty, inviting travelers and
+            surfers alike to chase the waves.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <hr />
+        <h2 class="divider">Trending</h2>
+        <hr />
+
+        <div class="posts">
+          <div class="card">
+            <a
+              aria-label="Top 10 Hidden Gems to Explore in Europe"
+              href="/articles/top-10-hidden-gems-europe.html"
+            >
+              <picture>
+                <!-- Desktop: crop exactly 1080×400 at 100% JPEG quality -->
+                <source
+                  media="(min-width:1024px)"
+                  srcset="
+                    https://images.unsplash.com/photo-1439853949127-fa647821eba0?crop=entropy&cs=tinysrgb&fit=crop&w=1080&h=400&dpr=2&q=100 2160w,
+                    https://images.unsplash.com/photo-1439853949127-fa647821eba0?crop=entropy&cs=tinysrgb&fit=crop&w=1080&h=400&q=100       1080w
+                  "
+                  sizes="(min-width:1024px) 1080px, 100vw"
+                />
+
+                <!-- Tablet: same crop, smaller width -->
+                <source
+                  media="(min-width:600px)"
+                  srcset="
+                    https://images.unsplash.com/photo-1439853949127-fa647821eba0?crop=entropy&cs=tinysrgb&fit=crop&w=400&h=150&dpr=2&q=100 800w,
+                    https://images.unsplash.com/photo-1439853949127-fa647821eba0?crop=entropy&cs=tinysrgb&fit=crop&w=400&h=150&q=100       400w
+                  "
+                  sizes="(min-width:600px) 400px, 100vw"
+                />
+
+                <!-- Fallback / mobile -->
+                <img
+                  src="https://images.unsplash.com/photo-1439853949127-fa647821eba0?crop=entropy&cs=tinysrgb&fit=crop&w=200&h=75&dpr=2&q=100"
+                  srcset="
+                    https://images.unsplash.com/photo-1439853949127-fa647821eba0?crop=entropy&cs=tinysrgb&fit=crop&w=200&h=75&q=100  200w,
+                    https://images.unsplash.com/photo-1439853949127-fa647821eba0?crop=entropy&cs=tinysrgb&fit=crop&w=400&h=150&q=100 400w
+                  "
+                  sizes="100vw"
+                  alt="photo of two mountains"
+                  decoding="async"
+                  width="1080"
+                  height="400"
+                  fetchpriority="high"
+                  style="display: block; width: 100%; height: auto"
+                />
+              </picture>
+            </a>
+
+            <h3>
+              <a href="/articles/top-10-hidden-gems-europe.html"
+                >Top 10 Hidden Gems to Explore in Europe
+              </a>
+            </h3>
+
+            <p>
+              Europe is full of renowned sights, but it’s the lesser-known spots
+              that often offer the most authentic and unforgettable experiences.
+              Journey through some of the continent's hidden gems and uncover
+              new favorites away from crowds and typical tourist routes.
+            </p>
+          </div>
+
+          <div class="card">
+            <a
+              aria-label="The Ultimate Guide to Solo Travel Safety"
+              href="/articles/solo-travel-safety-guide.html"
+            >
+              <picture>
+                <source
+                  media="(min-width:1024px)"
+                  srcset="
+                    https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=1080&h=400 1080w,
+                    https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=400         400w,
+                    https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=200         200w
+                  "
+                  sizes="(min-width:1024px) 1080px, 100vw"
+                />
+                <source
+                  media="(min-width:600px)"
+                  srcset="
+                    https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=400 400w,
+                    https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=200 200w
+                  "
+                  sizes="(min-width:600px) 400px, 100vw"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=200"
+                  srcset="
+                    https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=200         200w,
+                    https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=400         400w,
+                    https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=1080&h=400 1080w
+                  "
+                  sizes="(min-width:1024px) 1080px, (min-width:600px) 400px, 100vw"
+                  alt="airplane on sky during golden hour"
+                  decoding="async"
+                  width="1080"
+                  height="400"
+                  fetchpriority="high"
+                />
+              </picture>
+            </a>
+
+            <h3>
+              <a href="/articles/solo-travel-safety-guide.html"
+                >The Ultimate Guide to Solo Travel Safety
+              </a>
+            </h3>
+
+            <p>
+              Traveling solo offers unmatched freedom and adventure, but safety
+              must be a priority. This guide covers vital tips to ensure your
+              journeys are both exciting and secure, from planning to handling
+              unexpected situations.
+            </p>
+          </div>
+
+          <div class="card">
+            <a
+              aria-label="Hidden Gems Uncharted Travel Destinations Around the World"
+              href="/articles/top-surfing-destinations-world.html"
+            >
+              <picture>
+                <source
+                  media="(min-width:1024px)"
+                  srcset="
+                    https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaWRkZW4lMjB0cmF2ZWwlMjBkZXN0aW5hdGlvbnN8ZW58MHx8fHwxNzQ0OTA3Mzc4fDA&ixlib=rb-4.0.3&q=80&w=1080&h=800
+                  "
+                />
+                <source
+                  media="(min-width:600px)"
+                  srcset="
+                    https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaWRkZW4lMjB0cmF2ZWwlMjBkZXN0aW5hdGlvbnN8ZW58MHx8fHwxNzQ0OTA3Mzc4fDA&ixlib=rb-4.0.3&q=80&w=400
+                  "
+                />
+                <!-- fallback / smallest: the “thumb” URL (200px) -->
+                <img
+                  src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaWRkZW4lMjB0cmF2ZWwlMjBkZXN0aW5hdGlvbnN8ZW58MHx8fHwxNzQ0OTA3Mzc4fDA&ixlib=rb-4.0.3&q=80&w=200"
+                  alt="airplane on sky during golden hour"
+                  width="760"
+                  height="400"
+                />
+              </picture>
+            </a>
+
+            <h3>
+              <a href="/articles/top-surfing-destinations-world.html"
+                >Hidden Gems Uncharted Travel Destinations Around the World
+              </a>
+            </h3>
+
+            <p>
+              Beyond the familiar sights and crowded cities lies a wealth of
+              lesser-known treasures, waiting for intrepid travelers. From
+              untouched villages to secret beaches tucked away from bustling
+              crowds, these hidden gems offer spectacular experiences and
+              breathtaking wonders. Join a journey off the beaten path,
+              uncovering magical destinations you may not even know existed but
+              will never forget.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <hr />
+        <h2 class="divider">Recommended Articles</h2>
+        <hr />
+
+        <div class="posts">
+          <div class="card">
+            <a
+              aria-label="Sustainable Food Explorations"
+              href="/articles/sustainable-food-explorations.html"
+            >
+              <picture>
+                <!-- Desktop: full‑width -->
+                <source
+                  media="(min-width:1024px)"
+                  srcset="
+                    https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080&h=400 1080w,
+                    https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=400         400w,
+                    https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=200         200w
+                  "
+                  sizes="(min-width:1024px) 1080px, 100vw"
+                />
+
+                <!-- Tablet -->
+                <source
+                  media="(min-width:600px)"
+                  srcset="
+                    https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=400 400w,
+                    https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=200 200w
+                  "
+                  sizes="(min-width:600px) 400px, 100vw"
+                />
+
+                <!-- Mobile fallback -->
+                <img
+                  src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=200"
+                  srcset="
+                    https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=200         200w,
+                    https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=400         400w,
+                    https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080&h=400 1080w
+                  "
+                  sizes="(min-width:1024px) 1080px, (min-width:600px) 400px, 100vw"
+                  alt="Pesto pasta with sliced tomatoes served on white ceramic plate"
+                  decoding="async"
+                  width="1080"
+                  height="400"
+                  fetchpriority="high"
+                  style="display: block; width: 100%; height: auto"
+                />
+              </picture>
+            </a>
+
+            <h3>
+              <a href="/articles/sustainable-food-explorations.html"
+                >Sustainable Food Explorations: A Foodie's Guide to Eco-friendly
+                Dining Worldwide
+              </a>
+            </h3>
+
+            <p>
+              Traveling the world offers the chance to indulge in delicious
+              local cuisines. Embracing eco-friendly dining options enhances
+              your culinary adventures while reducing environmental impact,
+              creating meaningful and responsible travel experiences.
+            </p>
+          </div>
+
+          <div class="card">
+            <a
+              aria-label="Exploring World's Historical
+              Walking Routes"
+              href="/articles/exploring-worlds-historical-walking-routes.html"
+            >
+              <picture>
+                <!-- Desktop: full‑width -->
+                <source
+                  media="(min-width:1024px)"
+                  srcset="
+                    https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpYyUyMHN0cmVldHMlMkMlMjB3YWxraW5nJTIwdG91ciUyQyUyMGFuY2llbnQlMjBjaXR5JTJDJTIwaGlzdG9yaWNhbCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NDUzMzc1OTV8MA&ixlib=rb-4.0.3&q=80&w=1080&h=400&dpr=2 2160w,
+                    https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpYyUyMHN0cmVldHMlMkMlMjB3YWxraW5nJTIwdG91ciUyQyUyMGFuY2llbnQlMjBjaXR5JTJDJTIwaGlzdG9yaWNhbCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NDUzMzc1OTV8MA&ixlib=rb-4.0.3&q=80&w=1080&h=400       1080w
+                  "
+                  sizes="(min-width:1024px) 1080px, 100vw"
+                />
+
+                <!-- Tablet -->
+                <source
+                  media="(min-width:600px)"
+                  srcset="
+                    https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpYyUyMHN0cmVldHMlMkMlMjB3YWxraW5nJTIwdG91ciUyQyUyMGFuY2llbnQlMjBjaXR5JTJDJTIwaGlzdG9yaWNhbCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NDUzMzc1OTV8MA&ixlib=rb-4.0.3&q=80&w=400h=150&dpr=2 800w,
+                    https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpYyUyMHN0cmVldHMlMkMlMjB3YWxraW5nJTIwdG91ciUyQyUyMGFuY2llbnQlMjBjaXR5JTJDJTIwaGlzdG9yaWNhbCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NDUzMzc1OTV8MA&ixlib=rb-4.0.3&q=80&w=400h=150       400w
+                  "
+                  sizes="(min-width:600px) 400px, 100vw"
+                />
+
+                <!-- Mobile fallback -->
+                <img
+                  src="https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpYyUyMHN0cmVldHMlMkMlMjB3YWxraW5nJTIwdG91ciUyQyUyMGFuY2llbnQlMjBjaXR5JTJDJTIwaGlzdG9yaWNhbCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NDUzMzc1OTV8MA&ixlib=rb-4.0.3&q=80&w=200h=75"
+                  srcset="
+                    https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpYyUyMHN0cmVldHMlMkMlMjB3YWxraW5nJTIwdG91ciUyQyUyMGFuY2llbnQlMjBjaXR5JTJDJTIwaGlzdG9yaWNhbCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NDUzMzc1OTV8MA&ixlib=rb-4.0.3&q=80&w=200h=75&dpr=2 400w,
+                    https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpYyUyMHN0cmVldHMlMkMlMjB3YWxraW5nJTIwdG91ciUyQyUyMGFuY2llbnQlMjBjaXR5JTJDJTIwaGlzdG9yaWNhbCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NDUzMzc1OTV8MA&ixlib=rb-4.0.3&q=80&w=200h=75       200w
+                  "
+                  sizes="100vw"
+                  alt="grayscale photo of low angle view of building"
+                  decoding="async"
+                  width="1080"
+                  height="400"
+                  fetchpriority="high"
+                  style="display: block; width: 100%; height: auto"
+                />
+              </picture>
+            </a>
+
+            <h3>
+              <a
+                href="/articles/exploring-worlds-historical-walking-routes.html"
+                >A Walk Through Time: Exploring World's Historical Walking
+                Routes
+              </a>
+            </h3>
+
+            <p>
+              Embark on a journey through history by exploring some of the
+              world's most captivating walking routes. These paths allow
+              travelers to immerse themselves in the stories and cultures of
+              bygone eras, all from the comfort of a leisurely stroll. Whether
+              wandering ancient city streets or tracing historic trade routes,
+              these walks offer unique insights into our collective past.
+            </p>
+          </div>
+
+          <div class="card">
+            <a
+              aria-label="Dark Tourism"
+              href="/articles/dark-tourism-worlds-haunting-locations.html"
+            >
+              <picture>
+                <!-- Desktop: full‑width -->
+                <source
+                  media="(min-width:1024px)"
+                  srcset="
+                    https://images.unsplash.com/photo-1578593139775-971441c3c518?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoYXVudGluZyUyMGhpc3RvcmljYWwlMjBzaXRlc3xlbnwwfHx8fDE3NDUzMjk3Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080&h=400&dpr=2 2160w,
+                    https://images.unsplash.com/photo-1578593139775-971441c3c518?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoYXVudGluZyUyMGhpc3RvcmljYWwlMjBzaXRlc3xlbnwwfHx8fDE3NDUzMjk3Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080&h=400       1080w
+                  "
+                  sizes="(min-width:1024px) 1080px, 100vw"
+                />
+
+                <!-- Tablet -->
+                <source
+                  media="(min-width:600px)"
+                  srcset="
+                    https://images.unsplash.com/photo-1578593139775-971441c3c518?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoYXVudGluZyUyMGhpc3RvcmljYWwlMjBzaXRlc3xlbnwwfHx8fDE3NDUzMjk3Mjh8MA&ixlib=rb-4.0.3&q=80&w=400h=150&dpr=2 800w,
+                    https://images.unsplash.com/photo-1578593139775-971441c3c518?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoYXVudGluZyUyMGhpc3RvcmljYWwlMjBzaXRlc3xlbnwwfHx8fDE3NDUzMjk3Mjh8MA&ixlib=rb-4.0.3&q=80&w=400h=150       400w
+                  "
+                  sizes="(min-width:600px) 400px, 100vw"
+                />
+
+                <!-- Mobile fallback -->
+                <img
+                  src="https://images.unsplash.com/photo-1578593139775-971441c3c518?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoYXVudGluZyUyMGhpc3RvcmljYWwlMjBzaXRlc3xlbnwwfHx8fDE3NDUzMjk3Mjh8MA&ixlib=rb-4.0.3&q=80&w=200h=75"
+                  srcset="
+                    https://images.unsplash.com/photo-1578593139775-971441c3c518?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoYXVudGluZyUyMGhpc3RvcmljYWwlMjBzaXRlc3xlbnwwfHx8fDE3NDUzMjk3Mjh8MA&ixlib=rb-4.0.3&q=80&w=200h=75&dpr=2 400w,
+                    https://images.unsplash.com/photo-1578593139775-971441c3c518?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoYXVudGluZyUyMGhpc3RvcmljYWwlMjBzaXRlc3xlbnwwfHx8fDE3NDUzMjk3Mjh8MA&ixlib=rb-4.0.3&q=80&w=200h=75       200w
+                  "
+                  sizes="100vw"
+                  alt="grayscale photography of man standing near studio camera and woman sitting while holding book"
+                  decoding="async"
+                  width="1080"
+                  height="400"
+                  fetchpriority="high"
+                  style="display: block; width: 100%; height: auto"
+                />
+              </picture>
+            </a>
+
+            <h3>
+              <a href="/articles/dark-tourism-worlds-haunting-locations.html"
+                >Dark Tourism Visiting The World's Most Haunting Locations
+              </a>
+            </h3>
+
+            <p>
+              Dark tourism attracts travelers fascinated by history, tragedy,
+              and the mysteries of haunting locations. This journey uncovers
+              some of the world's most chilling sites, revealing their stories
+              and the human curiosity that draws visitors in for a haunting
+              experience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <hr />
+        <h2 class="divider">Latest Articles</h2>
+        <hr />
+
+        <div id="loading">Loading...</div>
+        <div class="posts" id="latest"></div>
+      </section>
     </main>
 
     <footer>

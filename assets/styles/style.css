@@ -14,6 +14,7 @@ html {
   --color-primary: #005fcc;
   --color-secondary: #ff5f42;
   --space: 0.5rem;
+  --color-shadow: #131111;
 
   scroll-behavior: smooth;
   background: #eee;
@@ -50,18 +51,6 @@ main {
   flex: 1 0 auto;
 }
 
-search {
-  width: 100%;
-  margin-bottom: 2rem;
-
-  input {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border-width: 0.1rem;
-  }
-}
-
 h1 {
   text-transform: uppercase;
   line-height: 1.7rem;
@@ -74,13 +63,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2rem;
-  line-height: 1.4rem;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
 }
 
 h4 {
-  font-size: 1.1rem;
-  line-height: 1.3rem;
+  font-size: 1.05rem;
+  line-height: 1.2rem;
 }
 
 body {
@@ -152,6 +141,9 @@ img {
   max-height: 400px;
   object-fit: cover;
   object-position: center;
+  transition: transform 300ms ease-in-out;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 figcaption {
@@ -200,6 +192,7 @@ figcaption {
     --color-bg: #fff;
     --space: 1rem;
     --color-text: #212529;
+    --color-shadow: #eee;
   }
 
   body > header nav a {
@@ -222,13 +215,13 @@ figcaption {
   }
 
   h3 {
-    font-size: 1.4em;
-    line-height: 1.6em;
+    font-size: 1.3em;
+    line-height: 1.5em;
   }
 
   h4 {
-    font-size: 1.3em;
-    line-height: 1.5em;
+    font-size: 1.1em;
+    line-height: 1.3em;
   }
 
   a {
