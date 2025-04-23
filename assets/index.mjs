@@ -2,15 +2,20 @@ function renderPosts(posts) {
   const container = document.getElementById("latest");
   container.innerHTML = "";
 
-  posts.forEach((post) => {
-    const human = new Date(post.publishDate).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-    const div = document.createElement("div");
-    div.className = "card";
-    div.innerHTML = `
+  posts
+    .sort(
+      (a, b) =>
+        new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
+    )
+    .forEach((post) => {
+      const human = new Date(post.publishDate).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      });
+      const div = document.createElement("div");
+      div.className = "card";
+      div.innerHTML = `
     <a
         aria-label="${post.imageAlt}"
         href="${post.url}">
@@ -44,8 +49,8 @@ function renderPosts(posts) {
 
   <p>${post.description}</p>
 `;
-    container.appendChild(div);
-  });
+      container.appendChild(div);
+    });
 }
 
 (async function init() {
