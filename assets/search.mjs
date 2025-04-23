@@ -25,7 +25,7 @@ function renderPosts(posts) {
     div.innerHTML = `
     <a
         aria-label="${post.imageAlt}"
-        href="/articles/${post.url}">
+        href="${post.url}">
         <picture>
             <img
                 src="${post.imageUrl}"
@@ -43,12 +43,7 @@ function renderPosts(posts) {
         </picture>
     </a>
 
-    <h3>
-        <a
-        href="/articles/${post.url}"
-        >${post.title}</a
-        </a>
-    </h3>
+    <h3><a href="${post.url}">${post.title}</a></h3>
 
      <div id="published">
         Published:
