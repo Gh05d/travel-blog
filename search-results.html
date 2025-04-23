@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, nofollow" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
     <link
       rel="icon"
       type="image/png"
@@ -31,34 +31,38 @@
     />
     <meta name="apple-mobile-web-app-title" content="audiotravelguide.eu" />
     <link rel="manifest" href="/site.webmanifest" />
-    <title>Audio Travel Guide | Contact</title>
+
+    <title>Audio Travel Guide | Search Results</title>
+
     <link rel="stylesheet" href="/assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/index.css" />
+    <link rel="stylesheet" href="assets/styles/search.css" />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"
+    ></script>
+    <script type="module" src="assets/search.mjs"></script>
   </head>
   <body>
     <header>
-      <a rel="home" href="/" id="title">🏠 Audio Travel Guide</a>
+      <a href="/" id="title">🏠 Audio Travel Guide</a>
       <hr />
     </header>
 
     <main>
-      <header>
-        <h1>Contact</h1>
-      </header>
+      <h1>Search Results</h1>
+      <search>
+        <input
+          id="search"
+          type="search"
+          name="query"
+          placeholder="Search posts…"
+          disabled
+      /></search>
 
-      <section>
-        <h2>Contact Information</h2>
-        <p>
-          <strong>Pascal Clanget</strong><br />
-          Eisenbahnstraße 47<br />
-          66117 Saarbrücken<br />
-          Germany
-        </p>
-
-        <p>
-          If you’ve got questions or suggestions, send us an email at
-          <a href="mailto:clap@mailbox.org">clap@mailbox.org</a><br />
-        </p>
-      </section>
+      <div id="loading">Loading...</div>
+      <section id="results"></section>
     </main>
 
     <footer>

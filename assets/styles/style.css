@@ -138,7 +138,7 @@ img {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 400px;
+  max-height: 38rem;
   object-fit: cover;
   object-position: center;
   transition: transform 300ms ease-in-out;

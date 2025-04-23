@@ -1,129 +1,200 @@
 [
   {
-    "title": "Eco-Friendly Traveling How to See the World Sustainably",
-    "excerpt": "Discover practical tips on eco-friendly traveling and embark on sustainable journeys that significantly reduce your environmental footprint.",
-    "url": "articles/eco-friendly-traveling-world-sustainably.html"
-  },
-  {
-    "title": "Traveling with a Twist – Unique Festivals Around the Globe",
-    "excerpt": "Discover unique and quirky festivals around the globe, adding unforgettable experiences to your travel adventures.",
-    "url": "articles/traveling-twist-unique-festivals-globe.html"
-  },
-  {
-    "title": "Hidden Gems Uncharted Travel Destinations Around the World",
-    "excerpt": "Explore spectacular hidden gems around the globe and uncover amazing lesser-known destinations beyond usual tourist spots.",
-    "url": "articles/hidden-gems-uncharted-travel-destinations.html"
-  },
-  {
-    "title": "Solo Traveler's Guide to Southeast Asia How to Travel Confidently and Safely",
-    "excerpt": "Your ultimate solo traveler’s guide to exploring Southeast Asia confidently and safely with tips on planning, safety, cultural respect, and embracing local adventures.",
-    "url": "articles/solo-travel-guide-southeast-asia-safety.html"
-  },
-  {
-    "title": "Travel Hacks Essential Tips to Save Money and Time While Traveling",
-    "excerpt": "Discover essential travel hacks to save money and time while exploring new destinations. Practical tips for smarter, more efficient travel adventures.",
-    "url": "articles/travel-hacks-tips-save-money-time.html"
-  },
-  {
-    "title": "Top 10 Hidden Gems to Explore in Europe",
-    "excerpt": "Explore Europe's top 10 hidden gems, from secret villages to untouched landscapes. Discover unique destinations off the beaten path for your next adventure.",
-    "url": "articles/top-10-hidden-gems-europe.html"
-  },
-  {
-    "title": "The Ultimate Guide to Solo Travel Safety",
-    "excerpt": "Discover essential safety tips for solo travelers. Learn how to stay secure, prepared, and confident while exploring the world on your own. Read more now!",
-    "url": "articles/solo-travel-safety-guide.html"
-  },
-  {
-    "title": "How to Travel on a Budget Without Missing Out",
-    "excerpt": "Learn practical tips to travel on a budget without missing out on adventures. Maximize savings and experiences for a fulfilling trip at a lower cost.",
-    "url": "articles/travel-budget-tips.html"
+    "title": "The African Safari Experience: A Journey into the Wild",
+    "url": "/articles/african-safari-experience-a-journey-into-the-wild.html",
+    "imageAlt": "selective focus photography of giraffe",
+    "description": "Embarking on an African safari offers an unparalleled chance to witness the continent’s incredible biodiversity. From majestic elephants to stealthy predators, explore the wild landscapes that define Africa's natural heritage and learn what makes this adventure truly unforgettable.",
+    "publishDate": "2025-04-14",
+    "imageUrl": "https://images.unsplash.com/photo-1467302091917-c7ac18f83832?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxBZnJpY2FuJTIwd2lsZGxpZmUlMjBzYWZhcml8ZW58MHx8fHwxNzQ1MjQ4MTE2fDA&ixlib=rb-4.0.3&q=80&w=200h=75"
   },
   {
     "title": "Best Travel Apps to Make Your Journey Easier",
-    "excerpt": "Explore the best travel apps to simplify your journeys. From navigation to booking, enhance your travel experience effortlessly with these essential tools.",
-    "url": "articles/best-travel-apps.html"
-  },
-  {
-    "title": "Embracing Eco-Tourism A Sustainable Journey through Costa Rica",
-    "excerpt": "Discover Costa Rica's lush rainforests, vibrant wildlife, and sustainable tourism initiatives. Embrace eco-tourism for a responsible and memorable travel experience.",
-    "url": "articles/embracing-eco-tourism-sustainable-journey-costa-rica.html"
-  },
-  {
-    "title": "Cultural Immersion Experiences That Transcend the Tourist Traps",
-    "excerpt": "Explore authentic cultural immersion experiences that transcend typical tourist traps. Deepen your connection with local communities and discover hidden treasures.",
-    "url": "articles/cultural-immersion-experiences.html"
-  },
-  {
-    "title": "Unplugged Adventures Experiencing Travel Without Technology",
-    "excerpt": "Experience the thrill of travel without technology. Unplug, explore authentic destinations, and reconnect with nature and local cultures on your journey.",
-    "url": "articles/unplugged-adventures-travel-without-technology.html"
-  },
-  {
-    "title": "Sustainable Food Explorations: A Foodie's Guide to Eco-friendly Dining Worldwide",
-    "excerpt": "Explore eco-friendly dining around the world with this guide. Discover sustainable food practices, eco-conscious restaurants, and how to enjoy local flavors responsibly.",
-    "url": "articles/sustainable-food-explorations.html"
-  },
-  {
-    "title": "Discovering the Underwater World Best Snorkeling Spots Globally",
-    "excerpt": "Uncover top snorkeling spots worldwide with stunning reefs, clear waters, and abundant marine life. Dive into our guide for an unforgettable underwater experience.",
-    "url": "articles/discovering-underwater-world-best-snorkeling-spots-globally.html"
-  },
-  {
-    "title": "The African Safari Experience: A Journey into the Wild",
-    "excerpt": "Experience Africa's wilderness with a thrilling safari adventure. Discover wildlife, stunning landscapes, and tips for an unforgettable journey into the wild.",
-    "url": "articles/african-safari-experience-a-journey-into-the-wild.html"
+    "url": "/articles/best-travel-apps.html",
+    "imageAlt": "person holding silver iPhone 6",
+    "description": "Travel apps have become indispensable for explorers seeking convenience and confidence on their journeys. These digital tools simplify logistics, improve safety, and enrich experiences, making every trip smoother and more enjoyable. Explore the top apps everyone should have to navigate the world with ease.",
+    "publishDate": "2025-01-26",
+    "imageUrl": "https://images.unsplash.com/photo-1528033978085-52f315289665?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHx0cmF2ZWwlMjBhcHBzJTIwb24lMjBzbWFydHBob25lfGVufDB8fHx8MTc0NDkzMTUxNnww&ixlib=rb-4.0.3&q=80&w=200"
   },
   {
     "title": "Beyond Hostels and Hotels: Unique Accommodations for the Adventurous Traveler",
-    "excerpt": "Discover unique and adventurous accommodations beyond hostels and hotels. Explore treehouses, glamping, cave hotels, and more for extraordinary travel experiences.",
-    "url": "articles/beyond-hostels-hotels-unique-accommodations-adventurous-traveler.html"
-  },
-  {
-    "title": "Exploring the Arctic: A Travel Guide to Life in the Far North",
-    "excerpt": "Explore the Arctic with this comprehensive travel guide. Discover icy landscapes, wildlife, indigenous cultures, and top tips for a memorable adventure in the Far North.",
-    "url": "articles/exploring-arctic-travel-guide.html"
-  },
-  {
-    "title": "Historic Railways of the World: A Journey Through Time and Cultures",
-    "excerpt": "Discover the world's most historic railways, their cultural significance, engineering marvels, and stories that connect us to the past in a timeless journey.",
-    "url": "articles/historic-railways-world-journey.html"
-  },
-  {
-    "title": "Dark Tourism Visiting The World's Most Haunting Locations",
-    "excerpt": "Discover the world of dark tourism exploring haunted, tragic, and mysterious locations that captivate and intrigue travelers seeking emotional and historical insights.",
-    "url": "articles/dark-tourism-worlds-haunting-locations.html"
-  },
-  {
-    "title": "Riding the Waves: Top Surfing Destinations Around the World",
-    "excerpt": "Explore top surfing destinations worldwide—from Bali to Hawaii—perfect for surfers of all levels. Discover scenic spots, best seasons, and travel tips for the ultimate wave riding experience.",
-    "url": "articles/top-surfing-destinations-world.html"
-  },
-  {
-    "title": "A Walk Through Time: Exploring World's Historical Walking Routes",
-    "excerpt": "Discover historic walking routes around the world that let you step back in time, explore ancient streets, and experience history on foot.",
-    "url": "articles/exploring-worlds-historical-walking-routes.html"
-  },
-  {
-    "title": "Navigating Night Markets: A Food Lover's Guide Around the World",
-    "excerpt": "Discover vibrant night markets worldwide, exploring local cuisines, unique stalls, and tips to enjoy an authentic food adventure at every turn.",
-    "url": "articles/navigating-night-markets-food-lovers-guide.html"
-  },
-  {
-    "title": "Touring the Tropics: A Comprehensive Guide to Tropical Destinations",
-    "excerpt": "Explore vibrant tropical destinations with our comprehensive guide, covering must-visit spots, local cultures, best times to visit, and travel tips for an unforgettable experience.",
-    "url": "articles/touring-tropics-comprehensive-guide.html"
-  },
-  {
-    "title": "Traveling Through Taste: A Culinary Journey Around the Globe",
-    "excerpt": "Embark on a flavorful adventure with our culinary journey around the world, exploring unique dishes, cultural food stories, and hidden gastronomic gems.",
-    "url": "articles/traveling-through-taste-culinary-journey.html"
+    "url": "/articles/beyond-hostels-hotels-unique-accommodations-adventurous-traveler.html",
+    "imageAlt": "a yellow and white train pulling into a train station",
+    "description": "Travelers craving more than typical accommodations seek unique stays that offer memorable experiences. From treehouses to ice hotels, discovering extraordinary places enhances every adventure and creates stories worth sharing. Dive into innovative options that redefine how and where you sleep on your travels.",
+    "publishDate": "2024-10-29",
+    "imageUrl": "https://images.unsplash.com/photo-1682764819678-adcf5daf7222?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHx1bmlxdWUlMjBhZHZlbnR1cm91cyUyMGFjY29tbW9kYXRpb258ZW58MHx8fHwxNzQ1MjY5MzA3fDA&ixlib=rb-4.0.3&q=80&w=200h=75"
   },
   {
     "title": "Chasing Northern Lights: Best Places to Witness this Natural Phenomenon",
-    "excerpt": "Discover the top destinations and tips for witnessing the mesmerizing Northern Lights, from Norway’s fjords to Canada’s icy landscapes. Plan your ultimate aurora adventure!",
-    "url": "articles/chasing-northern-lights-best-places.html",
+    "url": "/articles/chasing-northern-lights-best-places.html",
+    "imageAlt": "aerial photography of flowers at daytime",
+    "description": "The Northern Lights, or Aurora Borealis, captivate travelers with their shimmering displays across dark winter skies. Chasing this natural phenomenon requires careful planning and the right locations. Whether you're an adventure seeker or a photography enthusiast, exploring the best spots to view these lights guarantees an unforgettable experience beneath the vibrant, dancing skies.",
     "publishDate": "2025-03-21",
-    "imageUrl": "https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxOb3J0aGVybiUyMExpZ2h0cyUyQyUyMGF1cm9yYSUyMGJvcmVhbGlzJTJDJTIwd2ludGVyJTIwbGFuZHNjYXBlJTJDJTIwdHJhdmVsJTIwZGVzdGluYXRpb25zJTJDJTIwbmlnaHQlMjBza3l8ZW58MHx8fHwxNzQ1NDA2MDM2fDA&ixlib=rb-4.0.3&q=80&w=400h=150"
+    "imageUrl": "https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxOb3J0aGVybiUyMExpZ2h0cyUyQyUyMGF1cm9yYSUyMGJvcmVhbGlzJTJDJTIwd2ludGVyJTIwbGFuZHNjYXBlJTJDJTIwdHJhdmVsJTIwZGVzdGluYXRpb25zJTJDJTIwbmlnaHQlMjBza3l8ZW58MHx8fHwxNzQ1NDA2MDM2fDA&ixlib=rb-4.0.3&q=80&w=200h=75"
+  },
+  {
+    "title": "Cultural Immersion Experiences That Transcend the Tourist Traps",
+    "url": "/articles/cultural-immersion-experiences.html",
+    "imageAlt": "woman in purple and yellow floral dress",
+    "description": "Travelers seek genuine cultural experiences that go beyond crowded attractions. Exploring authentic local interactions and traditions enriches our understanding and creates memorable journeys that truly resonate with the place’s soul.",
+    "publishDate": "2025-03-07",
+    "imageUrl": "https://images.unsplash.com/photo-1622278934023-1fc1fe795c0c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxsb2NhbCUyMGN1bHR1cmFsJTIwaW1tZXJzaW9uJTIwZ2VudWluZSUyMGV4cGVyaWVuY2V8ZW58MHx8fHwxNzQ1MjMzNjc4fDA&ixlib=rb-4.0.3&q=80&w=200"
+  },
+  {
+    "title": "Dark Tourism Visiting The World's Most Haunting Locations",
+    "url": "/articles/dark-tourism-worlds-haunting-locations.html",
+    "imageAlt": "grayscale photography of man standing near studio camera and woman sitting while holding book",
+    "description": "Dark tourism attracts travelers fascinated by history, tragedy, and the mysteries of haunting locations. This journey uncovers some of the world's most chilling sites, revealing their stories and the human curiosity that draws visitors in for a haunting experience.",
+    "publishDate": "2025-04-07",
+    "imageUrl": "https://images.unsplash.com/photo-1578593139775-971441c3c518?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoYXVudGluZyUyMGhpc3RvcmljYWwlMjBzaXRlc3xlbnwwfHx8fDE3NDUzMjk3Mjh8MA&ixlib=rb-4.0.3&q=80&w=200h=75"
+  },
+  {
+    "title": "Discovering the Underwater World Best Snorkeling Spots Globally",
+    "url": "/articles/discovering-underwater-world-best-snorkeling-spots-globally.html",
+    "imageAlt": "clear blue body of water",
+    "description": "Venture beneath the surface to explore some of the world's most breathtaking underwater landscapes. From vibrant reefs to hidden lagoons, snorkeling offers a window into a mesmerizing marine universe that promises unforgettable adventures for travelers of all levels.",
+    "publishDate": "2023-10-01",
+    "imageUrl": "https://images.unsplash.com/photo-1530053969600-caed2596d242?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBjb3JhbCUyMHJlZWYlMjBzbm9ya2VsaW5nJTIwdW5kZXJ3YXRlcnxlbnwwfHx8fDE3NDUyNDEwMzF8MA&ixlib=rb-4.0.3&q=80&w=200h=75"
+  },
+  {
+    "title": "Eco-Friendly Traveling How to See the World Sustainably",
+    "url": "/articles/eco-friendly-traveling-world-sustainably.html",
+    "description": "Traveling broadens our horizons and enriches our lives, but it often comes at a high environmental cost. Fortunately, sustainable travel practices allow us to experience new cultures and stunning landscapes responsibly, preserving the planet for future generations. Embracing environmentally friendly traveling habits not only supports local communities but also ensures your adventures leave lasting positive impacts.",
+    "publishDate": "2025-04-04",
+    "imageUrl": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28lMjBmcmllbmRseSUyMHRyYXZlbCUyMHN1c3RhaW5hYmxlJTIwdG91cmlzbXxlbnwwfHx8fDE3NDQ4OTc4MzB8MA&ixlib=rb-4.0.3&q=80&w=200?w=200"
+  },
+  {
+    "title": "Embracing Eco-Tourism A Sustainable Journey through Costa Rica",
+    "url": "/articles/embracing-eco-tourism-sustainable-journey-costa-rica.html",
+    "imageAlt": "body of water under cloudy sky",
+    "description": "Costa Rica stands as a shining example of sustainable travel, offering lush rainforests, diverse wildlife, and vibrant local communities. Embracing eco-tourism allows travelers to connect deeply with nature while supporting conservation efforts and local economies.",
+    "publishDate": "2025-03-02",
+    "imageUrl": "https://images.unsplash.com/photo-1465512585831-856a0bfd5e0b?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxDb3N0YSUyMFJpY2ElMjBlY28lMjB0b3VyaXNtJTIwbHVzaCUyMHJhaW5mb3Jlc3R8ZW58MHx8fHwxNzQ1MDE4MDI3fDA&ixlib=rb-4.0.3&q=80&w=200"
+  },
+  {
+    "title": "Exploring the Arctic: A Travel Guide to Life in the Far North",
+    "url": "/articles/exploring-arctic-travel-guide.html",
+    "imageAlt": "body of water surrounded by trees",
+    "description": "The Arctic region captivates with its stunning landscapes, unique wildlife, and indigenous cultures. This travel guide explores what it takes to venture into the Far North, offering insights, tips, and inspiring stories for adventurers eager to experience this icy frontier.",
+    "publishDate": "2025-03-23",
+    "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxBcmN0aWMlMjBsYW5kc2NhcGUlMjBzbm93eSUyMGdsYWNpZXJzJTIwd2lsZGxpZmV8ZW58MHx8fHwxNzQ1MjcwNDMzfDA&ixlib=rb-4.0.3&q=80&w=200h=75"
+  },
+  {
+    "title": "A Walk Through Time: Exploring World's Historical Walking Routes",
+    "url": "/articles/exploring-worlds-historical-walking-routes.html",
+    "imageAlt": "grayscale photo of low angle view of building",
+    "description": "Embark on a journey through history by exploring some of the world's most captivating walking routes. These paths allow travelers to immerse themselves in the stories and cultures of bygone eras, all from the comfort of a leisurely stroll. Whether wandering ancient city streets or tracing historic trade routes, these walks offer unique insights into our collective past.",
+    "publishDate": "2024-12-08",
+    "imageUrl": "https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpYyUyMHN0cmVldHMlMkMlMjB3YWxraW5nJTIwdG91ciUyQyUyMGFuY2llbnQlMjBjaXR5JTJDJTIwaGlzdG9yaWNhbCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NDUzMzc1OTV8MA&ixlib=rb-4.0.3&q=80&w=200h=75"
+  },
+  {
+    "title": "Hidden Gems Uncharted Travel Destinations Around the World",
+    "url": "/articles/hidden-gems-uncharted-travel-destinations.html",
+    "description": "Beyond the familiar sights and crowded cities lies a wealth of lesser-known treasures, waiting for intrepid travelers. From untouched villages to secret beaches tucked away from bustling crowds, these hidden gems offer spectacular experiences and breathtaking wonders. Join a journey off the beaten path, uncovering magical destinations you may not even know existed but will never forget.",
+    "publishDate": "2025-03-11",
+    "imageUrl": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaWRkZW4lMjB0cmF2ZWwlMjBkZXN0aW5hdGlvbnN8ZW58MHx8fHwxNzQ0OTA3Mzc4fDA&ixlib=rb-4.0.3&q=80&w=200"
+  },
+  {
+    "title": "Historic Railways of the World: A Journey Through Time and Cultures",
+    "url": "/articles/historic-railways-world-journey.html",
+    "imageAlt": "A shack sitting on top of a rocky hillside",
+    "description": "Historic railways offer a fascinating glimpse into the past, showcasing engineering marvels and cultural stories from around the world. This journey uncovers how railways shaped societies and connected distant lands, inviting travelers to explore their enduring legacy.",
+    "publishDate": "2025-04-02",
+    "imageUrl": "https://images.unsplash.com/photo-1725137752276-c273686fc3c4?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpYyUyMHJhaWx3YXklMjB0cmFpbiUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NDUyNzA2NTZ8MA&ixlib=rb-4.0.3&q=80&w=200h=75"
+  },
+  {
+    "title": "Navigating Night Markets: A Food Lover's Guide Around the World",
+    "url": "/articles/navigating-night-markets-food-lovers-guide.html",
+    "imageAlt": "Pesto pasta with sliced tomatoes served on white ceramic plate",
+    "description": "Night markets are lively hubs of culture, cuisine, and community found around the globe. They offer an authentic glimpse into local traditions through tantalizing aromas, vibrant sights, and bustling crowds. Join us as we explore the best tips and must-try dishes to enhance your experience and indulge your senses in these dynamic food destinations.",
+    "publishDate": "2025-01-16",
+    "imageUrl": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxuaWdodCUyMG1hcmtldCUyMGZvb2QlMjBzdHJlZXQlMjBBc2lhJTIwY29sb3JmdWwlMjBzdGFsbHN8ZW58MHx8fHwxNzQ1MzM3OTYyfDA&ixlib=rb-4.0.3&q=80&w=200h=75"
+  },
+  {
+    "title": "Solo Traveler's Guide to Southeast Asia How to Travel Confidently and Safely",
+    "url": "/articles/solo-travel-guide-southeast-asia-safety.html",
+    "imageAlt": "brown and gold pagoda near cherry blossom",
+    "description": "Embarking on a solo trip through Southeast Asia offers unforgettable experiences and personal growth. This guide provides practical advice on how to navigate the region with confidence and safety, ensuring your adventure is smooth, enriching, and fun.",
+    "publishDate": "2024-11-06",
+    "imageUrl": "https://images.unsplash.com/photo-1522547902298-51566e4fb383?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsZXIlMjBTb3V0aGVhc3QlMjBBc2lhfGVufDB8fHx8MTc0NDkyNzA2NXww&ixlib=rb-4.0.3&q=80&w=200"
+  },
+  {
+    "title": "The Ultimate Guide to Solo Travel Safety",
+    "url": "/articles/solo-travel-safety-guide.html",
+    "imageAlt": "airplane on sky during golden hour",
+    "description": "Traveling solo offers unmatched freedom and adventure, but safety must be a priority. This guide covers vital tips to ensure your journeys are both exciting and secure, from planning to handling unexpected situations.",
+    "publishDate": "2024-11-23",
+    "imageUrl": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=200"
+  },
+  {
+    "title": "Sustainable Food Explorations: A Foodie's Guide to Eco-friendly Dining Worldwide",
+    "url": "/articles/sustainable-food-explorations.html",
+    "imageAlt": "Pesto pasta with sliced tomatoes served on white ceramic plate",
+    "description": "Traveling the world offers the chance to indulge in delicious local cuisines. Embracing eco-friendly dining options enhances your culinary adventures while reducing environmental impact, creating meaningful and responsible travel experiences.",
+    "publishDate": "2025-01-18",
+    "imageUrl": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=200"
+  },
+  {
+    "title": "Top 10 Hidden Gems to Explore in Europe",
+    "url": "/articles/top-10-hidden-gems-europe.html",
+    "imageAlt": "photo of two mountains",
+    "description": "Europe is full of renowned sights, but it’s the lesser-known spots that often offer the most authentic and unforgettable experiences. Journey through some of the continent's hidden gems and uncover new favorites away from crowds and typical tourist routes.",
+    "publishDate": "2025-03-19",
+    "imageUrl": "https://images.unsplash.com/photo-1439853949127-fa647821eba0?crop=entropy&cs=tinysrgb&fit=crop&w=200&h=75&dpr=2&q=100"
+  },
+  {
+    "title": "Riding the Waves: Top Surfing Destinations Around the World",
+    "url": "/articles/top-surfing-destinations-world.html",
+    "imageAlt": "aerial photography of seashore",
+    "description": "Surfing combines adrenaline, serenity, and a deep connection to nature. Exploring top destinations worldwide reveals spots perfect for every skill level, adventure, and beauty, inviting travelers and surfers alike to chase the waves.",
+    "publishDate": "2024-12-24",
+    "imageUrl": "https://images.unsplash.com/photo-1519229642444-2c6c164c3aa5?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzdXJmaW5nJTIwd2F2ZSUyMGNvYXN0bGluZXxlbnwwfHx8fDE3NDUzMzU0MzZ8MA&ixlib=rb-4.0.3&q=80&w=200h=75"
+  },
+  {
+    "title": "Touring the Tropics: A Comprehensive Guide to Tropical Destinations",
+    "url": "/articles/touring-tropics-comprehensive-guide.html",
+    "imageAlt": "palm trees",
+    "description": "The tropics offer a kaleidoscope of stunning beaches, lush rainforests, and vibrant cultures. From secluded islands to bustling markets, discover how to plan an unforgettable tropical adventure that balances relaxation, adventure, and cultural immersion. This guide will help you navigate the best destinations and insider tips for tropical travel.",
+    "publishDate": "2025-02-13",
+    "imageUrl": "https://images.unsplash.com/photo-1518965539400-77d851d65c43?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHx0cm9waWNhbCUyMGJlYWNoZXMlMkMlMjBsdXNoJTIwcmFpbmZvcmVzdHMlMkMlMjBpc2xhbmQlMjBwYXJhZGlzZSUyQyUyMHZpYnJhbnQlMjBsb2NhbCUyMG1hcmtldHN8ZW58MHx8fHwxNzQ1MzU3MzU5fDA&ixlib=rb-4.0.3&q=80&w=200h=75"
+  },
+  {
+    "title": "How to Travel on a Budget Without Missing Out",
+    "url": "/articles/travel-budget-tips.html",
+    "imageAlt": "airplane on sky during golden hour",
+    "description": "Traveling doesn’t have to break the bank. With clever planning and resourceful tips, you can immerse yourself in new destinations without missing out on experiences. Discover how to make your travel dreams come true while staying within your budget.",
+    "publishDate": "2024-11-27",
+    "imageUrl": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxidWRnZXQlMjB0cmF2ZWwlMjBkZXN0aW5hdGlvbnN8ZW58MHx8fHwxNzQ0OTMxNDg1fDA&ixlib=rb-4.0.3&q=80&w=200"
+  },
+  {
+    "title": "Travel Hacks Essential Tips to Save Money and Time While Traveling",
+    "url": "/articles/travel-hacks-tips-save-money-time.html",
+    "imageAlt": "person holding ballpoint pen writing on notebook",
+    "description": "Traveling can be both exciting and challenging, especially when trying to stick to a budget and optimize time. Discover practical travel hacks that will help you save money, avoid stress, and make the most of every journey, from planning to exploring new destinations.",
+    "publishDate": "2025-01-27",
+    "imageUrl": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHx0cmF2ZWwlMjBidWRnZXQlMjB0aXBzfGVufDB8fHx8MTc0NDkyODQ4OHww&ixlib=rb-4.0.3&q=80&w=200"
+  },
+  {
+    "title": "Traveling Through Taste: A Culinary Journey Around the Globe",
+    "url": "/articles/traveling-through-taste-culinary-journey.html",
+    "imageAlt": "Pesto pasta with sliced tomatoes served on white ceramic plate",
+    "description": "Imagine savoring the vibrant flavors of a Thai street market, indulging in hearty Italian pasta, or tasting spicy Mexican tacos—all without leaving your home. This culinary journey explores the rich tapestry of global cuisine, uncovering the stories, traditions, and unique ingredients that make each region’s food special. Prepare your senses for an unforgettable taste adventure worldwide.",
+    "publishDate": "2024-12-05",
+    "imageUrl": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxpbnRlcm5hdGlvbmFsJTIwY3Vpc2luZSUyQyUyMGZvb2QlMjBtYXJrZXRzJTJDJTIwc3RyZWV0JTIwZm9vZCUyQyUyMGdsb2JhbCUyMGRpc2hlcyUyQyUyMGN1bHR1cmFsJTIwZm9vZHxlbnwwfHx8fDE3NDUzNjAzMjJ8MA&ixlib=rb-4.0.3&q=80&w=200h=75"
+  },
+  {
+    "title": "Traveling with a Twist – Unique Festivals Around the Globe",
+    "url": "/articles/traveling-twist-unique-festivals-globe.html",
+    "imageAlt": "person holding black and brown globe ball while standing on grass land golden hour photography",
+    "description": "Travel isn't just about sightseeing—it's about immersing yourself in local traditions, discovering unexpected cultures, and creating lasting memories. Around the globe, countless festivals fuse travel with the excitement of unique experiences. Whether it’s tomato fights or vibrant lantern displays, stepping into these outstanding celebrations promises delightful surprises and stories worth retelling. Grab your passport, because your journey is about to get fascinatingly unconventional.",
+    "publishDate": "2025-03-26",
+    "imageUrl": "https://images.unsplash.com/photo-1476304884326-cd2c88572c5f?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHx1bmlxdWUlMjBnbG9iYWwlMjBmZXN0aXZhbHN8ZW58MHx8fHwxNzQ0OTAwNzUwfDA&ixlib=rb-4.0.3&q=80&w=200"
+  },
+  {
+    "title": "Unplugged Adventures Experiencing Travel Without Technology",
+    "url": "/articles/unplugged-adventures-travel-without-technology.html",
+    "imageAlt": "orange flowers",
+    "description": "Breaking free from screens and digital devices opens up new dimensions of discovery. Embarking on unplugged adventures allows travelers to reconnect with nature, local cultures, and themselves, creating memories far richer than those captured behind a screen.",
+    "publishDate": "2024-12-01",
+    "imageUrl": "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxuYXR1cmUlMjB0cmF2ZWwlMjBhZHZlbnR1cmUlMjBvZmZsaW5lJTIwZXhwbG9yYXRpb258ZW58MHx8fHwxNzQ1MjM1NTI5fDA&ixlib=rb-4.0.3&q=80&w=200"
   }
 ]
