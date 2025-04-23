@@ -1,17 +1,39 @@
-.post {
-  margin-bottom: calc(var(--space) * 2);
-  box-shadow: 2px 2px 3px #1d1c1c;
-  border-radius: 1rem;
+:root {
+  --max-width: 120ch;
+}
+
+body > footer,
+main {
+  max-width: var(--max-width);
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+search {
+  width: clamp(10rem, 25rem, 30rem);
+
+  input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+  }
+}
+
+section:not(first-of-type) {
+  margin-top: 3rem;
+}
+
+#header-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
   padding: 1rem;
-}
-
-.post-title {
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-
-.post-excerpt {
-  color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
 
 #loading {
@@ -33,6 +55,77 @@
   }
 }
 
+.divider {
+  margin: 0;
+}
+
+.posts {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  .card {
+    img {
+      max-height: 9rem;
+    }
+
+    p,
+    h3 {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-height: calc(1em * 1.5 * 3);
+      line-height: 1.5em;
+      white-space: normal;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      max-height: calc(1em * 1.5 * 3);
+    }
+
+    h3 {
+      max-height: calc(1em * 1.5 * 2);
+    }
+  }
+}
+
+.card {
+  box-shadow: 2px 2px 5px var(--color-shadow);
+  flex: 1 1 18rem;
+
+  img:hover {
+    transform: scale(1.2);
+  }
+
+  h3 {
+    margin-block: 1rem;
+    padding-inline: 1rem;
+  }
+
+  p {
+    margin: 0;
+    padding-inline: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.post {
+  margin-bottom: calc(var(--space) * 2);
+  box-shadow: 2px 2px 3px #1d1c1c;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.post-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.post-excerpt {
+  color: #666;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -42,5 +135,11 @@
 @media (prefers-reduced-motion: reduce) {
   #loading::before {
     animation: none;
+  }
+}
+
+@media screen and (min-width: var(--max-width)) {
+  #header-container {
+    padding: 0;
   }
 }
