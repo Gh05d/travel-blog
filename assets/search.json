@@ -199,189 +199,189 @@
   },
   {
     "title": "Into the Wild: Exploring the Untouched Forests of the World",
-    "excerpt": "Discover the world's most pristine forests, their unique ecosystems, and the adventure of exploring untouched wilderness from rainforests to ancient woodlands.",
+    "description": "Discover the world's most pristine forests, their unique ecosystems, and the adventure of exploring untouched wilderness from rainforests to ancient woodlands.",
     "url": "articles/exploring-untouched-forests.html",
     "publishDate": "2025-01-27",
     "imageUrl": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHx1bnRvdWNoZWQlMjBmb3Jlc3RzJTJDJTIwcHJpc3RpbmUlMjB3aWxkZXJuZXNzJTJDJTIwbHVzaCUyMGdyZWVuZXJ5JTJDJTIwYWR2ZW50dXJlJTIwdHJhdmVsfGVufDB8fHx8MTc0NTQxNzY1M3ww&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "A Visit to Earth’s Extremities: A Guide to Extreme Geographical Points",
-    "excerpt": "Explore Earth's most extreme geographical points, from the hottest deserts to the coldest poles, and discover the unique landscapes shaping our planet's edges.",
+    "description": "Explore Earth's most extreme geographical points, from the hottest deserts to the coldest poles, and discover the unique landscapes shaping our planet's edges.",
     "url": "articles/visit-earth-extremities.html",
     "publishDate": "2025-04-03",
     "imageUrl": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxFYXJ0aCUyMGV4dHJlbWUlMjBwb2ludHMlMkMlMjB3b3JsZCUyMGdlb2dyYXBoeSUyQyUyMGRlc2VydHMlMjBtb3VudGFpbnMlMjBwb2xlcyUyQyUyMHJlbW90ZSUyMGxhbmRzY2FwZXN8ZW58MHx8fHwxNzQ1NDE4Mjc2fDA&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "A Visit to Earth’s Extremities: A Guide to Extreme Geographical Points",
-    "excerpt": "Explore the Earth's most remote and extreme geographical points, from the highest peaks to the deepest depths, in this comprehensive travel guide.",
+    "description": "Explore the Earth's most remote and extreme geographical points, from the highest peaks to the deepest depths, in this comprehensive travel guide.",
     "url": "articles/visit-earth-extremities.html",
     "publishDate": "2024-11-03",
     "imageUrl": "https://images.unsplash.com/photo-1511860810434-a92f84c6f01e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxleHRyZW1lJTIwZ2VvZ3JhcGhpY2FsJTIwcG9pbnRzJTJDJTIwRWFydGglMjdzJTIwcG9sZXMlMkMlMjBtb3VudCUyMEV2ZXJlc3QlMkMlMjBNYXJpYW5hJTIwVHJlbmNoJTJDJTIwU2FoYXJhJTIwZGVzZXJ0JTJDJTIwQW50YXJjdGljJTIwaWNlJTJDJTIwZGVzZXJ0cyUyQyUyMG1vdW50YWlucyUyQyUyMG9jZWFuc3xlbnwwfHx8fDE3NDU0MTg2OTh8MA&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "A Visit to Earth’s Extremities: A Guide to Extreme Geographical Points",
-    "excerpt": "Explore the Earth's most extreme geographical points, from the northernmost to the southernmost, and discover the awe-inspiring landscapes and unique features they offer.",
+    "description": "Explore the Earth's most extreme geographical points, from the northernmost to the southernmost, and discover the awe-inspiring landscapes and unique features they offer.",
     "url": "articles/visit-earth-extremities.html",
     "publishDate": "2025-03-02",
     "imageUrl": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxFYXJ0aCUyMGV4dHJlbWl0aWVzJTJDJTIwZ2VvZ3JhcGhpYyUyMHBvbGVzJTJDJTIwbm9ydGhlcm5tb3N0JTIwcG9pbnQlMkMlMjBzb3V0aGVybm1vc3QlMjBwb2ludCUyQyUyMGdsYWNpZXJzJTJDJTIwZGVzZXJ0cyUyQyUyMG1vdW50YWluJTIwcGVha3MlMkMlMjBvY2VhbnxlbnwwfHx8fDE3NDU0MTk4MzB8MA&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Exploring the Highlands: A Guide to the Scottish Highlands",
-    "excerpt": "Discover the breathtaking landscapes, historic sites, and local culture of the Scottish Highlands with this comprehensive travel guide.",
+    "description": "Discover the breathtaking landscapes, historic sites, and local culture of the Scottish Highlands with this comprehensive travel guide.",
     "url": "articles/exploring-scottish-highlands.html",
     "publishDate": "2024-10-30",
     "imageUrl": "https://images.unsplash.com/photo-1607605032075-9cf98da3a6af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxTY290dGlzaCUyMEhpZ2hsYW5kcyUyMG1vdW50YWlucyUyMGxvY2hzJTIwY2FzdGxlcyUyMG5hdHVyZSUyMHRyYXZlbHxlbnwwfHx8fDE3NDU0MTk4NjB8MA&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Culinary Trails: Tracing the Origins of Iconic Street Food",
-    "excerpt": "Discover the fascinating history behind iconic street foods around the world and learn how they evolved into beloved culinary traditions.",
+    "description": "Discover the fascinating history behind iconic street foods around the world and learn how they evolved into beloved culinary traditions.",
     "url": "articles/culinary-trails-origins-iconic-street-food.html",
     "publishDate": "2024-11-14",
     "imageUrl": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzdHJlZXQlMjBmb29kJTJDJTIwZm9vZCUyMHN0YWxscyUyQyUyMGN1bGluYXJ5JTIwdHJhdmVsJTJDJTIwZm9vZCUyMGhpc3RvcnklMkMlMjB2aWJyYW50JTIwbWFya2V0c3xlbnwwfHx8fDE3NDU0MTk4ODJ8MA&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Glamping Around the World: Luxury Tents and Incredible Views",
-    "excerpt": "Discover the world of glamping with luxurious tents offering stunning views, unique accommodations, and unforgettable outdoor experiences worldwide.",
+    "description": "Discover the world of glamping with luxurious tents offering stunning views, unique accommodations, and unforgettable outdoor experiences worldwide.",
     "url": "articles/glamping-world-luxury-tents-incredible-views.html",
     "publishDate": "2025-03-25",
     "imageUrl": "https://images.unsplash.com/photo-1448375240586-882707db888b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBjYW1waW5nJTIwdGVudHMlMjBtb3VudGFpbiUyMHZpZXclMjBmb3Jlc3QlMjBzY2VuaWMlMjBvdXRkb29yfGVufDB8fHx8MTc0NTQxOTkwOXww&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Pedal Through Paradises: Best Destinations for Cycling Enthusiasts",
-    "excerpt": "Discover top cycling destinations around the world, from scenic mountain trails to vibrant city routes. Perfect for cycling lovers seeking new adventures.",
+    "description": "Discover top cycling destinations around the world, from scenic mountain trails to vibrant city routes. Perfect for cycling lovers seeking new adventures.",
     "url": "articles/pedal-paradises-destinations-cycling-enthusiasts.html",
     "publishDate": "2025-03-24",
     "imageUrl": "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxjeWNsaW5nJTIwbW91bnRhaW4lMjBsYW5kc2NhcGUlMjBjaXR5JTIwcm9hZCUyMGFkdmVudHVyZSUyMHNjZW5pY3xlbnwwfHx8fDE3NDU0MTk5MzR8MA&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Architectural Marvels: A Closer Look at Modern Wonders of the World",
-    "excerpt": "Explore the most stunning modern architectural marvels around the world, from towering skyscrapers to innovative sustainable structures, and discover their stories.",
+    "description": "Explore the most stunning modern architectural marvels around the world, from towering skyscrapers to innovative sustainable structures, and discover their stories.",
     "url": "articles/architectural-marvels-modern-wonders-world.html",
     "publishDate": "2024-12-08",
     "imageUrl": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBza3lzY3JhcGVycyUyMG1vbnVtZW50cyUyMGZ1dHVyaXN0aWMlMjBidWlsZGluZ3N8ZW58MHx8fHwxNzQ1NDIwMTYzfDA&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Sanctuaries in the Sky: World's Most Picturesque Mountain Retreats",
-    "excerpt": "Explore breathtaking mountain retreats around the globe, where serenity meets stunning vistas. Discover hidden sanctuaries perfect for relaxation and adventure.",
+    "description": "Explore breathtaking mountain retreats around the globe, where serenity meets stunning vistas. Discover hidden sanctuaries perfect for relaxation and adventure.",
     "url": "articles/sanctuaries-sky-worlds-picturesque-mountain-retreats.html",
     "publishDate": "2024-12-14",
     "imageUrl": "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxtb3VudGFpbiUyMHJldHJlYXQlMkMlMjBzY2VuaWMlMjBtb3VudGFpbiUyQyUyMG1vdW50YWluJTIwY2FiaW4lMkMlMjBhbHBpbmUlMjBsYW5kc2NhcGUlMkMlMjBwaWN0dXJlc3F1ZSUyMHBlYWtzfGVufDB8fHx8MTc0NTQyMDE4Nnww&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Global Gastronomy: Tasting Traditional Dishes Across Different Cultures",
-    "excerpt": "Explore traditional dishes from around the world, discovering unique flavors, cooking techniques, and cultural stories behind each cuisine.",
+    "description": "Explore traditional dishes from around the world, discovering unique flavors, cooking techniques, and cultural stories behind each cuisine.",
     "url": "articles/global-gastronomy-tasting-traditional-dishes-different-cultures.html",
     "publishDate": "2024-10-28",
     "imageUrl": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHx0cmFkaXRpb25hbCUyMGRpc2hlcyUyQyUyMHdvcmxkJTIwY3Vpc2luZSUyQyUyMGN1bHR1cmFsJTIwZm9vZCUyQyUyMGludGVybmF0aW9uYWwlMjBmb29kfGVufDB8fHx8MTc0NTQyMDIwN3ww&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "A Voyage Through the Vineyards: Exploring Wine Regions Around the Globe",
-    "excerpt": "Embark on a global journey through renowned wine regions. Discover vineyard landscapes, unique terroirs, and wine-making traditions around the world.",
+    "description": "Embark on a global journey through renowned wine regions. Discover vineyard landscapes, unique terroirs, and wine-making traditions around the world.",
     "url": "articles/voyage-through-vineyards-global-wine-regions.html",
     "publishDate": "2025-02-11",
     "imageUrl": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHx3aW5lJTIwdmluZXlhcmRzJTJDJTIwd2luZSUyMGNvdW50cnklMkMlMjB2aW5leWFyZCUyMGxhbmRzY2FwZSUyQyUyMHdpbmUlMjB0YXN0aW5nJTJDJTIwd2luZSUyMHJlZ2lvbnN8ZW58MHx8fHwxNzQ1NDQyMjAyfDA&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Behind the Scenes: How the World's Largest Festivals are Organized",
-    "excerpt": "Discover how the world's biggest festivals are meticulously planned, featuring event logistics, team coordination, security, and behind-the-scenes insights.",
+    "description": "Discover how the world's biggest festivals are meticulously planned, featuring event logistics, team coordination, security, and behind-the-scenes insights.",
     "url": "articles/behind-scenes-worlds-largest-festivals.html",
     "publishDate": "2025-04-13",
     "imageUrl": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxmZXN0aXZhbCUyMG9yZ2FuaXphdGlvbiUyQyUyMGNyb3dkJTIwbWFuYWdlbWVudCUyQyUyMGV2ZW50JTIwcGxhbm5pbmclMkMlMjBiYWNrc3RhZ2UlMkMlMjBmZXN0aXZhbCUyMGxvZ2lzdGljc3xlbnwwfHx8fDE3NDU0NDIyMTl8MA&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Traveling Through Time: Visiting the Oldest Cities in the World",
-    "excerpt": "Explore the oldest cities on Earth, journey through history, uncover ancient ruins, and experience the timeless charm of these legendary destinations.",
+    "description": "Explore the oldest cities on Earth, journey through history, uncover ancient ruins, and experience the timeless charm of these legendary destinations.",
     "url": "articles/traveling-through-time-oldest-cities.html",
     "publishDate": "2025-04-02",
     "imageUrl": "https://images.unsplash.com/photo-1517511620798-cec17d428bc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxhbmNpZW50JTIwY2l0eSUyMHJ1aW5zJTIwaGlzdG9yaWMlMjBzdHJlZXRzJTIwb2xkJTIwdG93bnN8ZW58MHx8fHwxNzQ1NDQyMjc5fDA&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Timeless Timelines: Unraveling the History of Iconic Landmarks",
-    "excerpt": "Journey through the captivating histories of the world's most iconic landmarks, exploring their origins, cultural significance, and timeless appeal.",
+    "description": "Journey through the captivating histories of the world's most iconic landmarks, exploring their origins, cultural significance, and timeless appeal.",
     "url": "articles/timeless-timelines-history-iconic-landmarks.html",
     "publishDate": "2024-11-16",
     "imageUrl": "https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpYyUyMGxhbmRtYXJrcyUyQyUyMGFyY2hpdGVjdHVyZSUyQyUyMGFuY2llbnQlMjBydWlucyUyQyUyMGNpdHlzY2FwZXMlMkMlMjBjdWx0dXJhbCUyMGhlcml0YWdlfGVufDB8fHx8MTc0NTQ0MjMyNnww&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Roaming the Roof of the World: A Guide to the Himalayas",
-    "excerpt": "Explore the breathtaking Himalayas with this comprehensive guide covering trekking routes, must-see sights, local culture, and travel tips for adventure seekers.",
+    "description": "Explore the breathtaking Himalayas with this comprehensive guide covering trekking routes, must-see sights, local culture, and travel tips for adventure seekers.",
     "url": "articles/roaming-roof-world-himalayas-guide.html",
     "publishDate": "2025-04-14",
     "imageUrl": "https://images.unsplash.com/photo-1736914329552-a8e43dcee31f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxIaW1hbGF5YXMlMjBtb3VudGFpbnMlMjB0cmVra2luZyUyMGFkdmVudHVyZSUyMHBlYWtzJTIwdmlsbGFnZXxlbnwwfHx8fDE3NDU0NDIzNTB8MA&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Traveling Without a Trace: A Guide to Leave No Trace Principles",
-    "excerpt": "Discover essential Leave No Trace principles to enjoy outdoor adventures responsibly, minimizing your impact and protecting nature for future generations.",
+    "description": "Discover essential Leave No Trace principles to enjoy outdoor adventures responsibly, minimizing your impact and protecting nature for future generations.",
     "url": "articles/traveling-without-trace.html",
     "publishDate": "2025-04-16",
     "imageUrl": "https://images.unsplash.com/photo-1439853949127-fa647821eba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxuYXR1cmUlMjBjYW1waW5nJTIwaGlraW5nJTIwb3V0ZG9vciUyMGVjbyUyMGNvbnNlcnZhdGlvbnxlbnwwfHx8fDE3NDU0NDIzNjZ8MA&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Going Green: The Rise of Vegan and Vegetarian Travel",
-    "excerpt": "Explore how vegan and vegetarian travel is transforming experiences worldwide, promoting sustainability, health, and ethical choices for conscious explorers.",
+    "description": "Explore how vegan and vegetarian travel is transforming experiences worldwide, promoting sustainability, health, and ethical choices for conscious explorers.",
     "url": "articles/going-green-vegan-vegetarian-travel.html",
     "publishDate": "2025-04-18",
     "imageUrl": "https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHx2ZWdhbiUyMHRyYXZlbCUyMHBsYW50LWJhc2VkJTIwZm9vZCUyMGVjby1mcmllbmRseSUyMHRyYXZlbCUyMGRlc3RpbmF0aW9uJTIwbmF0dXJlfGVufDB8fHx8MTc0NTQ0MjQyMXww&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Traveling the Silk Road: A Journey Through History",
-    "excerpt": "Explore the ancient Silk Road, its rich history, vibrant cultures, and incredible trade storylines that shaped continents over centuries in this captivating guide.",
+    "description": "Explore the ancient Silk Road, its rich history, vibrant cultures, and incredible trade storylines that shaped continents over centuries in this captivating guide.",
     "url": "articles/traveling-silk-road.html",
     "publishDate": "2024-12-28",
     "imageUrl": "https://images.unsplash.com/photo-1509281373149-e957c6296406?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxTaWxrJTIwUm9hZCUyQyUyMGFuY2llbnQlMjB0cmFkZSUyMHJvdXRlJTJDJTIwY2FyYXZhbnMlMkMlMjBkZXNlcnQlMkMlMjBoaXN0b3JpYyUyMGNpdHlzY2FwZSUyQyUyMHRyYWRlcnMlMkMlMjB2aW50YWdlJTIwY2FtZWxzfGVufDB8fHx8MTc0NTQ0MjkxMnww&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Unveiling the Magic of Polar Expeditions: Discovering Antarctica and the North Pole",
-    "excerpt": "Explore the breathtaking adventures of polar expeditions, uncovering the mysteries of Antarctica and the North Pole through history, wildlife, and modern exploration.",
+    "description": "Explore the breathtaking adventures of polar expeditions, uncovering the mysteries of Antarctica and the North Pole through history, wildlife, and modern exploration.",
     "url": "articles/unveiling-magic-polar-expeditions.html",
     "publishDate": "2025-01-09",
     "imageUrl": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxwb2xhciUyMGV4cGVkaXRpb24lMkMlMjBBbnRhcmN0aWNhJTJDJTIwTm9ydGglMjBQb2xlJTJDJTIwaWN5JTIwbGFuZHNjYXBlJTJDJTIwZXhwbG9yZXIlMjBnZWFyfGVufDB8fHx8MTc0NTQ0MjkzMnww&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Transcontinental Trails: Experiencing the Great Hiking Trails Around the World",
-    "excerpt": "Discover the world's most iconic transcontinental hiking trails, from the Appalachian to the Pacific Crest, and find tips for adventure, safety, and planning your journey.",
+    "description": "Discover the world's most iconic transcontinental hiking trails, from the Appalachian to the Pacific Crest, and find tips for adventure, safety, and planning your journey.",
     "url": "articles/transcontinental-trails-world.html",
     "publishDate": "2025-03-13",
     "imageUrl": "https://images.unsplash.com/photo-1715365705205-7682eb8811c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaWtpbmclMjB0cmFpbCUyMHdvcmxkJTIwbW91bnRhaW5zJTIwd2lsZGVybmVzcyUyMGFkdmVudHVyZSUyMGJhY2twYWNrfGVufDB8fHx8MTc0NTQ0Mjk1MXww&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "The Sacred Journey: Exploring the World's Most Religious Sites",
-    "excerpt": "Discover the world's most iconic religious sites, their history, significance, and what makes them spiritual and breathtaking destinations for travelers and pilgrims.",
+    "description": "Discover the world's most iconic religious sites, their history, significance, and what makes them spiritual and breathtaking destinations for travelers and pilgrims.",
     "url": "articles/exploring-worlds-most-religious-sites.html",
     "publishDate": "2025-03-14",
     "imageUrl": "https://images.unsplash.com/photo-1603166868295-4ae2cba14063?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxyZWxpZ2lvdXMlMjBzaXRlcyUyQyUyMHRlbXBsZXMlMkMlMjBjaHVyY2hlcyUyQyUyMHNocmluZXMlMkMlMjBwaWxncmltYWdlJTJDJTIwc2FjcmVkJTIwbGFuZG1hcmtzJTJDJTIwc3Bpcml0dWFsJTIwZGVzdGluYXRpb25zfGVufDB8fHx8MTc0NTQ0Mjk2OXww&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Voluntourism: Impactful Travel with a Cause",
-    "excerpt": "Discover how voluntourism combines travel with giving back. Learn its benefits, challenges, best practices, and how to make your volunteer trip truly impactful.",
+    "description": "Discover how voluntourism combines travel with giving back. Learn its benefits, challenges, best practices, and how to make your volunteer trip truly impactful.",
     "url": "articles/voluntourism-impactful-travel.html",
     "publishDate": "2025-02-18",
     "imageUrl": "https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHx2b2x1bnRvdXJpc20lMkMlMjB0cmF2ZWwlMjB2b2x1bnRlZXJpbmclMkMlMjBjb21tdW5pdHklMjBzZXJ2aWNlJTIwdHJhdmVsJTJDJTIwaW1wYWN0ZnVsJTIwdHJhdmVsfGVufDB8fHx8MTc0NTQ0Mjk4N3ww&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Digital Nomad Life: Exploring the World while Working Remotely",
-    "excerpt": "Discover how to embrace the digital nomad lifestyle, balancing work and adventure as you explore the world from wherever you choose to be.",
+    "description": "Discover how to embrace the digital nomad lifestyle, balancing work and adventure as you explore the world from wherever you choose to be.",
     "url": "articles/digital-nomad-life-world.html",
     "publishDate": "2025-02-03",
     "imageUrl": "https://images.unsplash.com/photo-1504598318550-17eba1008a68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwbm9tYWQlMkMlMjByZW1vdGUlMjB3b3JrJTJDJTIwdHJhdmVsJTJDJTIwd29ybGQlMjBleHBsb3JhdGlvbiUyQyUyMGxhcHRvcCUyMG91dGRvb3JzfGVufDB8fHx8MTc0NTQ0MzAwNHww&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "River Cruises: A Unique Way to Discover Hidden Gems of Europe",
-    "excerpt": "Explore Europe's secret treasures and charming towns aboard river cruises. An unforgettable journey to hidden gems awaits on Europe's winding waterways.",
+    "description": "Explore Europe's secret treasures and charming towns aboard river cruises. An unforgettable journey to hidden gems awaits on Europe's winding waterways.",
     "url": "articles/river-cruises-europe.html",
     "publishDate": "2024-12-26",
     "imageUrl": "https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxFdXJvcGVhbiUyMHJpdmVyJTIwY3J1aXNlJTJDJTIwc2NlbmljJTIwd2F0ZXJ3YXlzJTJDJTIwY2hhcm1pbmclMjB0b3ducyUyQyUyMHJpdmVyJTIwbGFuZHNjYXBlJTJDJTIwdHJhdmVsJTIwRXVyb3BlfGVufDB8fHx8MTc0NTQ0MzAyNHww&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Exploring UNESCO World Heritage Sites: A Journey into History and Culture",
-    "excerpt": "Discover the fascinating stories behind UNESCO World Heritage Sites and immerse yourself in their rich history and cultural significance around the world.",
+    "description": "Discover the fascinating stories behind UNESCO World Heritage Sites and immerse yourself in their rich history and cultural significance around the world.",
     "url": "articles/exploring-unesco-sites.html",
     "publishDate": "2024-12-28",
     "imageUrl": "https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxVTkVTQ08lMjBXb3JsZCUyMEhlcml0YWdlJTIwU2l0ZXMlMkMlMjBoaXN0b3JpY2FsJTIwbGFuZG1hcmtzJTJDJTIwY3VsdHVyYWwlMjBoZXJpdGFnZSUyQyUyMHRyYXZlbCUyMHBob3RvZ3JhcGh5JTJDJTIwYW5jaWVudCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NDU0NDMwNDJ8MA&ixlib=rb-4.0.3&q=80&w=400h=150"
   },
   {
     "title": "Experiencing Wildlife: Best Safari Destinations Around the Globe",
-    "excerpt": "Discover the top safari destinations worldwide to witness incredible wildlife. From Africa's savannahs to Asian jungles, explore nature's most breathtaking safaris.",
+    "description": "Discover the top safari destinations worldwide to witness incredible wildlife. From Africa's savannahs to Asian jungles, explore nature's most breathtaking safaris.",
     "url": "articles/best-safari-destinations.html",
     "publishDate": "2025-02-16",
     "imageUrl": "https://images.unsplash.com/photo-1517003142208-feb84c80413e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzYWZhcmklMjB3aWxkbGlmZSUyMGFkdmVudHVyZSUyMGFuaW1hbHMlMjBuYXR1cmUlMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzQ1NDQzMDk3fDA&ixlib=rb-4.0.3&q=80&w=400h=150"

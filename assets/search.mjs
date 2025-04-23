@@ -62,7 +62,9 @@ function renderPosts(posts) {
 }
 
 function setupSearch(posts) {
-  const fuse = new Fuse(posts, { keys: ["title", "description"] });
+  const fuse = new Fuse(posts, {
+    keys: ["title", "description", "publishDate"],
+  });
   const debouncedHandler = debounce((e) => {
     loading.style.display = "initial";
 
