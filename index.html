@@ -39,10 +39,6 @@
     <link rel="stylesheet" href="assets/styles/style.css" />
     <link rel="stylesheet" href="assets/styles/index.css" />
 
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"
-    ></script>
     <script type="module" src="assets/index.mjs"></script>
   </head>
 
@@ -51,7 +47,15 @@
       <div id="header-container">
         <h1>Audio Travel Guide</h1>
         <search>
-          <input type="search" id="search" placeholder="Search posts..." />
+          <form id="search-form" action="/search-results.html" method="get">
+            <input
+              type="search"
+              id="search"
+              name="query"
+              placeholder="Search posts..."
+              required
+            />
+          </form>
         </search>
       </div>
       <hr />
@@ -69,22 +73,22 @@
             <picture>
               <!-- Desktop: full‑width -->
               <source
-                media="(min-width:1024px)"
+                media="(min-width:76rem)"
                 srcset="
                   https://images.unsplash.com/photo-1519229642444-2c6c164c3aa5?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzdXJmaW5nJTIwd2F2ZSUyMGNvYXN0bGluZXxlbnwwfHx8fDE3NDUzMzU0MzZ8MA&ixlib=rb-4.0.3&q=80&w=1080&h=400&dpr=2 2160w,
                   https://images.unsplash.com/photo-1519229642444-2c6c164c3aa5?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzdXJmaW5nJTIwd2F2ZSUyMGNvYXN0bGluZXxlbnwwfHx8fDE3NDUzMzU0MzZ8MA&ixlib=rb-4.0.3&q=80&w=1080&h=400       1080w
                 "
-                sizes="(min-width:1024px) 1080px, 100vw"
+                sizes="(min-width:76rem) 76rem, 100vw"
               />
 
               <!-- Tablet -->
               <source
-                media="(min-width:600px)"
+                media="(min-width:38rem)"
                 srcset="
                   https://images.unsplash.com/photo-1519229642444-2c6c164c3aa5?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzdXJmaW5nJTIwd2F2ZSUyMGNvYXN0bGluZXxlbnwwfHx8fDE3NDUzMzU0MzZ8MA&ixlib=rb-4.0.3&q=80&w=400h=150&dpr=2 800w,
                   https://images.unsplash.com/photo-1519229642444-2c6c164c3aa5?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzdXJmaW5nJTIwd2F2ZSUyMGNvYXN0bGluZXxlbnwwfHx8fDE3NDUzMzU0MzZ8MA&ixlib=rb-4.0.3&q=80&w=400h=150       400w
                 "
-                sizes="(min-width:600px) 400px, 100vw"
+                sizes="(min-width:38rem) 38rem, 100vw"
               />
 
               <!-- Mobile fallback -->
@@ -133,22 +137,22 @@
               <picture>
                 <!-- Desktop: crop exactly 1080×400 at 100% JPEG quality -->
                 <source
-                  media="(min-width:1024px)"
+                  media="(min-width:76rem)"
                   srcset="
                     https://images.unsplash.com/photo-1439853949127-fa647821eba0?crop=entropy&cs=tinysrgb&fit=crop&w=1080&h=400&dpr=2&q=100 2160w,
                     https://images.unsplash.com/photo-1439853949127-fa647821eba0?crop=entropy&cs=tinysrgb&fit=crop&w=1080&h=400&q=100       1080w
                   "
-                  sizes="(min-width:1024px) 1080px, 100vw"
+                  sizes="(min-width:76rem) 76rem, 100vw"
                 />
 
                 <!-- Tablet: same crop, smaller width -->
                 <source
-                  media="(min-width:600px)"
+                  media="(min-width:38rem)"
                   srcset="
                     https://images.unsplash.com/photo-1439853949127-fa647821eba0?crop=entropy&cs=tinysrgb&fit=crop&w=400&h=150&dpr=2&q=100 800w,
                     https://images.unsplash.com/photo-1439853949127-fa647821eba0?crop=entropy&cs=tinysrgb&fit=crop&w=400&h=150&q=100       400w
                   "
-                  sizes="(min-width:600px) 400px, 100vw"
+                  sizes="(min-width:38rem) 38rem, 100vw"
                 />
 
                 <!-- Fallback / mobile -->
@@ -161,10 +165,9 @@
                   sizes="100vw"
                   alt="photo of two mountains"
                   decoding="async"
+                  loading="lazy"
                   width="1080"
                   height="400"
-                  fetchpriority="high"
-                  style="display: block; width: 100%; height: auto"
                 />
               </picture>
             </a>
@@ -190,21 +193,21 @@
             >
               <picture>
                 <source
-                  media="(min-width:1024px)"
+                  media="(min-width:76rem)"
                   srcset="
                     https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=1080&h=400 1080w,
                     https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=400         400w,
                     https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=200         200w
                   "
-                  sizes="(min-width:1024px) 1080px, 100vw"
+                  sizes="(min-width:76rem) 76rem, 100vw"
                 />
                 <source
-                  media="(min-width:600px)"
+                  media="(min-width:38rem)"
                   srcset="
                     https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=400 400w,
                     https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=200 200w
                   "
-                  sizes="(min-width:600px) 400px, 100vw"
+                  sizes="(min-width:38rem) 38rem, 100vw"
                 />
                 <img
                   src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=200"
@@ -213,12 +216,12 @@
                     https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=400         400w,
                     https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxzb2xvJTIwdHJhdmVsJTIwc2FmZXR5fGVufDB8fHx8MTc0NDkzMTM4MXww&ixlib=rb-4.0.3&q=80&w=1080&h=400 1080w
                   "
-                  sizes="(min-width:1024px) 1080px, (min-width:600px) 400px, 100vw"
+                  sizes="(min-width:76rem) 76rem, (min-width:38rem) 38rem, 100vw"
                   alt="airplane on sky during golden hour"
                   decoding="async"
                   width="1080"
                   height="400"
-                  fetchpriority="high"
+                  loading="lazy"
                 />
               </picture>
             </a>
@@ -244,13 +247,13 @@
             >
               <picture>
                 <source
-                  media="(min-width:1024px)"
+                  media="(min-width:76rem)"
                   srcset="
                     https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaWRkZW4lMjB0cmF2ZWwlMjBkZXN0aW5hdGlvbnN8ZW58MHx8fHwxNzQ0OTA3Mzc4fDA&ixlib=rb-4.0.3&q=80&w=1080&h=800
                   "
                 />
                 <source
-                  media="(min-width:600px)"
+                  media="(min-width:38rem)"
                   srcset="
                     https://images.unsplash.com/photo-1500835556837-99ac94a94552?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaWRkZW4lMjB0cmF2ZWwlMjBkZXN0aW5hdGlvbnN8ZW58MHx8fHwxNzQ0OTA3Mzc4fDA&ixlib=rb-4.0.3&q=80&w=400
                   "
@@ -261,6 +264,8 @@
                   alt="airplane on sky during golden hour"
                   width="760"
                   height="400"
+                  loading="lazy"
+                  decoding="async"
                 />
               </picture>
             </a>
@@ -298,23 +303,23 @@
               <picture>
                 <!-- Desktop: full‑width -->
                 <source
-                  media="(min-width:1024px)"
+                  media="(min-width:76rem)"
                   srcset="
                     https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080&h=400 1080w,
                     https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=400         400w,
                     https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=200         200w
                   "
-                  sizes="(min-width:1024px) 1080px, 100vw"
+                  sizes="(min-width:76rem) 76rem, 100vw"
                 />
 
                 <!-- Tablet -->
                 <source
-                  media="(min-width:600px)"
+                  media="(min-width:38rem)"
                   srcset="
                     https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=400 400w,
                     https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=200 200w
                   "
-                  sizes="(min-width:600px) 400px, 100vw"
+                  sizes="(min-width:38rem) 38rem, 100vw"
                 />
 
                 <!-- Mobile fallback -->
@@ -325,13 +330,12 @@
                     https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=400         400w,
                     https://images.unsplash.com/photo-1473093295043-cdd812d0e601?crop=entropy&cs=tinysrgb&fit=crop&fm=avif&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxlY28tZnJpZW5kbHklMjBnbG9iYWwlMjBjdWlzaW5lJTJDJTIwc3VzdGFpbmFibGUlMjBmb29kJTJDJTIwcmVzcG9uc2libGUlMjBkaW5pbmclMkMlMjBmb29kJTIwbWFya2V0cyUyMHdvcmxkd2lkZXxlbnwwfHx8fDE3NDUyMzU5MDJ8MA&ixlib=rb-4.0.3&q=80&w=1080&h=400 1080w
                   "
-                  sizes="(min-width:1024px) 1080px, (min-width:600px) 400px, 100vw"
+                  sizes="(min-width:76rem) 76rem, (min-width:38rem) 38rem, 100vw"
                   alt="Pesto pasta with sliced tomatoes served on white ceramic plate"
                   decoding="async"
                   width="1080"
                   height="400"
-                  fetchpriority="high"
-                  style="display: block; width: 100%; height: auto"
+                  loading="lazy"
                 />
               </picture>
             </a>
@@ -360,22 +364,22 @@
               <picture>
                 <!-- Desktop: full‑width -->
                 <source
-                  media="(min-width:1024px)"
+                  media="(min-width:76rem)"
                   srcset="
                     https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpYyUyMHN0cmVldHMlMkMlMjB3YWxraW5nJTIwdG91ciUyQyUyMGFuY2llbnQlMjBjaXR5JTJDJTIwaGlzdG9yaWNhbCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NDUzMzc1OTV8MA&ixlib=rb-4.0.3&q=80&w=1080&h=400&dpr=2 2160w,
                     https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpYyUyMHN0cmVldHMlMkMlMjB3YWxraW5nJTIwdG91ciUyQyUyMGFuY2llbnQlMjBjaXR5JTJDJTIwaGlzdG9yaWNhbCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NDUzMzc1OTV8MA&ixlib=rb-4.0.3&q=80&w=1080&h=400       1080w
                   "
-                  sizes="(min-width:1024px) 1080px, 100vw"
+                  sizes="(min-width:76rem) 76rem, 100vw"
                 />
 
                 <!-- Tablet -->
                 <source
-                  media="(min-width:600px)"
+                  media="(min-width:38rem)"
                   srcset="
                     https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpYyUyMHN0cmVldHMlMkMlMjB3YWxraW5nJTIwdG91ciUyQyUyMGFuY2llbnQlMjBjaXR5JTJDJTIwaGlzdG9yaWNhbCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NDUzMzc1OTV8MA&ixlib=rb-4.0.3&q=80&w=400h=150&dpr=2 800w,
                     https://images.unsplash.com/photo-1527576539890-dfa815648363?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoaXN0b3JpYyUyMHN0cmVldHMlMkMlMjB3YWxraW5nJTIwdG91ciUyQyUyMGFuY2llbnQlMjBjaXR5JTJDJTIwaGlzdG9yaWNhbCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NDUzMzc1OTV8MA&ixlib=rb-4.0.3&q=80&w=400h=150       400w
                   "
-                  sizes="(min-width:600px) 400px, 100vw"
+                  sizes="(min-width:38rem) 38rem, 100vw"
                 />
 
                 <!-- Mobile fallback -->
@@ -390,8 +394,7 @@
                   decoding="async"
                   width="1080"
                   height="400"
-                  fetchpriority="high"
-                  style="display: block; width: 100%; height: auto"
+                  loading="lazy"
                 />
               </picture>
             </a>
@@ -422,22 +425,22 @@
               <picture>
                 <!-- Desktop: full‑width -->
                 <source
-                  media="(min-width:1024px)"
+                  media="(min-width:76rem)"
                   srcset="
                     https://images.unsplash.com/photo-1578593139775-971441c3c518?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoYXVudGluZyUyMGhpc3RvcmljYWwlMjBzaXRlc3xlbnwwfHx8fDE3NDUzMjk3Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080&h=400&dpr=2 2160w,
                     https://images.unsplash.com/photo-1578593139775-971441c3c518?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoYXVudGluZyUyMGhpc3RvcmljYWwlMjBzaXRlc3xlbnwwfHx8fDE3NDUzMjk3Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080&h=400       1080w
                   "
-                  sizes="(min-width:1024px) 1080px, 100vw"
+                  sizes="(min-width:76rem) 76rem, 100vw"
                 />
 
                 <!-- Tablet -->
                 <source
-                  media="(min-width:600px)"
+                  media="(min-width:38rem)"
                   srcset="
                     https://images.unsplash.com/photo-1578593139775-971441c3c518?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoYXVudGluZyUyMGhpc3RvcmljYWwlMjBzaXRlc3xlbnwwfHx8fDE3NDUzMjk3Mjh8MA&ixlib=rb-4.0.3&q=80&w=400h=150&dpr=2 800w,
                     https://images.unsplash.com/photo-1578593139775-971441c3c518?crop=entropy&cs=tinysrgb&fit=crop&auto=format&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxoYXVudGluZyUyMGhpc3RvcmljYWwlMjBzaXRlc3xlbnwwfHx8fDE3NDUzMjk3Mjh8MA&ixlib=rb-4.0.3&q=80&w=400h=150       400w
                   "
-                  sizes="(min-width:600px) 400px, 100vw"
+                  sizes="(min-width:38rem) 38rem, 100vw"
                 />
 
                 <!-- Mobile fallback -->
@@ -452,8 +455,7 @@
                   decoding="async"
                   width="1080"
                   height="400"
-                  fetchpriority="high"
-                  style="display: block; width: 100%; height: auto"
+                  loading="lazy"
                 />
               </picture>
             </a>

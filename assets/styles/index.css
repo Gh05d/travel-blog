@@ -67,7 +67,7 @@ section:not(first-of-type) {
 
   .card {
     img {
-      max-height: 9rem;
+      height: 12rem;
     }
 
     p,
@@ -108,22 +108,11 @@ section:not(first-of-type) {
     padding-inline: 1rem;
     padding-bottom: 1rem;
   }
-}
 
-.post {
-  margin-bottom: calc(var(--space) * 2);
-  box-shadow: 2px 2px 3px #1d1c1c;
-  border-radius: 1rem;
-  padding: 1rem;
-}
-
-.post-title {
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-
-.post-excerpt {
-  color: #666;
+  #published {
+    padding-inline: 1rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 @keyframes spin {
