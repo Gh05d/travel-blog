@@ -118,5 +118,12 @@
     "title": "Traveling Through Taste: A Culinary Journey Around the Globe",
     "excerpt": "Embark on a flavorful adventure with our culinary journey around the world, exploring unique dishes, cultural food stories, and hidden gastronomic gems.",
     "url": "articles/traveling-through-taste-culinary-journey.html"
+  },
+  {
+    "title": "Chasing Northern Lights: Best Places to Witness this Natural Phenomenon",
+    "excerpt": "Discover the top destinations and tips for witnessing the mesmerizing Northern Lights, from Norway’s fjords to Canada’s icy landscapes. Plan your ultimate aurora adventure!",
+    "url": "articles/chasing-northern-lights-best-places.html",
+    "publishDate": "2025-03-21",
+    "imageUrl": "https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxOb3J0aGVybiUyMExpZ2h0cyUyQyUyMGF1cm9yYSUyMGJvcmVhbGlzJTJDJTIwd2ludGVyJTIwbGFuZHNjYXBlJTJDJTIwdHJhdmVsJTIwZGVzdGluYXRpb25zJTJDJTIwbmlnaHQlMjBza3l8ZW58MHx8fHwxNzQ1NDA2MDM2fDA&ixlib=rb-4.0.3&q=80&w=400h=150"
   }
 ]
