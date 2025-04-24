@@ -153,6 +153,44 @@ figcaption {
   color: var(--color);
 }
 
+details {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: var(--color-secondary);
+  margin: 0 auto;
+  border: 1px solid var(--color-shadow);
+  transition: background-color 0.3s ease-in-out;
+  --active: #f52d09;
+  --hover: #cf2406;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover);
+  }
+
+  &:active {
+    background-color: var(--active);
+  }
+
+  &::marker {
+    display: none;
+  }
+}
+
+details[open] {
+  cursor: initial;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border: none;
+
+  summary {
+    display: none;
+  }
+}
+
 #title {
   font-size: 1.3rem;
   font-weight: bold;
@@ -228,6 +266,12 @@ figcaption {
     color: var(--color-primary);
     --active: #0056b3;
     --visited: #6c757d;
+    --hover: #007bff;
+  }
+
+  details {
+    background-color: var(--color-primary);
+    --active: #0056b3;
     --hover: #007bff;
   }
 
