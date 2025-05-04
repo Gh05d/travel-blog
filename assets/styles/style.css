@@ -107,12 +107,13 @@ body {
 }
 
 a {
-  color: var(--color-secondary);
+  --element-color: var(--color-secondary);
+  color: var(--element-color);
   text-decoration: none;
   transition: color 0.2s ease-in-out;
-  --active: #f52d09;
-  --visited: #6c757d;
-  --hover: #cf2406;
+  --hover: color-mix(in srgb, var(--element-color) 80%, black);
+  --active: color-mix(in srgb, var(--element-color) 70%, black);
+  --visited: color-mix(in srgb, var(--element-color) 90%, gray);
 
   &:hover,
   &:focus {
@@ -154,17 +155,18 @@ figcaption {
 }
 
 details {
+  --element-color: var(--color-secondary);
   color: #fff;
   display: flex;
   justify-content: center;
   padding: 1rem;
   cursor: pointer;
-  background-color: var(--color-secondary);
+  background-color: var(--element-color);
   margin: 0 auto;
   border: 1px solid var(--color-shadow);
   transition: background-color 0.3s ease-in-out;
-  --active: #f52d09;
-  --hover: #cf2406;
+  --hover: color-mix(in srgb, var(--element-color) 80%, black);
+  --active: color-mix(in srgb, var(--element-color) 70%, black);
 
   &:hover,
   &:focus {
@@ -262,17 +264,9 @@ details[open] {
     line-height: 1.3em;
   }
 
-  a {
-    color: var(--color-primary);
-    --active: #0056b3;
-    --visited: #6c757d;
-    --hover: #007bff;
-  }
-
+  a,
   details {
-    background-color: var(--color-primary);
-    --active: #0056b3;
-    --hover: #007bff;
+    --element-color: var(--color-primary);
   }
 
   figcaption {

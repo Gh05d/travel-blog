@@ -30,3 +30,7 @@
     color: #333;
   }
 }
+
+.team-avatar {
+  --size: 4rem;
+}
