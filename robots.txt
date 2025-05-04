@@ -2,5 +2,5 @@ User-agent: *
 Sitemap: https://audiotravelguide.eu/sitemap.xml
 
 Disallow: /assets/search.json
-Disallow: /assets/styles/style.css
+Disallow: /assets/styles/
 Disallow: /assets/team/
