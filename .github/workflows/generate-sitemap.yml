@@ -14,7 +14,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Generate sitemap
+      - name: Generate sitemap.xml
         id: sitemap
         uses: cicirello/generate-sitemap@v1
         with:
@@ -28,6 +28,13 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y xmlstarlet
+
+      - name: Generate sitemap.txt
+        run: |
+          xmlstarlet sel \
+            -N sm="http://www.sitemaps.org/schemas/sitemap/0.9" \
+            -t -m "/sm:urlset/sm:url/sm:loc" \
+            -v . -n sitemap.xml > sitemap.txt
 
       - name: Update dates in sitemap
         run: |
@@ -46,10 +53,12 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: master
-          add-paths: sitemap.xml
-          commit-message: "chore: update sitemap.xml"
-          title: "chore: automated sitemap update"
-          body: "This PR updates sitemap.xml with all current articles."
+          add-paths: |
+            sitemap.xml
+            sitemap.txt
+          commit-message: "chore: updated sitemap files"
+          title: "chore: automated sitemap updates"
+          body: "This PR updates sitemap.xml and sitemap.txt with all current articles."
           branch: automated/sitemap-update
           delete-branch: true
 
