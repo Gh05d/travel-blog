@@ -21,7 +21,7 @@ jobs:
           base-url-path: https://audiotravelguide.eu/
           path-to-root: .       
           include-pdf: false           
-          drop-html-extension: true    
+          drop-html-extension: false    
           date-only: true
 
       - name: Install xmlstarlet
