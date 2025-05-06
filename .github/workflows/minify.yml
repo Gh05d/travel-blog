@@ -1,8 +1,20 @@
-- name: Auto Minify JS & CSS
-  uses: tibdex/auto-minify@v1
-  with:
-    paths: |
-      assets/styles
-      assets/scripts
-    recursive: true
-    overwrite: true
+name: Minify Assets
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  minify:
+    runs-on: ubuntu-latest
+    steps:
+      
+      - name: Auto Minify JS & CSS
+        uses: tibdex/auto-minify@v1
+        with:
+          paths: |
+            assets/styles
+            assets/scripts
+          recursive: true
+          overwrite: true
