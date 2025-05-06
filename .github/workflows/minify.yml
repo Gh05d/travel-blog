@@ -7,16 +7,18 @@ on:
 
 jobs:
   minify:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Check out repository
-      uses: actions/checkout@v4
-
-    - name: Auto Minify JS & CSS
-      uses: nizarmah/auto-minify@v3
-      with:
-        paths: |
-          assets/styles
-          assets/scripts
-        recursive: true
-        overwrite: true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Auto Minify JS & CSS
+        uses: nizarmah/auto-minify@v3
+        with:
+          paths: |
+            assets/styles
+            assets/scripts
+          recursive: true
+          overwrite: true
