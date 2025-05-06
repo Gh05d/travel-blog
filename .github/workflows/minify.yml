@@ -19,7 +19,7 @@ jobs:
 
           for file in assets/styles/*.css; do
             echo "⏳ Minifying $file…"
-            npx parcel-css \
+            npx -p @parcel/css parcel-css \
               --minify \
               --nesting \
               "$file" \
