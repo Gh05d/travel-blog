@@ -108,12 +108,12 @@ body {
 
 a {
   --element-color: var(--color-secondary);
+  --hover: color-mix(in srgb, var(--element-color) 80%, black);
+  --active: color-mix(in srgb, var(--element-color) 70%, black);
+  --visited: color-mix(in srgb, var(--element-color) 90%, #fff);
   color: var(--element-color);
   text-decoration: none;
   transition: color 0.2s ease-in-out;
-  --hover: color-mix(in srgb, var(--element-color) 80%, black);
-  --active: color-mix(in srgb, var(--element-color) 70%, black);
-  --visited: color-mix(in srgb, var(--element-color) 90%, gray);
 
   &:hover,
   &:focus {
@@ -126,6 +126,29 @@ a {
 
   &:visited {
     color: var(--visited);
+  }
+}
+
+button {
+  --element-color: var(--color-secondary);
+  --hover: color-mix(in srgb, var(--element-color) 80%, black);
+  --active: color-mix(in srgb, var(--element-color) 70%, black);
+  background-color: var(--element-color);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover);
+  }
+
+  &:active {
+    background-color: var(--hover);
   }
 }
 
@@ -156,6 +179,8 @@ figcaption {
 
 details {
   --element-color: var(--color-secondary);
+  --hover: color-mix(in srgb, var(--element-color) 80%, black);
+  --active: color-mix(in srgb, var(--element-color) 70%, black);
   color: #fff;
   display: flex;
   justify-content: center;
@@ -165,8 +190,6 @@ details {
   margin: 0 auto;
   border: 1px solid var(--color-shadow);
   transition: background-color 0.3s ease-in-out;
-  --hover: color-mix(in srgb, var(--element-color) 80%, black);
-  --active: color-mix(in srgb, var(--element-color) 70%, black);
 
   &:hover,
   &:focus {
@@ -265,6 +288,7 @@ details[open] {
   }
 
   a,
+  button,
   details {
     --element-color: var(--color-primary);
   }

@@ -1,4 +1,13 @@
-function renderPosts(posts) {
+const loading = document.getElementById("loading");
+const showMoreButton = document.getElementById("show-more-button");
+
+async function renderPosts() {
+  loading.style.display = "block";
+  showMoreButton.style.display = "none";
+
+  const res = await fetch("assets/search.json");
+  const posts = await res.json();
+
   const container = document.getElementById("latest");
   container.innerHTML = "";
 
@@ -51,11 +60,8 @@ function renderPosts(posts) {
 `;
       container.appendChild(div);
     });
+
+  loading.style.display = "none";
 }
 
-(async function init() {
-  const res = await fetch("assets/search.json");
-  const posts = await res.json();
-  renderPosts(posts);
-  document.getElementById("loading").style.display = "none";
-})();
+showMoreButton.addEventListener("click", renderPosts);
