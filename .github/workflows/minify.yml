@@ -30,13 +30,19 @@ jobs:
             echo "✅ Done: $file"
           done
 
+      - name: Install Terser
+        run: npm install terser --no-save
+
       - name: Minify JS modules
         run: |
           echo "🔍 Found JS files:"
           ls assets/scripts/*.mjs
-          
+
           for file in assets/scripts/*.mjs; do
             echo "⏳ Minifying $file…"
-            npx -p terser "$file" --compress --mangle --output "$file"
+            npx terser "$file" \
+                --compress \
+                --mangle \
+                --output "$file"
             echo "✅ Done: $file"
           done
