@@ -9,16 +9,24 @@ jobs:
   minify:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Minify HTML, CSS & JS
-        uses: docker://devatherock/minify-js:3.1.0
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          directory: 'assets'           
-          add_suffix: false             
-          
-          inclusions: |-
-            .*\.css$
-            .*\.mjs$
+          node-version: '18'
+
+      - name: Install Parcel CSS CLI
+        run: npm install --no-save @parcel/css-cli
+
+      - name: Compile & Minify with Nesting
+        run: |
+          npx parcel-css \
+            --minify \
+            --nesting \
+            assets/styles/style.css:assets/styles/style.css \
+            assets/styles/index.css:assets/styles/index.css \
+            assets/styles/search.css:assets/styles/search.css \
+            assets/styles/about-us.css:assets/styles/about-us.css
+
 
