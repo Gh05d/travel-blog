@@ -20,5 +20,5 @@ jobs:
           
           inclusions: |-
             .*\.css$
-            .*\.js$
+            .*\.mjs$
 
