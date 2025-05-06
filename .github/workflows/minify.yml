@@ -9,17 +9,14 @@ jobs:
   minify-css:
     runs-on: ubuntu-latest
     steps:
-      # 1. Check out your repository
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # 2. Set up Node.js (needed for npx)
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      # 3. Run PostCSS via npx; dynamically pulls in the CLI + plugins
       - name: Minify all CSS with PostCSS
         run: |
           echo "🔍 Found these CSS files:"
@@ -30,5 +27,16 @@ jobs:
             npx -p postcss-cli -p postcss-preset-env -p postcss-nested -p cssnano postcss "$file" \
               --use postcss-preset-env postcss-nested cssnano \
               --replace --no-map
+            echo "✅ Done: $file"
+          done
+
+      - name: Minify JS modules
+        run: |
+          echo "🔍 Found JS files:"
+          ls assets/scripts/*.mjs
+          
+          for file in assets/scripts/*.mjs; do
+            echo "⏳ Minifying $file…"
+            npx -p terser "$file" --compress --mangle --output "$file"
             echo "✅ Done: $file"
           done
