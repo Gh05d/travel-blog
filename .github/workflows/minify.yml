@@ -1,4 +1,4 @@
-name: Minify CSS with Lightning CSS
+name: Minify CSS with PostCSS CLI
 
 on:
   push:
@@ -6,32 +6,29 @@ on:
       - master
 
 jobs:
-  minify:
+  minify-css:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      # 1. Check out your repository
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      # 2. Set up Node.js (needed for npx)
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: '18'
 
-      - name: Install Lightning CSS CLI
-        run: npm install --save-dev lightningcss-cli
-
-      - name: Minify all CSS files
+      # 3. Run PostCSS via npx; dynamically pulls in the CLI + plugins
+      - name: Minify all CSS with PostCSS
         run: |
           echo "🔍 Found these CSS files:"
           ls assets/styles/*.css
+
           for file in assets/styles/*.css; do
             echo "⏳ Minifying $file…"
-            npx lightningcss \
-              --minify \
-              --nesting \
-              "$file" \
-              -o "$file"
+            npx -p postcss-cli -p postcss-preset-env -p postcss-nested -p cssnano postcss "$file" \
+              --use postcss-preset-env postcss-nested cssnano \
+              --replace --no-map
             echo "✅ Done: $file"
           done
