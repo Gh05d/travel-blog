@@ -1,4 +1,5 @@
-name: Minify Assets
+# .github/workflows/minify-css.yml
+name: Minify CSS  
 
 on:
   push:
@@ -8,25 +9,27 @@ on:
 jobs:
   minify:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4  # checks out your repo into $GITHUB_WORKSPACE :contentReference[oaicite:0]{index=0}
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4  # installs Node.js so we can run npx :contentReference[oaicite:1]{index=1}
         with:
           node-version: '18'
 
       - name: Install Parcel CSS CLI
-        run: npm install --no-save @parcel/css-cli
+        run: npm install --no-save @parcel/css-cli  # gets the parcel-css binary into node_modules/.bin :contentReference[oaicite:2]{index=2}
 
-      - name: Compile & Minify with Nesting
+      - name: Minify CSS with nesting support
         run: |
-          npx parcel-css \
-            --minify \
-            --nesting \
-            assets/styles/style.css:assets/styles/style.css \
-            assets/styles/index.css:assets/styles/index.css \
-            assets/styles/search.css:assets/styles/search.css \
-            assets/styles/about-us.css:assets/styles/about-us.css
-
-
+          for file in assets/styles/*.css; do
+            echo "⏳ Minifying $file…"
+            npx parcel-css \
+              --minify \         # strip whitespace, comments, shorten values :contentReference[oaicite:3]{index=3}
+              --nesting \        # transpile native CSS nesting to flat rules :contentReference[oaicite:4]{index=4}
+              "$file" \
+              -o "$file"
+            echo "✅ Done: $file"
+          done
