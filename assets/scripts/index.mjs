@@ -39,8 +39,8 @@ async function renderPosts() {
                 alt="${post.imageAlt}"
                 loading="lazy"
                 decoding="async"
-                width="456"
-                height="170"
+                width="608"
+                height="227"
             />
         </picture>
     </a>

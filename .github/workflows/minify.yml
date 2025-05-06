@@ -1,0 +1,8 @@
+- name: Auto Minify JS & CSS
+  uses: tibdex/auto-minify@v1
+  with:
+    paths: |
+      assets/styles
+      assets/scripts
+    recursive: true
+    overwrite: true
