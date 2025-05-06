@@ -17,8 +17,6 @@ jobs:
       - name: Auto Minify JS & CSS
         uses: nizarmah/auto-minify@v3
         with:
-          paths: |
-            assets/styles
-            assets/scripts
+          directory: assets
           recursive: true
           overwrite: true
