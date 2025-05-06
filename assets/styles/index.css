@@ -39,6 +39,8 @@ section:not(first-of-type) {
 #loading {
   position: relative;
   padding-left: 1.8em;
+  display: none;
+  margin-block: 2rem;
 
   &::before {
     content: "";
@@ -88,6 +90,12 @@ section:not(first-of-type) {
       max-height: calc(1em * 1.5 * 2);
     }
   }
+}
+
+#show-more-button {
+  margin-block: 2rem;
+  margin-inline: auto;
+  width: 100%;
 }
 
 .card {
