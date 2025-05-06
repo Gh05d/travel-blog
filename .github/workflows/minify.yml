@@ -27,8 +27,8 @@ jobs:
           for file in assets/styles/*.css; do
             echo "⏳ Minifying $file…"
             npx parcel-css \
-              --minify \         # strip whitespace, comments, shorten values :contentReference[oaicite:3]{index=3}
-              --nesting \        # transpile native CSS nesting to flat rules :contentReference[oaicite:4]{index=4}
+              --minify \         
+              --nesting \       
               "$file" \
               -o "$file"
             echo "✅ Done: $file"
