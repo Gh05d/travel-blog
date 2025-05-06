@@ -40,19 +40,50 @@
       as="image"
       href="/assets/images/hero-image.avif"
       type="image/avif"
-      imagesrcset="
-      /assets/images/hero-image-small.avif  400w,
-      /assets/images/hero-image-medium.avif 800w,
-      /assets/images/hero-image.avif        1080w
-    "
-      imagesizes="
-      (min-width: 76rem) 76rem,
-      (min-width: 38rem) 38rem,
-      100vw
-    "
+      imagesrcset="/assets/images/hero-image-small.avif 400w, /assets/images/hero-image-medium.avif 800w, /assets/images/hero-image.avif 1080w"
+      imagesizes="(min-width:76rem) 76rem, (min-width:38rem) 38rem, 100vw"
     />
 
     <title>Audio Travel Guide | Best articles about traveling</title>
+    <style>
+      :root {
+        --max-width: 120ch;
+      }
+
+      body > footer,
+      main {
+        max-width: var(--max-width);
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      search {
+        width: clamp(10rem, 25rem, 30rem);
+
+        input {
+          width: 100%;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          border-width: 0.1rem;
+        }
+      }
+
+      section:not(first-of-type) {
+        margin-top: 3rem;
+      }
+
+      #header-container {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+      }
+    </style>
     <link rel="stylesheet" href="assets/styles/style.css" />
     <link rel="stylesheet" href="assets/styles/index.css" />
 
