@@ -1,5 +1,4 @@
-# .github/workflows/minify-css.yml
-name: Minify CSS
+name: Minify CSS with Lightning CSS
 
 on:
   push:
@@ -10,31 +9,29 @@ jobs:
   minify:
     runs-on: ubuntu-latest
     steps:
-      # 1️⃣ check out your repo
-      - name: Check out code
+      - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      # 2️⃣ bring in Node.js so we can npm install & npx
-      - name: Use Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: '20'
 
-      # 3️⃣ install the Parcel CSS CLI locally (no package.json needed)
-      - name: Install @parcel/css
-        run: npm install --no-save @parcel/css
+      - name: Install Lightning CSS CLI
+        run: npm install --save-dev lightningcss-cli
 
-      # 4️⃣ find & minify every .css in assets/styles
-      - name: Minify all CSS with nesting support
+      - name: Minify all CSS files
         run: |
           echo "🔍 Found these CSS files:"
-          find assets/styles -type f -name '*.css'
+          ls assets/styles/*.css
           for file in assets/styles/*.css; do
             echo "⏳ Minifying $file…"
-            npx parcel-css \
-              "$file" \
+            npx lightningcss \
               --minify \
               --nesting \
+              "$file" \
               -o "$file"
             echo "✅ Done: $file"
           done
