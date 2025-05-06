@@ -1,3 +1,4 @@
+# .github/workflows/minify-css.yml
 name: Minify CSS
 
 on:
@@ -9,20 +10,31 @@ jobs:
   minify:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      # 1️⃣ check out your repo
+      - name: Check out code
         uses: actions/checkout@v4
 
-      - name: Minify all CSS with parcel-css
+      # 2️⃣ bring in Node.js so we can npm install & npx
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      # 3️⃣ install the Parcel CSS CLI locally (no package.json needed)
+      - name: Install @parcel/css
+        run: npm install --no-save @parcel/css
+
+      # 4️⃣ find & minify every .css in assets/styles
+      - name: Minify all CSS with nesting support
         run: |
           echo "🔍 Found these CSS files:"
-          ls assets/styles/*.css || exit 1
-
+          find assets/styles -type f -name '*.css'
           for file in assets/styles/*.css; do
             echo "⏳ Minifying $file…"
-            npx -p @parcel/css parcel-css \
+            npx parcel-css \
+              "$file" \
               --minify \
               --nesting \
-              "$file" \
-              --output-path "$file"
+              -o "$file"
             echo "✅ Done: $file"
           done
