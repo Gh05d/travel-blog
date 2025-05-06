@@ -39,7 +39,11 @@
     <link rel="stylesheet" href="assets/styles/style.css" />
     <link rel="stylesheet" href="assets/styles/index.css" />
 
-    <script type="module" src="assets/index.mjs"></script>
+    <script
+      type="module"
+      src="assets/index.mjs"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -86,9 +90,16 @@
               />
 
               <!-- Mobile fallback -->
-              <img
-                src="/assets/images/hero-image-small.avif"
+              <source
+                media="(max-width:37.99rem)"
                 srcset="/assets/images/hero-image-small.avif 400w"
+                sizes="100vw"
+              />
+
+              <!-- Fallback for browsers that don't support AVIF -->
+              <img
+                src="/assets/images/hero-image-fallback.jpg"
+                srcset="/assets/images/hero-image-fallback.jpg 400w"
                 sizes="100vw"
                 alt="aerial photography of seashore"
                 decoding="async"
