@@ -3,7 +3,7 @@ name: update-sitemap
 on:
   push:
     paths:
-      - 'articles/**'
+      - "articles/**"
 
 jobs:
   sitemap:
@@ -18,10 +18,10 @@ jobs:
         id: sitemap
         uses: cicirello/generate-sitemap@v1
         with:
-          base-url-path: https://audiotravelguide.eu/
-          path-to-root: .       
-          include-pdf: false           
-          drop-html-extension: false    
+          base-url-path: https://exitfloridakeys.eu/
+          path-to-root: .
+          include-pdf: false
+          drop-html-extension: false
           date-only: true
 
       - name: Install xmlstarlet
@@ -43,7 +43,7 @@ jobs:
               slug=$(basename "$html" .html)
               xmlstarlet ed -L \
                 -N sm="http://www.sitemaps.org/schemas/sitemap/0.9" \
-                -u "/sm:urlset/sm:url[sm:loc='https://audiotravelguide.eu/articles/$slug']/sm:lastmod" \
+                -u "/sm:urlset/sm:url[sm:loc='https://exitfloridakeys.eu/articles/$slug']/sm:lastmod" \
                 -v "$datetime" \
                 sitemap.xml
             done
@@ -76,4 +76,3 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
           merge-method: merge
-
