@@ -1,5 +1,6 @@
-const loading = document.getElementById("loading"),
-  showMoreButton = document.getElementById("show-more-button");
+const loading = document.getElementById("loading");
+const showMoreButton = document.getElementById("show-more-button");
+
 async function renderPosts() {
   (loading.style.display = "block"), (showMoreButton.style.display = "none");
   const e = await fetch("assets/search.json"),
@@ -24,4 +25,5 @@ async function renderPosts() {
       }),
     (loading.style.display = "none");
 }
+
 showMoreButton.addEventListener("click", renderPosts);
