@@ -1,6 +1,6 @@
 {
     "id": "/index.html",
-    "name": "Audio Travel Guide",
+    "name": "Exit Florida Keys",
     "short_name": "TravelGuide",
     "start_url": "/index.html",
     "description": "Your ultimate travel companion for exploring the world with guides, tips, and inspiration.",
@@ -29,14 +29,14 @@
             "sizes": "1280x720",
             "type": "image/png",
             "form_factor": "wide",
-            "label": "Audio Travel Guide on desktop"
+            "label": "Travel Guide on desktop"
         },
         {
             "src": "/assets/hero-phone.png",
             "sizes": "360x640",
             "type": "image/png",
             "form_factor": "narrow",
-            "label": "Audio Travel Guide on mobile"
+            "label": "Travel Guide Keys on mobile"
         }
     ]
 }
