@@ -2,5 +2,5 @@ User-agent: *
 Sitemap: https://exitfloridakeys.com/sitemap.xml
 
 Disallow: /assets/search.json
-Disallow: /assets/styles/
-Disallow: /assets/team/
+# Disallow: /assets/styles/
+# Disallow: /assets/team/
