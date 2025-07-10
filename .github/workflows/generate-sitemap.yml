@@ -23,6 +23,9 @@ jobs:
           include-pdf: false
           drop-html-extension: false
           date-only: true
+          exclude-paths: >
+            /404.html
+            /search-results.html
 
       - name: Install xmlstarlet
         run: |
