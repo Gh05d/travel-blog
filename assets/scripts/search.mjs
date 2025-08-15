@@ -1,1 +1,42 @@
-const loading=document.getElementById("loading"),searchInput=document.getElementById("search");function debounce(e,n=300){let t;return(...a)=>{clearTimeout(t),t=setTimeout(()=>e(...a),n)}}function renderPosts(e){const n=document.getElementById("results");n.innerHTML="",e.forEach(e=>{const t=new Date(e.publishDate).toLocaleDateString("en-US",{year:"numeric",month:"long",day:"numeric"}),a=document.createElement("div");a.className="card",a.innerHTML=`\n    <a\n        aria-label="${e.imageAlt}"\n        href="${e.url}">\n        <picture>\n            <img\n                src="${e.imageUrl}"\n                srcset="\n                ${e.imageUrl}&dpr=2 2x,\n                ${e.imageUrl} 1x\n                "\n                sizes="(min-width:38rem) 38rem, 100vw"\n                alt="${e.imageAlt}"\n                loading="lazy"\n                decoding="async"\n                width="1080"\n                height="385"\n            />\n        </picture>\n    </a>\n\n    <h3><a href="${e.url}">${e.title}</a></h3>\n\n     <div id="published">\n        Published:\n        <em\n        ><time itemprop="datePublished" datetime="${e.publishDate}">\n            ${t}</time\n        ></em\n        >\n    </div>\n\n  <p>${e.description}</p>\n`,n.appendChild(a)}),loading.style.display="none"}function setupSearch(e){const n=new Fuse(e,{keys:["title","description","publishDate"]}),t=debounce(t=>{loading.style.display="initial";const a=t.target.value.trim();renderPosts(a?n.search(a).map(e=>e.item):e)});searchInput.addEventListener("input",t)}!async function(){const e=await fetch("assets/search.json"),n=await e.json();renderPosts(n),setupSearch(n);const t=new URLSearchParams(window.location.search).get("query")||"";searchInput.value=t,t&&searchInput.dispatchEvent(new Event("input")),search.disabled=!1}();
+const loading = document.getElementById("loading"),
+  searchInput = document.getElementById("search");
+function debounce(e, n = 300) {
+  let t;
+  return (...a) => {
+    clearTimeout(t), (t = setTimeout(() => e(...a), n));
+  };
+}
+function renderPosts(e) {
+  const n = document.getElementById("results");
+  (n.innerHTML = ""),
+    e.forEach((e) => {
+      const t = new Date(e.publishDate).toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        }),
+        a = document.createElement("div");
+      (a.className = "card"),
+        (a.innerHTML = `\n    <a\n        aria-label="${e.imageAlt}"\n        href="${e.url}">\n        <picture>\n            <img\n                src="${e.imageUrl}"\n                srcset="\n                ${e.imageUrl}&dpr=2 2x,\n                ${e.imageUrl} 1x\n                "\n                sizes="(min-width:38rem) 38rem, 100vw"\n                alt="${e.imageAlt}"\n                loading="lazy"\n                decoding="async"\n                width="1080"\n                height="385"\n            />\n        </picture>\n    </a>\n\n    <h3><a href="${e.url}">${e.title}</a></h3>\n\n     <div id="published">\n        Published:\n        <em\n        ><time itemprop="datePublished" datetime="${e.publishDate}">\n            ${t}</time\n        ></em\n        >\n    </div>\n\n  <p>${e.description}</p>\n`),
+        n.appendChild(a);
+    }),
+    (loading.style.display = "none");
+}
+function setupSearch(e) {
+  const n = new Fuse(e, { keys: ["title", "description", "publishDate"] }),
+    t = debounce((t) => {
+      loading.style.display = "initial";
+      const a = t.target.value.trim();
+      renderPosts(a ? n.search(a).map((e) => e.item) : e);
+    });
+  searchInput.addEventListener("input", t);
+}
+!(async function () {
+  const e = await fetch("assets/search.json"),
+    n = await e.json();
+  renderPosts(n), setupSearch(n);
+  const t = new URLSearchParams(window.location.search).get("query") || "";
+  (searchInput.value = t),
+    t && searchInput.dispatchEvent(new Event("input")),
+    (search.disabled = !1);
+})();

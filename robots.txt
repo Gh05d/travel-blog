@@ -1,6 +1,21 @@
+# Globale Regeln
 User-agent: *
+# explizit alles erlauben (de facto ohnehin so, außer der einen Datei)
+Disallow:
 Sitemap: https://exitfloridakeys.com/sitemap.xml
 
+# On-demand Browsing von ChatGPT erlauben
+User-agent: ChatGPT-User
+Allow: /
+
+# OpenAI-Crawler (Training/Recherche) erlauben
+User-agent: GPTBot
+Allow: /
+
+# Common Crawl (Basis vieler Datensätze) erlauben
+User-agent: CCBot
+Allow: /
+
+# Nur diese eine Datei bleibt gesperrt
+User-agent: *
 Disallow: /assets/search.json
-# Disallow: /assets/styles/
-# Disallow: /assets/team/
