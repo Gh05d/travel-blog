@@ -10,7 +10,8 @@ const index = [];
 for (const file of files) {
   const html = await readFile(join(articlesDir, file), 'utf8');
 
-  const title = html.match(/<meta[^>]*property=["']og:title["'][^>]*content=["']([^"]+)["'][^>]*>/i)?.[1] || '';
+  let title = html.match(/<meta[^>]*property=["']og:title["'][^>]*content=["']([^"]+)["'][^>]*>/i)?.[1] || '';
+  title = title.replace(/^Audio Travel Guide \|\s*/, '');
   const descMatch = html.match(/<p[^>]*itemprop=["']description["'][^>]*>([\s\S]*?)<\/p>/i);
   const description = descMatch ? descMatch[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim() : '';
   const publishDate = html.match(/<time[^>]*datetime=["']([^"]+)["']/i)?.[1] || '';
