@@ -1,14 +1,16 @@
 window.addEventListener("DOMContentLoaded", () => {
-  const loading = document.getElementById("loading"),
-    showMoreButton = document.getElementById("show-more-button"),
-    latestFeatured = document.getElementById("latest-featured"),
-    latestGrid = document.getElementById("latest-grid");
+  const loading = document.getElementById("loading");
+  const showMoreButton = document.getElementById("show-more-button");
+  const latestFeatured = document.getElementById("latest-featured");
+  const latestGrid = document.getElementById("latest-grid");
+
   if (loading && showMoreButton && latestFeatured && latestGrid) {
-    let allPosts = [],
-      loadedCount =
-        latestFeatured.querySelectorAll(".card").length +
-        latestGrid.querySelectorAll(".card").length,
-      isFetching = !1;
+    let allPosts = [];
+    let loadedCount =
+      latestFeatured.querySelectorAll(".card").length +
+      latestGrid.querySelectorAll(".card").length;
+    let isFetching = !1;
+
     async function loadMore() {
       if (isFetching) return;
       if (
