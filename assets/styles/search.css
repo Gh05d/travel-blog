@@ -1,1 +1,16 @@
-search{width:100%}#loading{margin-top:2rem}#results{display:flex;flex-direction:column;gap:2rem}img,picture{max-height:20rem}
+search {
+  width: 100%;
+}
+#loading {
+  margin-top: 2rem;
+  display: none;
+}
+#results {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+img,
+picture {
+  max-height: 20rem;
+}
