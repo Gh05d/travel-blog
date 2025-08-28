@@ -1,9 +1,12 @@
 const loading = document.getElementById("loading"),
   showMoreButton = document.getElementById("show-more-button"),
-  latest = document.getElementById("latest");
+  latestFeatured = document.getElementById("latest-featured"),
+  latestGrid = document.getElementById("latest-grid");
 
 let allPosts = [],
-  loadedCount = latest.children.length,
+  loadedCount =
+    latestFeatured.querySelectorAll(".card").length +
+    latestGrid.querySelectorAll(".card").length,
   isFetching = !1;
 
 async function loadMore() {
@@ -61,7 +64,7 @@ async function loadMore() {
 
   <p>${e.description}</p>
 `;
-    latest.appendChild(n);
+    latestGrid.appendChild(n);
   }),
     (loadedCount += e.length),
     (loading.style.display = "none"),
