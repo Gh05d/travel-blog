@@ -20,12 +20,15 @@ jobs:
       - name: Update search index
         run: node scripts/update-search-index.mjs
 
+      - name: Update author pages
+        run: node scripts/update-author-pages.mjs
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/search.json
-          git commit -m "chore: update search index" || echo "No changes to commit"
+          git add assets/search.json authors/*.html
+          git commit -m "chore: update search index and author pages" || echo "No changes to commit"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
