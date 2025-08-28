@@ -3,7 +3,6 @@
 }
 body > footer,
 main {
-  max-width: 120ch;
   max-width: var(--max-width);
 }
 search {
@@ -53,11 +52,11 @@ section:not(first-of-type) {
 }
 .posts {
   margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 .posts:not(#latest) .card {
   margin-bottom: 2rem;
-  display: flex;
-  gap: 2rem;
 
   picture {
     height: 100%;
@@ -136,15 +135,17 @@ section:not(first-of-type) {
 .card--big {
   grid-column: span 2;
 }
+
 @media screen and (min-width: var(--max-width )) {
   .posts:not(#latest) {
     display: flex;
     gap: 2rem;
     overflow-x: auto;
-  }
-  .posts:not(#latest) .card {
-    flex: 0 0 18rem;
-    margin-bottom: 0;
+
+    .card {
+      flex: 0 0 18rem;
+      margin-bottom: 0;
+    }
   }
 }
 @keyframes spin {
