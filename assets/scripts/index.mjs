@@ -1,1 +1,87 @@
-window.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("loading"),n=document.getElementById("show-more-button"),t=document.getElementById("latest-featured"),i=document.getElementById("latest-grid");if(e&&n&&t&&i){let l=[],d=t.querySelectorAll(".card").length+i.querySelectorAll(".card").length,s=!1;async function a(t){if(s)return;if(s=!0,e.style.display="block",n.disabled=!0,0===l.length){const e=await fetch("assets/search.json");l=await e.json(),l.sort((e,n)=>new Date(n.publishDate).getTime()-new Date(e.publishDate).getTime())}const a=l.slice(d,d+t);a.forEach(e=>{const n=new Date(e.publishDate).toLocaleDateString("en-US",{year:"numeric",month:"long",day:"numeric"}),t=document.createElement("div");t.className="card",t.innerHTML=`\n    <a\n     aria-label="${e.imageAlt}"\n        href="${e.url}"\n    >\n        <picture>\n            <img\n                src="${e.imageUrl}"\n                srcset="\n                ${e.imageUrl} 200w,\n                ${e.imageUrl}&dpr=2 400w\n    "\n                sizes="(min-width:76rem) 18rem, 100vw"\n                alt="${e.imageAlt}"\n        loading="lazy"\n                decoding="async"\n                width="200"\n                height="75"\n            />\n        </picture>\n    </a>\n\n    <h3><a href="${e.url}">${e.title}</a></h3>\n\n     <div id="published">\n        Published:\n        <em><time itemprop="datePublished" datetime="${e.publishDate}">\n            ${n}</time\n        ></em>\n    </div>\n\n  <p>${e.description}</p>\n`,i.appendChild(t)}),d+=a.length,e.style.display="none",n.disabled=!1,s=!1,d>=l.length&&(n.style.display="none")}a(10),n.addEventListener("click",()=>a(10))}});
+window.addEventListener("DOMContentLoaded", () => {
+  const loadingElement = document.getElementById("loading");
+  const showMoreButton = document.getElementById("show-more-button");
+  const featuredContainer = document.getElementById("latest-featured");
+  const gridContainer = document.getElementById("latest-grid");
+
+  if (!loadingElement || !showMoreButton || !featuredContainer || !gridContainer) {
+    return;
+  }
+
+  let allArticles = [];
+  let displayedCount =
+    featuredContainer.querySelectorAll(".card").length +
+    gridContainer.querySelectorAll(".card").length;
+  let isLoading = false;
+
+  async function loadArticles(count, showLoading = true) {
+    if (isLoading) {
+      return;
+    }
+
+    isLoading = true;
+    if (showLoading) {
+      loadingElement.style.display = "block";
+    }
+    showMoreButton.disabled = true;
+
+    if (allArticles.length === 0) {
+      const response = await fetch("assets/search.json");
+      allArticles = await response.json();
+      allArticles.sort(
+        (a, b) => new Date(b.publishDate) - new Date(a.publishDate)
+      );
+    }
+
+    const newArticles = allArticles.slice(displayedCount, displayedCount + count);
+
+    newArticles.forEach((article) => {
+      const formattedDate = new Date(article.publishDate).toLocaleDateString(
+        "en-US",
+        { year: "numeric", month: "long", day: "numeric" }
+      );
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+ <a aria-label="${article.imageAlt}" href="${article.url}">
+   <picture>
+     <img
+       src="${article.imageUrl}"
+       srcset="
+         ${article.imageUrl} 200w,
+         ${article.imageUrl}&dpr=2 400w
+       "
+       sizes="(min-width:76rem) 18rem, 100vw"
+       alt="${article.imageAlt}"
+       loading="lazy"
+       decoding="async"
+       width="200"
+       height="75"
+     />
+   </picture>
+ </a>
+ <h3><a href="${article.url}">${article.title}</a></h3>
+ <div id="published">
+   Published:
+   <em><time itemprop="datePublished" datetime="${article.publishDate}">
+     ${formattedDate}
+   </time></em>
+ </div>
+ <p>${article.description}</p>
+      `;
+      gridContainer.appendChild(card);
+    });
+
+    displayedCount += newArticles.length;
+    loadingElement.style.display = "none";
+    showMoreButton.disabled = false;
+    isLoading = false;
+
+    if (displayedCount >= allArticles.length) {
+      showMoreButton.style.display = "none";
+    }
+  }
+
+  loadArticles(10, false);
+  showMoreButton.addEventListener("click", () => loadArticles(10));
+});
