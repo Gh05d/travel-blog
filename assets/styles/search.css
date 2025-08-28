@@ -1,1 +1,13 @@
-search{width:100%}#loading{display:none;margin-top:2rem}#results{display:flex;flex-direction:column;gap:2rem}img,picture{max-height:20rem}
+search {
+  width: 100%;
+}
+
+#results {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+img,
+picture {
+  max-height: 20rem;
+}
