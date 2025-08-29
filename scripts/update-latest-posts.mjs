@@ -1,24 +1,10 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
+import layout from "./latest-layout.json" assert { type: "json" };
 
 const articlesDir = join(process.cwd(), "articles");
 const indexFile = join(process.cwd(), "index.html");
-
-// Define which of the 12 slots should include an image
-const slotsWithImage = [
-  false,
-  false,
-  false,
-  true,
-  false,
-  true,
-  true,
-  true,
-  true,
-  true,
-  true,
-  false,
-];
+const placeholderImg = "/assets/images/hero-image-fallback.jpg";
 
 // Read article files
 const files = (await readdir(articlesDir)).filter((f) => f.endsWith(".html"));
@@ -67,10 +53,13 @@ const latest = entries.slice(0, 12);
 
 const parts = latest.map((article, index) => {
   const { title, url, description, imageUrl, imageAlt } = article;
+  const { hasImage } = layout[index] ?? {};
   let content = "";
-  if (slotsWithImage[index] && imageUrl) {
+  if (hasImage) {
+    const src = imageUrl || placeholderImg;
+    const alt = imageAlt || title;
     content += `          <a href="${url}">\n`;
-    content += `            <img src="${imageUrl}" alt="${imageAlt}" width="220" height="120" loading="lazy" decoding="async" />\n`;
+    content += `            <img src="${src}" alt="${alt}" width="220" height="120" loading="lazy" decoding="async" />\n`;
     content += "          </a>\n";
   }
   content += `          <h3>\n`;
