@@ -82,3 +82,5 @@ const updatedHtml = indexHtml.replace(
 );
 
 await writeFile(indexFile, updatedHtml);
+
+await import("./update-random-articles.mjs");
