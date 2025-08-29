@@ -5,6 +5,26 @@ const root = process.cwd();
 const articlesDir = join(root, 'articles');
 const authorsDir = join(root, 'authors');
 
+const navBlock = `      <nav aria-label="Main site navigation">
+        <a rel="home" href="/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/assets/exitfloridakeys-logo.avif" type="image/avif" /><img src="/assets/exitfloridakeys-logo.png" alt="Travel Guide logo" class="logo" /></picture></a>
+        <ul class="site-nav">
+          <li>
+            <a href="/latest-articles.html">Latest Articles</a>
+          </li>
+          <li>
+            <a href="/most-read-articles.html">Most Read Articles</a>
+          </li>
+          <li>
+            <a href="/articles/top-10-hidden-gems-europe.html">Top Destinations</a>
+          </li>
+          <li>
+            <a href="/articles/navigating-night-markets-food-lovers-guide.html">Editor’s Picks</a>
+          </li>
+        </ul>
+      </nav>`;
+
+const headerBlock = `    <header>\n${navBlock}\n      <hr />\n    </header>`;
+
 function slugify(name) {
   return name
     .toLowerCase()
@@ -35,6 +55,9 @@ for (const [author, articles] of authorMap.entries()) {
   } catch {
     continue; // author page doesn't exist
   }
+
+  html = html.replace(/<nav aria-label="Main site navigation">[\s\S]*?<\/nav>/, navBlock);
+  html = html.replace(/<header>[\s\S]*?<\/header>/, headerBlock);
 
   articles.sort((a, b) => a.title.localeCompare(b.title));
   const listItems = articles
