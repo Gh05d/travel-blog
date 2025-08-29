@@ -1,9 +1,1 @@
-.author-main {
-  background-color: #fff;
-}
-.author-main img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 1rem;
-}
+.author-main{background-color:#fff}.author-main img{display:block;height:auto;margin-bottom:1rem;max-width:100%}
