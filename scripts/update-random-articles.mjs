@@ -3,10 +3,7 @@ import { join } from "node:path";
 
 const root = process.cwd();
 const dataFile = join(root, "assets", "search.json");
-const pages = [
-  join(root, "latest-articles.html"),
-  join(root, "most-read-articles.html"),
-];
+const pages = [join(root, "most-read-articles.html")];
 
 const searchData = JSON.parse(await readFile(dataFile, "utf8"));
 
