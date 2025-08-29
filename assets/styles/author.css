@@ -1,0 +1,9 @@
+.author-main {
+  background-color: #fff;
+}
+.author-main img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
