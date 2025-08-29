@@ -1,6 +1,6 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import layout from "./latest-layout.json" assert { type: "json" };
+import layout from "./latest-layout.json" with { type: "json" };
 
 const articlesDir = join(process.cwd(), "articles");
 const indexFile = join(process.cwd(), "index.html");
@@ -53,13 +53,15 @@ const latest = entries.slice(0, 12);
 
 const parts = latest.map((article, index) => {
   const { title, url, description, imageUrl, imageAlt } = article;
-  const { hasImage } = layout[index] ?? {};
+  const { hasImage, width, height } = layout[index] ?? {};
   let content = "";
   if (hasImage) {
     const src = imageUrl || placeholderImg;
     const alt = imageAlt || title;
+    const w = Number.isFinite(width) ? width : 220;
+    const h = Number.isFinite(height) ? height : 120;
     content += `          <a href="${url}">\n`;
-    content += `            <img src="${src}" alt="${alt}" width="220" height="120" loading="lazy" decoding="async" />\n`;
+    content += `            <img src="${src}" alt="${alt}" width="${w}" height="${h}" loading="lazy" decoding="async" />\n`;
     content += "          </a>\n";
   }
   content += `          <h3>\n`;
