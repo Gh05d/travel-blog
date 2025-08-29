@@ -26,12 +26,15 @@ jobs:
       - name: Update latest posts
         run: node scripts/update-latest-posts.mjs
 
+      - name: Update site navigation
+        run: node scripts/update-site-nav.mjs
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/search.json authors/*.html index.html
-          git commit -m "chore: update search index, author pages, and latest posts" || echo "No changes to commit"
+          git add assets/search.json authors/*.html index.html articles/*.html
+          git commit -m "chore: update site nav, search index, author pages, and latest posts" || echo "No changes to commit"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
