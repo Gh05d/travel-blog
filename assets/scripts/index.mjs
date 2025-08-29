@@ -1,1 +1,87 @@
-window.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("loading"),n=document.getElementById("show-more-button"),t=document.getElementById("latest-featured"),i=document.getElementById("latest-grid");if(!(e&&n&&t&&i))return;let a=[],l=t.querySelectorAll(".card").length+i.querySelectorAll(".card").length,d=!1;async function r(t,r=!0){if(d)return;if(d=!0,r&&(e.style.display="block"),n.disabled=!0,0===a.length){const e=await fetch("assets/search.json");a=await e.json(),a.sort((e,n)=>new Date(n.publishDate)-new Date(e.publishDate))}const s=a.slice(l,l+t);s.forEach(e=>{const n=new Date(e.publishDate).toLocaleDateString("en-US",{year:"numeric",month:"long",day:"numeric"}),t=document.createElement("div");t.className="card",t.innerHTML=`\n <a aria-label="${e.imageAlt}" href="${e.url}">\n   <picture>\n     <img\n       src="${e.imageUrl}"\n       srcset="\n         ${e.imageUrl} 200w,\n         ${e.imageUrl}&dpr=2 400w\n       "\n       sizes="(min-width:76rem) 18rem, 100vw"\n       alt="${e.imageAlt}"\n       loading="lazy"\n       decoding="async"\n       width="200"\n       height="75"\n     />\n   </picture>\n </a>\n <h3><a href="${e.url}">${e.title}</a></h3>\n <div id="published">\n   Published:\n   <em><time itemprop="datePublished" datetime="${e.publishDate}">\n     ${n}\n   </time></em>\n </div>\n <p>${e.description}</p>\n      `,i.appendChild(t)}),l+=s.length,e.style.display="none",n.disabled=!1,d=!1,l>=a.length&&(n.style.display="none")}r(10,!1),n.addEventListener("click",()=>r(10))});
+window.addEventListener("DOMContentLoaded", () => {
+  const loading = document.getElementById("loading");
+  const showMoreButton = document.getElementById("show-more-button");
+  const latestGrid = document.getElementById("latest-grid");
+
+  // Ensure required elements exist
+  if (!(loading && showMoreButton && latestGrid)) return;
+
+  let searchIndex = [];
+  // Count posts already rendered on the page (latest posts grid)
+  let loadedCount =
+    document.getElementById("latest-posts")?.children?.length || 0;
+  let isLoading = false;
+
+  async function loadPosts(count, showSpinner = true) {
+    if (isLoading) return;
+    isLoading = true;
+
+    if (showSpinner) loading.style.display = "block";
+    showMoreButton.disabled = true;
+
+    if (searchIndex.length === 0) {
+      const res = await fetch("assets/search.json");
+      searchIndex = await res.json();
+      searchIndex.sort(
+        (a, b) => new Date(b.publishDate) - new Date(a.publishDate)
+      );
+    }
+
+    const slice = searchIndex.slice(loadedCount, loadedCount + count);
+
+    slice.forEach((post) => {
+      const published = new Date(post.publishDate).toLocaleDateString(
+        "en-US",
+        { year: "numeric", month: "long", day: "numeric" }
+      );
+
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+ <a aria-label="${post.imageAlt}" href="${post.url}">
+   <picture>
+     <img
+       src="${post.imageUrl}"
+       srcset="
+         ${post.imageUrl} 200w,
+         ${post.imageUrl}&dpr=2 400w
+       "
+       sizes="(min-width:76rem) 18rem, 100vw"
+       alt="${post.imageAlt}"
+       loading="lazy"
+       decoding="async"
+       width="200"
+       height="75"
+     />
+   </picture>
+ </a>
+ <h3><a href="${post.url}">${post.title}</a></h3>
+ <div id="published">
+   Published:
+   <em><time itemprop="datePublished" datetime="${post.publishDate}">
+     ${published}
+   </time></em>
+ </div>
+ <p>${post.description}</p>
+      `;
+
+      latestGrid.appendChild(card);
+    });
+
+    loadedCount += slice.length;
+
+    loading.style.display = "none";
+    showMoreButton.disabled = false;
+    isLoading = false;
+
+    if (loadedCount >= searchIndex.length) {
+      showMoreButton.style.display = "none";
+    }
+  }
+
+  // Load initial posts without showing spinner
+  loadPosts(10, false);
+
+  showMoreButton.addEventListener("click", () => loadPosts(10));
+});
+
