@@ -20,7 +20,8 @@ for (const file of articleFiles) {
   const html = await readFile(join(articlesDir, file), 'utf8');
   const author = html.match(/<meta[^>]*name=["']author["'][^>]*content=["']([^"']+)["']/i)?.[1];
   if (!author) continue;
-  const title = html.match(/<title>([^<]+)<\/title>/i)?.[1].replace(/\s+/g, ' ').trim() || file;
+  const rawTitle = html.match(/<title>([^<]+)<\/title>/i)?.[1].replace(/\s+/g, ' ').trim() || file;
+  const title = rawTitle.replace(/^Travel Guide \|\s*/i, '');
   if (!authorMap.has(author)) authorMap.set(author, []);
   authorMap.get(author).push({ file, title });
 }
