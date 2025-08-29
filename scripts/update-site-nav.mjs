@@ -1,37 +1,37 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 
-const articlesDir = join(process.cwd(), "articles");
+const root = process.cwd();
+const articlesDir = join(root, "articles");
+const extraFiles = ["index.html", "search-results.html"].map((f) => join(root, f));
 
-// canonical site navigation block reused across articles
-const navBlock = `        <ul class="site-nav">
+const navBlock = `      <nav aria-label="Main site navigation">
+        <a rel="home" href="/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/assets/exitfloridakeys-logo.avif" type="image/avif" /><img src="/assets/exitfloridakeys-logo.png" alt="Travel Guide logo" class="logo" /></picture></a>
+        <ul class="site-nav">
           <li>
-            <a href="/latest-articles.html"
-              >Latest Articles</a
-            >
+            <a href="/latest-articles.html">Latest Articles</a>
           </li>
           <li>
-            <a href="/most-read-articles.html"
-              >Most Read Articles</a
-            >
+            <a href="/most-read-articles.html">Most Read Articles</a>
           </li>
           <li>
-            <a href="/articles/top-10-hidden-gems-europe.html"
-              >Top Destinations</a
-            >
+            <a href="/articles/top-10-hidden-gems-europe.html">Top Destinations</a>
           </li>
           <li>
-            <a href="/articles/navigating-night-markets-food-lovers-guide.html"
-              >Editor’s Pick</a
-            >
+            <a href="/articles/navigating-night-markets-food-lovers-guide.html">Editor’s Picks</a>
           </li>
-        </ul>`;
+        </ul>
+      </nav>`;
 
-const files = (await readdir(articlesDir)).filter((f) => f.endsWith(".html"));
+const articleFiles = (await readdir(articlesDir)).filter((f) => f.endsWith(".html"));
+const targets = articleFiles.map((f) => join(articlesDir, f)).concat(extraFiles);
 
-for (const file of files) {
-  const filePath = join(articlesDir, file);
+for (const filePath of targets) {
   const html = await readFile(filePath, "utf8");
-  const updated = html.replace(/^[ \t]*<ul class="site-nav">[\s\S]*?<\/ul>/m, navBlock);
+  const updated = html.replace(
+    /<nav aria-label="Main site navigation">[\s\S]*?<\/nav>/,
+    navBlock
+  );
   await writeFile(filePath, updated);
 }
+
