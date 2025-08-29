@@ -5,6 +5,37 @@ const root = process.cwd();
 const articlesDir = join(root, 'articles');
 const authorsDir = join(root, 'authors');
 
+const navBlock = `        <ul class="site-nav">
+          <li>
+            <a href="/latest-articles.html"
+              >Latest Articles</a
+            >
+          </li>
+          <li>
+            <a href="/most-read-articles.html"
+              >Most Read Articles</a
+            >
+          </li>
+          <li>
+            <a href="/articles/top-10-hidden-gems-europe.html"
+              >Top Destinations</a
+            >
+          </li>
+          <li>
+            <a href="/articles/navigating-night-markets-food-lovers-guide.html"
+              >Editor’s Pick</a
+            >
+          </li>
+        </ul>`;
+
+const headerBlock = `    <header>
+      <nav aria-label="Main site navigation">
+        <a rel="home" href="/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/assets/exitfloridakeys-logo.avif" type="image/avif" /><img src="/assets/exitfloridakeys-logo.png" alt="Travel Guide logo" class="logo" /></picture></a>
+${navBlock}
+      </nav>
+      <hr />
+    </header>`;
+
 function slugify(name) {
   return name
     .toLowerCase()
@@ -43,6 +74,7 @@ for (const [author, articles] of authorMap.entries()) {
 
   const listHtml = `      <h2>Articles by ${author}</h2>\n      <ul>\n${listItems}\n      </ul>`;
 
+  html = html.replace(/<header>[\s\S]*?<hr \/>\s*<\/header>/, headerBlock);
   html = html.replace(/\n\s*<h2>Articles(?: by [^<]+)?<\/h2>\s*<ul>[\s\S]*?<\/ul>/, `\n${listHtml}`);
   html = html.replace(
     '<p><a href="/about-us.html">Back to About Us</a></p>',

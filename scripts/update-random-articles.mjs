@@ -8,6 +8,37 @@ const pages = [
   join(root, "most-read-articles.html"),
 ];
 
+const navBlock = `        <ul class="site-nav">
+          <li>
+            <a href="/latest-articles.html"
+              >Latest Articles</a
+            >
+          </li>
+          <li>
+            <a href="/most-read-articles.html"
+              >Most Read Articles</a
+            >
+          </li>
+          <li>
+            <a href="/articles/top-10-hidden-gems-europe.html"
+              >Top Destinations</a
+            >
+          </li>
+          <li>
+            <a href="/articles/navigating-night-markets-food-lovers-guide.html"
+              >Editor’s Pick</a
+            >
+          </li>
+        </ul>`;
+
+const headerBlock = `    <header>
+      <nav aria-label="Main site navigation">
+        <a rel="home" href="/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/assets/exitfloridakeys-logo.avif" type="image/avif" /><img src="/assets/exitfloridakeys-logo.png" alt="Travel Guide logo" class="logo" /></picture></a>
+${navBlock}
+      </nav>
+      <hr />
+    </header>`;
+
 const searchData = JSON.parse(await readFile(dataFile, "utf8"));
 
 function shuffle(array) {
@@ -52,9 +83,11 @@ for (const page of pages) {
   const count = Math.floor(Math.random() * 6) + 5;
   const markup = buildMarkup(shuffled.slice(0, count));
   const html = await readFile(page, "utf8");
-  const updated = html.replace(
-    /<section id="results">[\s\S]*?<\/section>/,
-    `<section id="results">\n${markup}\n      </section>`
-  );
+  const updated = html
+    .replace(/<header>[\s\S]*?<hr \/>\s*<\/header>/, headerBlock)
+    .replace(
+      /<section id="results">[\s\S]*?<\/section>/,
+      `<section id="results">\n${markup}\n      </section>`
+    );
   await writeFile(page, updated);
 }

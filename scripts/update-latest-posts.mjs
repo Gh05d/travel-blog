@@ -6,6 +6,50 @@ const articlesDir = join(process.cwd(), "articles");
 const indexFile = join(process.cwd(), "index.html");
 const placeholderImg = "/assets/images/hero-image-fallback.jpg";
 
+const navBlock = `        <ul class="site-nav">
+          <li>
+            <a href="/latest-articles.html"
+              >Latest Articles</a
+            >
+          </li>
+          <li>
+            <a href="/most-read-articles.html"
+              >Most Read Articles</a
+            >
+          </li>
+          <li>
+            <a href="/articles/top-10-hidden-gems-europe.html"
+              >Top Destinations</a
+            >
+          </li>
+          <li>
+            <a href="/articles/navigating-night-markets-food-lovers-guide.html"
+              >Editor’s Pick</a
+            >
+          </li>
+        </ul>`;
+
+const headerBlock = `    <header>
+      <div id="header-container">
+        <nav aria-label="Main site navigation">
+          <a rel="home" href="/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/assets/exitfloridakeys-logo.avif" type="image/avif" /><img src="/assets/exitfloridakeys-logo.png" alt="Travel Guide logo" class="logo" /></picture></a>
+${navBlock}
+        </nav>
+        <search>
+          <form id="search-form" action="/search-results" method="get">
+            <input
+              type="search"
+              id="search"
+              name="query"
+              placeholder="Search posts..."
+              required
+            />
+          </form>
+        </search>
+      </div>
+      <hr />
+    </header>`;
+
 // Read article files
 const files = (await readdir(articlesDir)).filter((f) => f.endsWith(".html"));
 const entries = [];
@@ -76,10 +120,12 @@ const parts = latest.map((article, index) => {
 const newMarkup = `<div id=\"latest-posts\">\n${parts.join("\n")}\n        </div>`;
 
 const indexHtml = await readFile(indexFile, "utf8");
-const updatedHtml = indexHtml.replace(
-  /<div id="latest-posts">[\s\S]*?<\/div>/,
-  newMarkup
-);
+const updatedHtml = indexHtml
+  .replace(/<header>[\s\S]*?<hr \/>\s*<\/header>/, headerBlock)
+  .replace(
+    /<div id="latest-posts">[\s\S]*?<\/div>/,
+    newMarkup
+  );
 
 await writeFile(indexFile, updatedHtml);
 
