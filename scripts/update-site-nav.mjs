@@ -3,7 +3,9 @@ import { join } from "node:path";
 
 const root = process.cwd();
 const articlesDir = join(root, "articles");
-const extraFiles = ["index.html", "search-results.html"].map((f) => join(root, f));
+const extraFiles = ["index.html", "search-results.html"].map((f) =>
+  join(root, f)
+);
 
 const navBlock = `      <nav aria-label="Main site navigation">
         <a rel="home" href="/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/assets/exitfloridakeys-logo.avif" type="image/avif" /><img src="/assets/exitfloridakeys-logo.png" alt="Travel Guide logo" class="logo" /></picture></a>
@@ -18,13 +20,17 @@ const navBlock = `      <nav aria-label="Main site navigation">
             <a href="/articles/top-10-hidden-gems-europe.html">Top Destinations</a>
           </li>
           <li>
-            <a href="/articles/navigating-night-markets-food-lovers-guide.html">Editor’s Picks</a>
+            <a href="/articles/navigating-night-markets-food-lovers-guide.html">Editor’s Pick</a>
           </li>
         </ul>
       </nav>`;
 
-const articleFiles = (await readdir(articlesDir)).filter((f) => f.endsWith(".html"));
-const targets = articleFiles.map((f) => join(articlesDir, f)).concat(extraFiles);
+const articleFiles = (await readdir(articlesDir)).filter((f) =>
+  f.endsWith(".html")
+);
+const targets = articleFiles
+  .map((f) => join(articlesDir, f))
+  .concat(extraFiles);
 
 for (const filePath of targets) {
   const html = await readFile(filePath, "utf8");
@@ -34,4 +40,3 @@ for (const filePath of targets) {
   );
   await writeFile(filePath, updated);
 }
-
