@@ -5,39 +5,43 @@ import path from 'node:path';
 const ROOT = path.resolve(process.cwd());
 const ARTICLES_DIR = path.join(ROOT, 'articles');
 
-const snippet = `          <picture>
+function buildSnippet(seed) {
+  const base = `https://picsum.photos/seed/${seed}`;
+  return `          <picture>
             <!-- Desktop -->
             <source
               type="image/webp"
               media="(min-width:76rem)"
-              srcset="https://picsum.photos/1080/400.webp?random=1"
+              srcset="${base}/1080/400.webp"
             />
             <source
               media="(min-width:76rem)"
-              srcset="https://picsum.photos/1080/400.jpg?random=1"
+              srcset="${base}/1080/400.jpg"
             />
 
             <!-- Tablet -->
             <source
               type="image/webp"
               media="(min-width:38rem)"
-              srcset="https://picsum.photos/800/300.webp?random=2"
+              srcset="${base}/800/300.webp"
             />
             <source
               media="(min-width:38rem)"
-              srcset="https://picsum.photos/800/300.jpg?random=2"
+              srcset="${base}/800/300.jpg"
             />
 
             <!-- Mobile Fallback -->
             <img
-              src="https://picsum.photos/400/200.jpg?random=3"
+              src="${base}/400/200.jpg"
               alt="Random placeholder photo"
+              title="Photo via https://picsum.photos"
               width="1080"
               height="400"
               loading="lazy"
               decoding="async"
             />
           </picture>`;
+}
 
 // Recursively collect files under a directory
 async function* walk(dir) {
@@ -53,7 +57,7 @@ async function* walk(dir) {
 }
 
 // Replace <picture> blocks that contain random placeholders
-function replaceRandomPictures(html) {
+function replaceRandomPictures(html, seed) {
   const re = /<picture[\s\S]*?<\/picture>/g; // non-greedy match across lines
   let count = 0;
   const replaced = html.replace(re, (match) => {
@@ -66,7 +70,7 @@ function replaceRandomPictures(html) {
     const indentationMatch = match.match(/^(\s*)<picture/m);
     const indent = indentationMatch ? indentationMatch[1] : '';
     // Indent each line of snippet with the detected indent
-    const indented = snippet
+    const indented = buildSnippet(seed)
       .split('\n')
       .map((line) => (line.length ? indent + line : line))
       .join('\n');
@@ -82,7 +86,10 @@ async function main() {
   for await (const file of walk(ARTICLES_DIR)) {
     if (!file.endsWith('.html')) continue;
     const original = await fs.readFile(file, 'utf8');
-    const { replaced, count } = replaceRandomPictures(original);
+    // Use the article URL path as a deterministic seed, URL-encoded
+    const relativePath = '/' + path.relative(ROOT, file).replace(/\\/g, '/');
+    const seed = encodeURIComponent(relativePath);
+    const { replaced, count } = replaceRandomPictures(original, seed);
     if (count > 0) {
       await fs.writeFile(file, replaced, 'utf8');
       totalFiles += 1;
@@ -98,4 +105,3 @@ main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
-
