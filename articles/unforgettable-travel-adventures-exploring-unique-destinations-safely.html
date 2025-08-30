@@ -300,23 +300,39 @@
           </form>
         
 <figure>
-  <picture>
-    <!-- Desktop: full-width -->
-    <source media="(min-width:76rem)" srcset="
-        https://source.unsplash.com/random/1080x400?travel&sig=116661&dpr=2 2160w,
-        https://source.unsplash.com/random/1080x400?travel&sig=116661 1080w
-      " sizes="(min-width:76rem) 76rem, 100vw" />
-    <!-- Tablet -->
-    <source media="(min-width:38rem)" srcset="
-        https://source.unsplash.com/random/400x150?travel&sig=116661&dpr=2 800w,
-        https://source.unsplash.com/random/400x150?travel&sig=116661 400w
-      " sizes="(min-width:38rem) 38rem, 100vw" />
-    <!-- Mobile fallback -->
-    <img src="https://source.unsplash.com/random/200x75?travel&sig=116661" srcset="
-        https://source.unsplash.com/random/200x75?travel&sig=116661&dpr=2 400w,
-        https://source.unsplash.com/random/200x75?travel&sig=116661 200w
-      " sizes="100vw" alt="Random travel image from Unsplash" loading="lazy" decoding="async" width="1080" height="400" title="https://unsplash.com" />
-  </picture>
+            <picture>
+            <!-- Desktop -->
+            <source
+              type="image/webp"
+              media="(min-width:76rem)"
+              srcset="https://picsum.photos/1080/400.webp?random=1"
+            />
+            <source
+              media="(min-width:76rem)"
+              srcset="https://picsum.photos/1080/400.jpg?random=1"
+            />
+
+            <!-- Tablet -->
+            <source
+              type="image/webp"
+              media="(min-width:38rem)"
+              srcset="https://picsum.photos/800/300.webp?random=2"
+            />
+            <source
+              media="(min-width:38rem)"
+              srcset="https://picsum.photos/800/300.jpg?random=2"
+            />
+
+            <!-- Mobile Fallback -->
+            <img
+              src="https://picsum.photos/400/200.jpg?random=3"
+              alt="Random placeholder photo"
+              width="1080"
+              height="400"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
 </figure>
 </section>
         <section>
