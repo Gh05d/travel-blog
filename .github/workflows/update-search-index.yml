@@ -17,6 +17,57 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Inject secondary figures
+        run: |
+          for file in articles/*.html; do
+            node - "$file" <<'NODE'
+const { readFile, writeFile } = require('fs/promises');
+const { basename } = require('path');
+
+(async () => {
+  const file = process.argv[2];
+  let html = await readFile(file, 'utf8');
+  const slug = basename(file, '.html');
+
+  const sidebarStart = html.indexOf('<aside id="sidebar">');
+  if (sidebarStart !== -1) {
+    const sidebarEnd = html.indexOf('</aside>', sidebarStart);
+    const sidebar = html.slice(sidebarStart, sidebarEnd);
+    const cleanedSidebar = sidebar.replace(/\n?<figure>[\s\S]*?<\/figure>\n?/, '\n');
+    html = html.slice(0, sidebarStart) + cleanedSidebar + html.slice(sidebarEnd);
+  }
+
+  const articleStart = html.indexOf('<article');
+  const asideIndex = html.indexOf('<aside id="sidebar">');
+  const articleContent = html.slice(articleStart, asideIndex);
+
+  if (articleContent.includes('picsum.photos/seed/' + slug)) return;
+
+  const sectionMatches = [...articleContent.matchAll(/<section/gi)];
+  const articleEndIndex = html.indexOf('</article>', articleStart);
+  let insertPos = articleEndIndex;
+  if (sectionMatches.length >= 3) {
+    let idx = -1; let count = 0;
+    const regex = /<\/section>/gi;
+    let match;
+    while ((match = regex.exec(articleContent)) && count < 3) { idx = match.index; count++; }
+    insertPos = articleStart + idx + '</section>'.length;
+  } else if (sectionMatches.length >= 2) {
+    let idx = -1; let count = 0;
+    const regex = /<\/section>/gi;
+    let match;
+    while ((match = regex.exec(articleContent)) && count < 2) { idx = match.index; count++; }
+    insertPos = articleStart + idx + '</section>'.length;
+  }
+
+  const figureMarkup = `\n        <figure>\n          <picture>\n            <!-- Desktop -->\n            <source type="image/webp" media="(min-width:76rem)" srcset="https://picsum.photos/seed/${slug}/1080/400.webp" />\n            <source media="(min-width:76rem)" srcset="https://picsum.photos/seed/${slug}/1080/400.jpg" />\n            <!-- Tablet -->\n            <source type="image/webp" media="(min-width:38rem)" srcset="https://picsum.photos/seed/${slug}/800/300.webp" />\n            <source media="(min-width:38rem)" srcset="https://picsum.photos/seed/${slug}/800/300.jpg" />\n            <!-- Mobile Fallback -->\n            <img src="https://picsum.photos/seed/${slug}/400/200.jpg" alt="Random placeholder photo" title="Photo via https://picsum.photos" width="1080" height="400" loading="lazy" decoding="async" />\n          </picture>\n        </figure>\n`;
+
+  const updated = html.slice(0, insertPos) + figureMarkup + html.slice(insertPos);
+  await writeFile(file, updated);
+})();
+NODE
+          done
+
       - name: Update search index
         run: node scripts/update-search-index.mjs
 
