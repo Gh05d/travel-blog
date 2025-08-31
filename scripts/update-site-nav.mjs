@@ -8,7 +8,7 @@ const extraFiles = ["index.html", "search-results.html"].map((f) =>
 );
 
 const navBlock = `      <nav aria-label="Main site navigation">
-        <a rel="home" href="/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/assets/exitfloridakeys-logo.avif" type="image/avif" /><img src="/assets/exitfloridakeys-logo.png" alt="Travel Guide logo" class="logo" /></picture></a>
+        <a rel="home" href="/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/assets/logo.avif" type="image/avif" /><img src="/assets/logo.png" alt="Travel Guide logo" class="logo" /></picture></a>
         <ul class="site-nav">
           <li>
             <a href="/latest-articles.html">Latest Articles</a>
