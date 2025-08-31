@@ -47,7 +47,7 @@ jobs:
               slug=$(basename "$html" .html)
               xmlstarlet ed -L \
                 -N sm="http://www.sitemaps.org/schemas/sitemap/0.9" \
-                -u "/sm:urlset/sm:url[sm:loc='https://exitfloridakeys.com/articles/$slug']/sm:lastmod" \
+                -u "/sm:urlset/sm:url[sm:loc='https://exitfloridakeys.com/articles/$slug.html']/sm:lastmod" \
                 -v "$datetime" \
                 sitemap.xml
             done
