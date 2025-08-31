@@ -42,19 +42,19 @@ jobs:
 
       - name: Update dates in sitemap
         run: |
-         for html in articles/*.html; do
-             datetime=$(grep -oP '<time[^>]*datetime="\K[^"]+' "$html" || true)
-             slug=$(basename "$html" .html)
-             if [ -n "$datetime" ]; then
-                 xmlstarlet ed -L \
-                   -N sm="http://www.sitemaps.org/schemas/sitemap/0.9" \
-                   -u "/sm:urlset/sm:url[sm:loc='https://exitfloridakeys.com/articles/$slug.html']/sm:lastmod" \
-                   -v "$datetime" \
-                   sitemap.xml
-             else
-                 echo "No datetime found in $html, skipping..."
-             fi
-         done
+          for html in articles/*.html; do
+              datetime=$(grep -oP '<time[^>]*datetime="\K[^"]+' "$html" || true)
+              slug=$(basename "$html" .html)
+              if [ -n "$datetime" ]; then
+                  xmlstarlet ed -L \
+                    -N sm="http://www.sitemaps.org/schemas/sitemap/0.9" \
+                    -u "/sm:urlset/sm:url[sm:loc='https://exitfloridakeys.com/articles/$slug.html']/sm:lastmod" \
+                    -v "$datetime" \
+                    sitemap.xml
+              else
+                  echo "No datetime found in $html, skipping..."
+              fi
+          done
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
