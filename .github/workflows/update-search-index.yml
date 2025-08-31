@@ -17,6 +17,9 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Update sidebar
+        run: node scripts/update-sidebar.mjs
+
       - name: Inject secondary figures
         run: |
           for file in articles/*.html; do
