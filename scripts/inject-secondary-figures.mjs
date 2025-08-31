@@ -31,6 +31,12 @@ for (const file of files) {
   const bound = asideIndex !== -1 ? asideIndex : (articleEndIndex !== -1 ? articleEndIndex : html.length);
   const articleContent = html.slice(articleStart, bound);
 
+  // Count existing figures in the article body (skip header and sidebar)
+  const headerEnd = articleContent.indexOf("</header>");
+  const articleBody = headerEnd !== -1 ? articleContent.slice(headerEnd) : articleContent;
+  const figureCount = (articleBody.match(/<figure/gi) || []).length;
+  if (figureCount >= 2) continue;
+
   // Skip if the placeholder image for this slug already exists
   if (articleContent.includes("picsum.photos/seed/" + slug)) continue;
 
