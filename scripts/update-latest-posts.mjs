@@ -84,14 +84,6 @@ const updatedHtml = indexHtml.replace(
 
 await writeFile(indexFile, updatedHtml);
 
-function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
 function buildMarkup(posts) {
   return posts
     .map((post) => {
@@ -124,9 +116,7 @@ function buildMarkup(posts) {
     .join("\n");
 }
 
-const shuffled = shuffle([...latest]);
-const count = Math.floor(Math.random() * 6) + 5;
-const markup = buildMarkup(shuffled.slice(0, count));
+const markup = buildMarkup(latest);
 const latestHtml = await readFile(latestArticlesFile, "utf8");
 const updatedLatestHtml = latestHtml.replace(
   /<section id="results">[\s\S]*?<\/section>/,
