@@ -38,6 +38,13 @@ for (const file of files) {
     imageAlt = imgTag.match(/alt=["']([^"]*)["']/i)?.[1] || "";
   }
 
+  const author =
+    html.match(/<meta[^>]*name=["']author["'][^>]*content=["']([^"']+)["']/i)?.[1] || "";
+  const authorSlug = author
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+
   index.push({
     title,
     url: `/articles/${file}`,
@@ -45,6 +52,8 @@ for (const file of files) {
     description,
     publishDate,
     imageUrl,
+    author,
+    authorSlug,
   });
 }
 
