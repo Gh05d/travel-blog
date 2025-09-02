@@ -34,7 +34,8 @@ function buildMarkup(posts) {
         `      </a>\n\n` +
         `      <h3><a href="${post.url}">${post.title}</a></h3>\n\n` +
         `      <div id="published">\n` +
-        `        By <a href="/authors/${post.authorSlug}.html">${post.author}</a> | Published:\n` +
+        `        By <a href="/authors/${post.authorSlug}.html"><img src="/assets/team/${post.authorSlug}.webp" alt="${post.author}" class="author-thumb" /> ${post.author}</a><br />
+        Published:\n` +
         `        <em><time itemprop="datePublished" datetime="${post.publishDate}">\n` +
         `            ${date}</time></em>\n` +
         `      </div>\n\n` +
