@@ -1,1 +1,65 @@
-window.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("loading"),n=document.getElementById("show-more-button"),t=document.getElementById("latest-grid");if(!(e&&n&&t))return;let i=[],a=document.getElementById("latest-posts")?.children?.length||0,l=!1;n.addEventListener("click",()=>async function(d,s=!0){if(l)return;if(l=!0,s&&(e.style.display="block"),n.disabled=!0,0===i.length){const e=await fetch("assets/search.json");i=await e.json(),i.sort((e,n)=>new Date(n.publishDate)-new Date(e.publishDate))}const r=i.slice(a,a+d);r.forEach(e=>{const n=new Date(e.publishDate).toLocaleDateString("en-US",{year:"numeric",month:"long",day:"numeric"}),i=document.createElement("div");i.className="card",i.innerHTML=`\n <a aria-label="${e.imageAlt}" href="${e.url}">\n   <picture>\n     <img\n       src="${e.imageUrl}"\n       srcset="\n         ${e.imageUrl} 200w,\n         ${e.imageUrl}&dpr=2 400w\n       "\n       sizes="(min-width:76rem) 18rem, 100vw"\n       alt="${e.imageAlt}"\n       loading="lazy"\n       decoding="async"\n       width="200"\n       height="75"\n     />\n   </picture>\n </a>\n <h3><a href="${e.url}">${e.title}</a></h3>\n <div id="published">\n   Published:\n   <em><time itemprop="datePublished" datetime="${e.publishDate}">\n     ${n}\n   </time></em>\n </div>\n <p>${e.description}</p>\n      `,t.appendChild(i)}),a+=r.length,e.style.display="none",n.disabled=!1,l=!1,a>=i.length&&(n.style.display="none")}(10))});
+window.addEventListener("DOMContentLoaded", () => {
+  const loading = document.getElementById("loading"),
+    button = document.getElementById("show-more-button"),
+    grid = document.getElementById("latest-grid");
+  if (!(loading && button && grid)) return;
+  let cache = [],
+    offset = document.getElementById("latest-posts")?.children?.length || 0,
+    busy = false;
+  button.addEventListener("click", () =>
+    (async function (count, showLoading = true) {
+      if (busy) return;
+      if ((busy = true), showLoading && (loading.style.display = "block"), (button.disabled = true), cache.length === 0) {
+        const resp = await fetch("assets/search.json");
+        cache = await resp.json();
+        cache.sort(
+          (a, b) => new Date(b.publishDate) - new Date(a.publishDate)
+        );
+      }
+      const slice = cache.slice(offset, offset + count);
+      slice.forEach((e) => {
+        const date = new Date(e.publishDate).toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        });
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+ <a aria-label="${e.imageAlt}" href="${e.url}">
+   <picture>
+     <img
+       src="${e.imageUrl}"
+       srcset="
+         ${e.imageUrl} 200w,
+         ${e.imageUrl}&dpr=2 400w
+       "
+       sizes="(min-width:76rem) 18rem, 100vw"
+       alt="${e.imageAlt}"
+       loading="lazy"
+       decoding="async"
+       width="200"
+       height="75"
+     />
+   </picture>
+ </a>
+ <h3><a href="${e.url}">${e.title}</a></h3>
+ <div id="published">
+   By <a href="/authors/${e.authorSlug}.html">${e.author}</a> | Published:
+   <em><time itemprop="datePublished" datetime="${e.publishDate}">
+${date}
+   </time></em>
+ </div>
+ <p>${e.description}</p>
+      `;
+        grid.appendChild(card);
+      });
+      offset += slice.length;
+      loading.style.display = "none";
+      button.disabled = false;
+      busy = false;
+      offset >= cache.length && (button.style.display = "none");
+    })(10)
+  );
+});
+
