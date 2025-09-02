@@ -99,6 +99,7 @@
   />
 
   <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/styles/sidebar.css" />
 
   <title>Travel Guide | Discover Relaxing and Affordable Travel-Related Hobbies for Everyone</title>
 </head>
@@ -106,37 +107,20 @@
 <body>
 
    <header>
-      <nav aria-label="Main site navigation">
-      <a rel="home" href="/" id="title" aria-label="Travel Guide Home"
-          ><picture class="logo"
-            ><source
-              srcset="/assets/logo.avif"
-              type="image/avif" />
-            <img
-              src="/assets/logo.png"
-              alt="Travel Guide logo"
-              class="logo" /></picture
-        ></a>
+            <nav aria-label="Main site navigation">
+        <a rel="home" href="/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/assets/logo.avif" type="image/avif" /><img src="/assets/logo.png" alt="Travel Guide logo" class="logo" /></picture></a>
         <ul class="site-nav">
           <li>
-            <a href="/articles/latest-articles.html"
-              >Latest Articles</a
-            >
+            <a href="/latest-articles.html">Latest Articles</a>
           </li>
           <li>
-            <a href="/articles/most-read-articles.html"
-              >Most‑Read Articles</a
-            >
+            <a href="/most-read-articles.html">Most Read Articles</a>
           </li>
           <li>
-            <a href="/articles/inspiring-travel-destinations-tips-2025-adventures.html"
-              >Top Destinations</a
-            >
+            <a href="/articles/top-10-hidden-gems-europe.html">Top Destinations</a>
           </li>
           <li>
-            <a href="/articles/global-gastronomy-tasting-traditional-dishes-different-cultures.html"
-              >Editor’s Pick</a
-            >
+            <a href="/articles/navigating-night-markets-food-lovers-guide.html">Editor’s Pick</a>
           </li>
         </ul>
       </nav>
@@ -316,7 +300,83 @@
     Embracing these travel-related hobbies can deepen your connection to places and people while promoting relaxation and personal growth. Start incorporating these activities into your next trip and transform the way you travel.
   </section>
   </article>
-</main>
+      <aside id="sidebar">
+        <section>
+          <h2>Search</h2>
+          <form action="/search-results" method="get">
+            <input
+              type="search"
+              name="query"
+              placeholder="Search articles..."
+              aria-label="Search articles"
+            />
+          </form>
+        </section>
+        <section>
+            <h2>Recent Articles</h2>
+                <ul>
+            <li>
+              <a href="/articles/relaxing-affordable-travel-hobbies-for-everyone.html">Discover Relaxing and Affordable Travel-Related Hobbies for Everyone</a>
+            </li>
+            <li>
+              <a href="/articles/discover-inspiring-travel-experiences-safety-tips-2025.html">Discover Inspiring Travel Experiences and Safety Tips for 2025</a>
+            </li>
+            <li>
+              <a href="/articles/discover-top-travel-destinations-insider-experiences-2025.html">Discover Top Travel Destinations and Insider Experiences in 2025</a>
+            </li>
+            <li>
+              <a href="/articles/embrace-joy-travel-inspiring-stories-top-tips-2025.html">Embrace the Joy of Travel: Inspiring Stories and Top Tips for 2025</a>
+            </li>
+            <li>
+              <a href="/articles/embrace-life-fully-inspiring-travel-stories-hidden-gems-2025.html">Embrace Life Fully: Inspiring Travel Stories and Hidden Gems for 2025</a>
+            </li>
+                </ul>
+                </section>
+        <section>
+          <h2>Hot Articles</h2>
+          <ul>
+            <li>
+              <a href="/articles/eco-friendly-traveling-world-sustainably.html"
+                >Eco-Friendly Traveling: Exploring the World Sustainably</a
+              >
+            </li>
+            <li>
+              <a href="/articles/top-surfing-destinations-world.html"
+                >Top Surfing Destinations in the World</a
+              >
+            </li>
+            <li>
+              <a href="/articles/travel-budget-tips.html"
+                >Essential Travel Budget Tips</a
+              >
+            </li>
+            <li>
+              <a href="/articles/exploring-unesco-sites.html"
+                >Exploring UNESCO Sites</a
+              >
+            </li>
+            <li>
+              <a href="/articles/solo-travel-safety-guide.html"
+                >Solo Travel Safety Guide</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section id="random-image">
+          <img
+            src="https://picsum.photos/200"
+            alt="Random travel photo from Picsum.photos"
+          />
+        </section>
+        <section>
+          <h2>Travel Quote</h2>
+          <blockquote>
+            Traveling – it leaves you speechless, then turns you into a
+            storyteller.
+          </blockquote>
+        </section>
+      </aside>
+    </main>
 
 
 <footer>
