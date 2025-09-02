@@ -35,6 +35,13 @@ export async function getLatestArticles(limit = Infinity) {
       imageAlt = imgTag.match(/alt=['\"]([^'\"]*)['\"]/i)?.[1] || "";
     }
 
+    const author =
+      html.match(/<meta[^>]*name=['\"]author['\"][^>]*content=['\"]([^'\"]+)['\"]/i)?.[1] || "";
+    const authorSlug = author
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
+
     entries.push({
       title,
       url: `/articles/${file}`,
@@ -42,6 +49,8 @@ export async function getLatestArticles(limit = Infinity) {
       publishDate,
       imageUrl,
       imageAlt,
+      author,
+      authorSlug,
     });
   }
 
