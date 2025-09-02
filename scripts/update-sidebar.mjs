@@ -1,10 +1,18 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
+import { getLatestArticles } from "./lib/get-latest-articles.mjs";
 
 const root = process.cwd();
 const articlesDir = join(root, "articles");
 
 const sidebarLink = '<link rel="stylesheet" href="../assets/styles/sidebar.css" />';
+
+const latestList = (await getLatestArticles(5))
+  .map(({ title, url }) =>
+    `            <li>\n              <a href="${url}">${title}</a>\n            </li>`
+  )
+  .join("\n");
+
 const sidebarMarkup = `      <aside id="sidebar">
         <section>
           <h2>Search</h2>
@@ -18,37 +26,11 @@ const sidebarMarkup = `      <aside id="sidebar">
           </form>
         </section>
         <section>
-          <h2>Recent Articles</h2>
-          <ul>
-            <li>
-              <a
-                href="/articles/african-safari-experience-a-journey-into-the-wild.html"
-                >The African Safari Experience: A Journey into the Wild</a
-              >
-            </li>
-            <li>
-              <a
-                href="/articles/architectural-marvels-modern-wonders-world.html"
-                >Architectural Marvels: A Closer Look at Modern Wonders of the
-                World</a
-              >
-            </li>
-            <li>
-              <a href="/articles/behind-scenes-worlds-largest-festivals.html"
-                >Behind the Scenes: How the World's Largest Festivals are
-                Organized</a
-              >
-            </li>
-            <li>
-              <a href="/articles/best-safari-destinations.html"
-                >Best Safari Destinations</a
-              >
-            </li>
-            <li>
-              <a href="/articles/best-travel-apps.html">Best Travel Apps</a>
-            </li>
-          </ul>
-        </section>
+            <h2>Recent Articles</h2>
+                <ul>
+${latestList}
+                </ul>
+                </section>
         <section>
           <h2>Hot Articles</h2>
           <ul>
@@ -110,9 +92,14 @@ for (const file of articleFiles) {
     );
   }
 
-  if (!html.includes('<aside id="sidebar">')) {
-    updated = updated.replace(/<\/main>/, `${sidebarMarkup}\n    </main>`);
-  }
+    if (html.includes('<aside id="sidebar">')) {
+      updated = updated.replace(
+        /<aside id="sidebar">[\s\S]*?<\/aside>/,
+        sidebarMarkup
+      );
+    } else {
+      updated = updated.replace(/<\/main>/, `${sidebarMarkup}\n    </main>`);
+    }
 
   if (updated !== html) {
     await writeFile(filePath, updated);

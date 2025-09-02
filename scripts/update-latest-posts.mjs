@@ -1,56 +1,13 @@
-import { readdir, readFile, writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import layout from "./latest-layout.json" with { type: "json" };
+import { getLatestArticles } from "./lib/get-latest-articles.mjs";
 
-const articlesDir = join(process.cwd(), "articles");
 const indexFile = join(process.cwd(), "index.html");
 const latestArticlesFile = join(process.cwd(), "latest-articles.html");
 const placeholderImg = "/assets/images/hero-image-fallback.jpg";
 
-// Read article files
-const files = (await readdir(articlesDir)).filter((f) => f.endsWith(".html"));
-const entries = [];
-
-for (const file of files) {
-  const html = await readFile(join(articlesDir, file), "utf8");
-
-  let title =
-    html.match(
-      /<meta[^>]*property=["']og:title["'][^>]*content=["']([^"']+)["'][^>]*>/i
-    )?.[1] || "";
-  title = title.replace(/^Travel Guide \|\s*/, "");
-
-  const descMatch = html.match(
-    /<p[^>]*itemprop=["']description["'][^>]*>([\s\S]*?)<\/p>/i
-  );
-  const description = descMatch
-    ? descMatch[1].replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim()
-    : "";
-
-  const publishDate =
-    html.match(/<time[^>]*datetime=["']([^"']+)["']/i)?.[1] || "";
-
-  const figureMatch = html.match(/<figure[\s\S]*?<img[^>]*>/i);
-  let imageUrl = "";
-  let imageAlt = "";
-  if (figureMatch) {
-    const imgTag = figureMatch[0].match(/<img[^>]*>/i)?.[0] || "";
-    imageUrl = imgTag.match(/src=["']([^"']+)["']/i)?.[1] || "";
-    imageAlt = imgTag.match(/alt=["']([^"']*)["']/i)?.[1] || "";
-  }
-
-  entries.push({
-    title,
-    url: `/articles/${file}`,
-    description,
-    publishDate,
-    imageUrl,
-    imageAlt,
-  });
-}
-
-entries.sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
-const latest = entries.slice(0, 12);
+const latest = await getLatestArticles(12);
 
 const parts = latest.map((article, index) => {
   const { title, url, description, imageUrl, imageAlt } = article;
