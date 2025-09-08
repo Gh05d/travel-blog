@@ -1,1 +1,9 @@
-.author-main{background-color:#fff}.author-main img{display:block;height:auto;margin-bottom:1rem;max-width:100%}
+.author-main {
+  background-color: #fff;
+}
+.author-main img {
+  display: block;
+  height: auto;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
