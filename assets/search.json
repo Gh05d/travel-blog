@@ -10,6 +10,16 @@
     "authorSlug": "shamina-cody"
   },
   {
+    "title": "Discover Bali's Rich Cultural Heritage Through Its Traditional Arts and Festivals",
+    "url": "/articles/discover-bali-traditional-arts-festivals.html",
+    "imageAlt": "people gathering near structure",
+    "description": "Did you know that Bali's traditional dance performances can last for hours and often unfold in temple courtyards under starlit skies? By visiting during key Hindu festivals, you can witness an immersive blend of art, spirituality, and community rarely found elsewhere.",
+    "publishDate": "2026-02-01",
+    "imageUrl": "https://images.unsplash.com/photo-1553984692-28866d21c23b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxCYWxpJTIwdHJhZGl0aW9uYWwlMjBCYWxpbmVzZSUyMGRhbmNlJTIwcGVyZm9ybWFuY2UlMjBhdCUyMFVidWQlMjBQYWxhY2UlMjBhdXRoZW50aWMlMjBzdHJlZXQlMjBzY2VuZXN8ZW58MHwwfHx8MTc2OTk0NTI1M3ww&ixlib=rb-4.1.0&q=80&w=1080?w=200",
+    "author": "Shamina Cody",
+    "authorSlug": "shamina-cody"
+  },
+  {
     "title": "Discover Paris Through Its Hidden Gems: Unseen Spots Off the Beaten Path",
     "url": "/articles/discover-paris-hidden-gems-unseen-spots.html",
     "imageAlt": "a view of a building with a dome in the background",
@@ -18,6 +28,26 @@
     "imageUrl": "https://images.unsplash.com/photo-1636619300466-559404d1feb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwyfHxEaXNjb3ZlciUyMFdhbGtzJTIwUGFyaXMlMjBzY2VuaWMlMjBzdHJlZXQlMjBzY2VuZSUyMHdpdGglMjBoaXN0b3JpYyUyMGFyY2hpdGVjdHVyZXxlbnwwfDB8fHwxNzY5OTMwOTAyfDA&ixlib=rb-4.1.0&q=80&w=1080?w=200",
     "author": "Danielle Eyebright",
     "authorSlug": "danielle-eyebright"
+  },
+  {
+    "title": "Discovering Bali's Hidden Gems: Off-the-Beaten-Path Experiences",
+    "url": "/articles/discovering-balis-hidden-gems-off-the-beaten-path-experiences.html",
+    "imageAlt": "brown and white houses on green grass field",
+    "description": "Did you know that some of Bali’s most captivating villages remain untouched by mass tourism, offering experiences far from the usual crowds? By exploring these hidden gems with local guides, you'll uncover authentic cultural moments and secret attractions rarely found in typical travel guides.",
+    "publishDate": "2026-02-01",
+    "imageUrl": "https://images.unsplash.com/photo-1621149745810-1b9ff757c2b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxCYWxpJTIwTG9jYWwlMjBFeHBlcmllbmNlJTIwdHJhZGl0aW9uYWwlMjB2aWxsYWdlJTIwc2NlbmUlMjByaWNlJTIwcGFkZGllc3xlbnwwfDB8fHwxNzY5OTQzOTk5fDA&ixlib=rb-4.1.0&q=80&w=1080?w=200",
+    "author": "Danielle Eyebright",
+    "authorSlug": "danielle-eyebright"
+  },
+  {
+    "title": "Experiencing Nepal’s Rich Cultural Festivals and Traditions",
+    "url": "/articles/experiencing-nepals-rich-cultural-festivals-and-traditions.html",
+    "imageAlt": "people near houses",
+    "description": "Did you know that Nepal celebrates over 50 festivals annually, seamlessly blending Hindu and Buddhist traditions in vibrant rituals? Exploring these festivals offers travelers an authentic glimpse into the country's diverse cultural tapestry and rich heritage.",
+    "publishDate": "2026-02-01",
+    "imageUrl": "https://images.unsplash.com/photo-1562135291-0f32de39d6fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwzfHxLYXRobWFuZHUlMjBEdXJiYXIlMjBTcXVhcmUlMjB2aWJyYW50JTIwZmVzdGl2YWwlMjBjZWxlYnJhdGlvbnxlbnwwfDB8fHwxNzY5OTQzODYyfDA&ixlib=rb-4.1.0&q=80&w=1080?w=200",
+    "author": "David Agnew",
+    "authorSlug": "david-agnew"
   },
   {
     "title": "Experiencing Nice: Reflections from a Seasoned European Traveler",
@@ -52,12 +82,42 @@
   {
     "title": "Exploring Nice’s Lesser-Known Sides Beyond the Promenade",
     "url": "/articles/exploring-nice-lesser-known-sides-beyond-promenade.html",
-    "imageAlt": "",
+    "imageAlt": "Nice, France coastline and beach",
     "description": "Have you ever wandered beyond Nice’s bustling Promenade des Anglais to find a side of the city where locals sip coffee in quiet courtyards and art whispers from hidden galleries? Exploring these lesser-known corners reveals authentic experiences often missed by tourists, from charming neighborhoods to tucked-away cultural spots.",
     "publishDate": "2026-02-01",
-    "imageUrl": "?w=200",
+    "imageUrl": "https://images.unsplash.com/photo-1491166617655-0723a0999cfc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200",
     "author": "David Agnew",
     "authorSlug": "david-agnew"
+  },
+  {
+    "title": "Exploring Paris Through Its Hidden Culinary Gems: A Food Lover's Guide",
+    "url": "/articles/exploring-paris-hidden-culinary-gems-food-lovers-guide.html",
+    "imageAlt": "a view of a clock tower from between two buildings",
+    "description": "Did you know that many of Paris's most authentic dining experiences hide just a few streets away from its busiest tourist hubs? This guide reveals how to navigate beyond classic hotspots to savor hidden culinary gems and master local dining customs for a truly immersive experience.",
+    "publishDate": "2026-02-01",
+    "imageUrl": "https://images.unsplash.com/photo-1705306384012-0ec8e3b48b51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxQYXJpcyUyMGhpZGRlbiUyMHJlc3RhdXJhbnRzJTIwY296eSUyMGFsbGV5d2F5JTIwZXZlbmluZyUyMGxpZ2h0fGVufDB8MHx8fDE3Njk5MzIyMjd8MA&ixlib=rb-4.1.0&q=80&w=1080?w=200",
+    "author": "Shamina Cody",
+    "authorSlug": "shamina-cody"
+  },
+  {
+    "title": "Falling in Love with Rome: A Local Experience Beyond Crowds",
+    "url": "/articles/falling-in-love-with-rome-local-experience-beyond-crowds.html",
+    "imageAlt": "Colosseum in Rome at golden hour",
+    "description": "Did you know that early mornings at the Colosseum offer a serene atmosphere rare to most visitors? Discover how to navigate Rome’s iconic sights and uncover hidden neighborhoods that reveal authentic local life beyond the tourist crowds.",
+    "publishDate": "2026-02-01",
+    "imageUrl": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200",
+    "author": "Shamina Cody",
+    "authorSlug": "shamina-cody"
+  },
+  {
+    "title": "Japan's Scenic Hiking Trails: Exploring Nature Beyond the Cities",
+    "url": "/articles/japan-scenic-hiking-trails-nature-exploration.html",
+    "imageAlt": "A stone bridge over a river surrounded by trees",
+    "description": "Did you know that Japan boasts over 10,000 miles of hiking trails, many just beyond the bustling cityscapes? Discover which lesser-known paths offer a true immersion in nature, along with practical tips for family-friendly hikes and how to navigate common challenges.",
+    "publishDate": "2026-02-01",
+    "imageUrl": "https://images.unsplash.com/photo-1738683500464-11efeb77b4d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxNb3Jpa2FtaSUyME11c2V1bSUyMGFuZCUyMEphcGFuZXNlJTIwR2FyZGVucyUyMHRyYW5xdWlsJTIwcG9uZCUyMGFuZCUyMGx1c2glMjBncmVlbmVyeXxlbnwwfDB8fHwxNzY5OTQ0MTAyfDA&ixlib=rb-4.1.0&q=80&w=1080?w=200",
+    "author": "Danielle Eyebright",
+    "authorSlug": "danielle-eyebright"
   },
   {
     "title": "Navigating Japan’s Rising Tourism: How to Avoid the Crowds",
@@ -78,6 +138,16 @@
     "imageUrl": "https://images.unsplash.com/photo-1659277352020-1af9fe708f80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwyfHxTaXRlcyUyMG9mJTIwSmFwYW4lRTIlODAlOTlzJTIwTWVpamklMjBJbmR1c3RyaWFsJTIwUmV2b2x1dGlvbiUyMGluZHVzdHJpYWwlMjBoZXJpdGFnZSUyMHNpdGUlMjBKYXBhbiUyMHRyYXZlbHxlbnwwfDB8fHwxNzY5OTMwNjY3fDA&ixlib=rb-4.1.0&q=80&w=1080?w=200",
     "author": "Lisa Crow",
     "authorSlug": "lisa-crow"
+  },
+  {
+    "title": "Savoring Nice: A Culinary Journey Through Local Markets and Flavors",
+    "url": "/articles/savoring-nice-culinary-journey-local-markets-flavors.html",
+    "imageAlt": "An outdoor market with lots of fruits and vegetables",
+    "description": "Early morning in Nice reveals vibrant markets where fresh socca and fragrant olives beckon food lovers. Discover the perfect times to visit and insider tips that unlock authentic local flavors beyond the tourist crowds.",
+    "publishDate": "2026-02-01",
+    "imageUrl": "https://images.unsplash.com/photo-1731762512350-d02e9c5be1d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwzfHxOaWNlJTIwbG9jYWwlMjBtYXJrZXRzJTIwYnVzdGxpbmclMjBzdHJlZXQlMjBzY2VuZSUyMHdpdGglMjBmcmVzaCUyMHByb2R1Y2V8ZW58MHwwfHx8MTc2OTk0NDIzMHww&ixlib=rb-4.1.0&q=80&w=1080?w=200",
+    "author": "Shamina Cody",
+    "authorSlug": "shamina-cody"
   },
   {
     "title": "What Makes Nice a Memorable Stop on European Trips",
