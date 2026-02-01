@@ -120,6 +120,16 @@
     "authorSlug": "shamina-cody"
   },
   {
+    "title": "Exploring Japan’s Ecological Parks: Conservation and Wildlife Insights",
+    "url": "/articles/exploring-japan-ecological-parks-conservation-wildlife-insights.html",
+    "imageAlt": "green leaf trees",
+    "description": "Did you know that Japan’s national parks harbor species found nowhere else on Earth, offering a unique glimpse into the country’s hidden biodiversity? From urban preserves near Tokyo to expansive wildlife safaris, visitors can experience diverse ecosystems while learning about ongoing conservation efforts.",
+    "publishDate": "2026-02-01",
+    "imageUrl": "https://images.unsplash.com/photo-1572698580186-81e068038c9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxJbnN0aXR1dGUlMjBmb3IlMjBOYXR1cmUlMjBTdHVkeSUyMFRva3lvJTIwbHVzaCUyMGdyZWVuZXJ5JTIwY2xvc2UtdXAlMjB3aWxkbGlmZXxlbnwwfDB8fHwxNzY5OTU2NTIyfDA&ixlib=rb-4.1.0&q=80&w=1080?w=200",
+    "author": "Davina Blake",
+    "authorSlug": "davina-blake"
+  },
+  {
     "title": "Exploring Japan’s Rich Cultural Traditions Beyond the Tourist Trail",
     "url": "/articles/exploring-japan-rich-cultural-traditions-beyond-tourist-trail.html",
     "imageAlt": "Travel destination landscape",
@@ -148,6 +158,16 @@
     "imageUrl": "https://images.unsplash.com/photo-1491166617655-0723a0999cfc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200",
     "author": "David Agnew",
     "authorSlug": "david-agnew"
+  },
+  {
+    "title": "Exploring Outdoor Adventures and Coastal Hikes Around Nice",
+    "url": "/articles/exploring-outdoor-adventures-coastal-hikes-nice.html",
+    "imageAlt": "Travel destination landscape",
+    "description": "Did you know that the Chemin de Nietzsche trail near Nice inspired the philosopher Friedrich Nietzsche himself with its rugged beauty and panoramic sea views? Alongside the famous coastal paths, these natural trails offer unique challenges and serene escapes just beyond the Mediterranean bustle.",
+    "publishDate": "2026-02-01",
+    "imageUrl": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080?w=200",
+    "author": "Daniil Kharms",
+    "authorSlug": "daniil-kharms"
   },
   {
     "title": "Exploring Paris Through Its Hidden Culinary Gems: A Food Lover's Guide",
