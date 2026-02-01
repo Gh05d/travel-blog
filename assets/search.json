@@ -70,6 +70,16 @@
     "authorSlug": "david-agnew"
   },
   {
+    "title": "Experiencing South Africa’s Vibrant Cultural Festivals and Traditions",
+    "url": "/articles/experiencing-south-africas-vibrant-cultural-festivals-traditions.html",
+    "imageAlt": "woman in red and gold traditional dress",
+    "description": "Did you know that South Africa hosts over 50 unique cultural festivals each year, from traditional Zulu ceremonies to vibrant street carnivals? These events offer an immersive glimpse into the country's diverse heritage and are often accompanied by authentic performing arts and local celebrations.",
+    "publishDate": "2026-02-01",
+    "imageUrl": "https://images.unsplash.com/photo-1593507721017-4072754a93ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxOYXRpb25hbCUyMEFydHMlMjBGZXN0aXZhbCUyME1ha2hhbmRhJTIwdmlicmFudCUyMHBlcmZvcm1hbmNlJTIwc3RhZ2UlMjBjdWx0dXJhbCUyMGNlbGVicmF0aW9ufGVufDB8MHx8fDE3Njk5NTUyNDl8MA&ixlib=rb-4.1.0&q=80&w=1080?w=200",
+    "author": "David Agnew",
+    "authorSlug": "david-agnew"
+  },
+  {
     "title": "Exploring Amsterdam’s Charm: Beyond the Typical Tourist Spots",
     "url": "/articles/exploring-amsterdams-charm-beyond-typical-tourist-spots.html",
     "imageAlt": "brown concrete buildings near body of water",
@@ -86,6 +96,16 @@
     "description": "Did you know that some of Paris's most cherished culinary experiences are hidden behind unmarked doors and bustling local markets? This guide reveals how to uncover authentic Parisian flavors away from tourist crowds, including securing coveted reservations and understanding price nuances.",
     "publishDate": "2026-02-01",
     "imageUrl": "?w=200",
+    "author": "Shamina Cody",
+    "authorSlug": "shamina-cody"
+  },
+  {
+    "title": "Exploring Japan’s Rich Cultural Traditions Beyond the Tourist Trail",
+    "url": "/articles/exploring-japan-rich-cultural-traditions-beyond-tourist-trail.html",
+    "imageAlt": "Travel destination landscape",
+    "description": "Many travelers rush through Japan’s iconic temples and shrines, missing the quiet villages where ancient traditions thrive untouched. Discover how venturing beyond popular landmarks reveals authentic cultural rituals, architectural treasures, and local stories rarely shared in guidebooks.",
+    "publishDate": "2026-02-01",
+    "imageUrl": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080?w=200",
     "author": "Shamina Cody",
     "authorSlug": "shamina-cody"
   },
@@ -158,6 +178,16 @@
     "imageUrl": "https://images.unsplash.com/photo-1731762512350-d02e9c5be1d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwzfHxOaWNlJTIwbG9jYWwlMjBtYXJrZXRzJTIwYnVzdGxpbmclMjBzdHJlZXQlMjBzY2VuZSUyMHdpdGglMjBmcmVzaCUyMHByb2R1Y2V8ZW58MHwwfHx8MTc2OTk0NDIzMHww&ixlib=rb-4.1.0&q=80&w=1080?w=200",
     "author": "Shamina Cody",
     "authorSlug": "shamina-cody"
+  },
+  {
+    "title": "South Africa’s Finest Luxury Safari Lodges for Exclusive Experiences",
+    "url": "/articles/south-africa-finest-luxury-safari-lodges-exclusive-experiences.html",
+    "imageAlt": "Travel destination landscape",
+    "description": "Did you know that Madikwe Game Reserve is one of South Africa’s few malaria-free reserves, making it a top choice for exclusive safari lodges? Beyond spectacular wildlife sightings, these lodges offer a blend of privacy, luxe amenities, and immersive nature experiences you won’t find elsewhere.",
+    "publishDate": "2026-02-01",
+    "imageUrl": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080?w=200",
+    "author": "Davina Blake",
+    "authorSlug": "davina-blake"
   },
   {
     "title": "What Makes Nice a Memorable Stop on European Trips",
