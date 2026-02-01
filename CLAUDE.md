@@ -49,14 +49,16 @@ No local package.json is tracked. CI workflows install dependencies inline (Post
 ### n8n Workflows (Local)
 Two main workflows handle content generation:
 
-1. **Topic Generator** - Fetches Google Trends, generates travel topics, creates Airtable records
-2. **Earnest HemmingwAI** - Full article pipeline:
+1. **Topic Generator** (`loVBaBy9K6JYCQMI`) - Fetches Google Trends, generates travel topics, creates Airtable records
+2. **Earnest HemmingwAI** (`26JTEvvmpO2nAf48`) - Full article pipeline:
    - Research phase: Scrapes Reddit, Google Maps reviews, Wikivoyage for real traveler data
    - AI generates chapters using research insights (specific places, prices, honest warnings)
    - Builds HTML article from template
    - Sets status to "Review" for human approval before publishing
 
 **Required APIs:** SerpAPI (Google Maps reviews), OpenAI, Airtable. Reddit and Wikivoyage are free.
+
+**Airtable:** Base `app94N1Rtl3jobWLe`, Table `tblfhOlFljHhmtzNu` (Arbitrage). Fields: Topic, Category, Status, Author, Keywords, Destination, Url, Sentiment.
 
 ### Automation Scripts (`/scripts`)
 Build scripts use ES Modules (`.mjs`) with Node.js native APIs. They perform regex-based HTML manipulation to inject content:
@@ -100,3 +102,18 @@ Scripts extract metadata from HTML using regex:
 ## Deployment
 
 Master branch deploys to GitHub Pages. Custom domain configured via CNAME file.
+
+## Troubleshooting
+
+### n8n Workflow Issues
+- **Duplicate articles:** Check Get Articles node filter - must include all statuses and fetch Destination field
+- **Duplicate angle detection:** Validate Angle node (Code) compares extracted angle categories against existing articles. Angles: food, hidden_gems, budget, crowds, culture, adventure, luxury, practical, history, nature. Overrides AI's `isDifferentFromExisting` if angle already covered.
+- **Empty images:** Earnest HemmingwAI Build Article node needs FALLBACK_IMAGE for when Unsplash returns no results
+- Use `mcp__n8n__n8n_get_workflow` with `mode: "full"` to inspect node parameters
+
+### SEO Requirements
+Articles must include:
+- Schema.org Article JSON-LD with `publisher`, `dateModified`, and `author.url`
+- BreadcrumbList JSON-LD (Home → Articles → Article Title)
+- Open Graph `article:published_time`, `article:modified_time`, `article:author`
+- Twitter handle: `@Memopolis228816`
