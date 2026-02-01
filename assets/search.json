@@ -40,6 +40,16 @@
     "authorSlug": "danielle-eyebright"
   },
   {
+    "title": "Discovering South Africa’s Remarkable Historical Landmarks",
+    "url": "/articles/discovering-south-africas-remarkable-historical-landmarks.html",
+    "imageAlt": "Ancient ruins of stone buildings in a dry landscape.",
+    "description": "Did you know that South Africa’s Cradle of Humankind holds over 40% of the world’s human ancestor fossils? Exploring these sites alongside the southern coast reveals a fascinating blend of breathtaking scenery and deep cultural history.",
+    "publishDate": "2026-02-01",
+    "imageUrl": "https://images.unsplash.com/photo-1760192985937-4be02e9ca7cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxDcmFkbGUlMjBvZiUyMEh1bWFua2luZCUyMGFyY2hhZW9sb2dpY2FsJTIwc2l0ZSUyMHJ1Z2dlZCUyMHRlcnJhaW4lMjBpbmZvcm1hbCUyMHRyYXZlbHxlbnwwfDB8fHwxNzY5OTU1NTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080?w=200",
+    "author": "Daniil Kharms",
+    "authorSlug": "daniil-kharms"
+  },
+  {
     "title": "Experiencing Nepal’s Rich Cultural Festivals and Traditions",
     "url": "/articles/experiencing-nepals-rich-cultural-festivals-and-traditions.html",
     "imageAlt": "people near houses",
@@ -168,6 +178,16 @@
     "imageUrl": "https://images.unsplash.com/photo-1659277352020-1af9fe708f80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwyfHxTaXRlcyUyMG9mJTIwSmFwYW4lRTIlODAlOTlzJTIwTWVpamklMjBJbmR1c3RyaWFsJTIwUmV2b2x1dGlvbiUyMGluZHVzdHJpYWwlMjBoZXJpdGFnZSUyMHNpdGUlMjBKYXBhbiUyMHRyYXZlbHxlbnwwfDB8fHwxNzY5OTMwNjY3fDA&ixlib=rb-4.1.0&q=80&w=1080?w=200",
     "author": "Lisa Crow",
     "authorSlug": "lisa-crow"
+  },
+  {
+    "title": "Navigating South Africa’s Scenic Routes: Best Road Trip Tips",
+    "url": "/articles/navigating-south-africas-scenic-routes-best-road-trip-tips.html",
+    "imageAlt": "an aerial view of a field with trees and water",
+    "description": "Did you know that South Africa’s scenic routes often reveal hidden gems unreachable by typical highways? Mastering navigation and incorporating unique transit options like the Okavango Delta boat rides and Cape Town MetroRail can transform your road trip into an unforgettable adventure.",
+    "publishDate": "2026-02-01",
+    "imageUrl": "https://images.unsplash.com/photo-1672388144534-78e131140d78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxPa2F2YW5nbyUyMERlbHRhJTIwYWVyaWFsJTIwdmlldyUyMGx1c2glMjB3ZXRsYW5kc3xlbnwwfDB8fHwxNzY5OTU1NDE5fDA&ixlib=rb-4.1.0&q=80&w=1080?w=200",
+    "author": "Shamina Cody",
+    "authorSlug": "shamina-cody"
   },
   {
     "title": "Savoring Nice: A Culinary Journey Through Local Markets and Flavors",
