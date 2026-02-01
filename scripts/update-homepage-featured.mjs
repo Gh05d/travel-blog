@@ -77,6 +77,17 @@ function buildTopStoryHtml(article) {
     day: "numeric",
   });
 
+  // Create responsive image URLs from article's Unsplash image
+  const baseImg = article.imageUrl
+    .replace(/w=\d+/g, "w=1080")
+    .replace(/h=\d+/g, "h=400");
+  const mediumImg = article.imageUrl
+    .replace(/w=\d+/g, "w=800")
+    .replace(/h=\d+/g, "h=300");
+  const smallImg = article.imageUrl
+    .replace(/w=\d+/g, "w=400")
+    .replace(/h=\d+/g, "h=150");
+
   return `      <section id="top-story">
         <h2>Top Story</h2>
 
@@ -86,32 +97,14 @@ function buildTopStoryHtml(article) {
             href="${article.url}"
           >
             <picture>
-              <!-- Desktop: full-width -->
-              <source
-                media="(min-width:76rem)"
-                srcset="/assets/images/hero-image.avif 1080w"
-                sizes="(min-width:76rem) 76rem, 100vw"
-              />
-
-              <!-- Tablet -->
-              <source
-                media="(min-width:38rem)"
-                srcset="/assets/images/hero-image-medium.avif 800w"
-                sizes="(min-width:38rem) 38rem, 100vw"
-              />
-
-              <!-- Mobile fallback -->
-              <source
-                media="(max-width:37.99rem)"
-                srcset="/assets/images/hero-image-small.avif 400w"
-                sizes="100vw"
-              />
-
-              <!-- Fallback for browsers that don't support AVIF -->
               <img
-                src="/assets/images/hero-image-fallback.jpg"
-                srcset="/assets/images/hero-image-fallback.jpg 400w"
-                sizes="100vw"
+                src="${baseImg}"
+                srcset="
+                  ${smallImg} 400w,
+                  ${mediumImg} 800w,
+                  ${baseImg} 1080w
+                "
+                sizes="(min-width:76rem) 76rem, (min-width:38rem) 38rem, 100vw"
                 alt="${article.imageAlt || article.title}"
                 decoding="async"
                 width="1080"
