@@ -52,12 +52,32 @@
   {
     "title": "Exploring Nice’s Lesser-Known Sides Beyond the Promenade",
     "url": "/articles/exploring-nice-lesser-known-sides-beyond-promenade.html",
-    "imageAlt": "",
+    "imageAlt": "Nice, France coastline and beach",
     "description": "Have you ever wandered beyond Nice’s bustling Promenade des Anglais to find a side of the city where locals sip coffee in quiet courtyards and art whispers from hidden galleries? Exploring these lesser-known corners reveals authentic experiences often missed by tourists, from charming neighborhoods to tucked-away cultural spots.",
     "publishDate": "2026-02-01",
-    "imageUrl": "?w=200",
+    "imageUrl": "https://images.unsplash.com/photo-1491166617655-0723a0999cfc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200",
     "author": "David Agnew",
     "authorSlug": "david-agnew"
+  },
+  {
+    "title": "Exploring Paris Through Its Hidden Culinary Gems: A Food Lover's Guide",
+    "url": "/articles/exploring-paris-hidden-culinary-gems-food-lovers-guide.html",
+    "imageAlt": "a view of a clock tower from between two buildings",
+    "description": "Did you know that many of Paris's most authentic dining experiences hide just a few streets away from its busiest tourist hubs? This guide reveals how to navigate beyond classic hotspots to savor hidden culinary gems and master local dining customs for a truly immersive experience.",
+    "publishDate": "2026-02-01",
+    "imageUrl": "https://images.unsplash.com/photo-1705306384012-0ec8e3b48b51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxQYXJpcyUyMGhpZGRlbiUyMHJlc3RhdXJhbnRzJTIwY296eSUyMGFsbGV5d2F5JTIwZXZlbmluZyUyMGxpZ2h0fGVufDB8MHx8fDE3Njk5MzIyMjd8MA&ixlib=rb-4.1.0&q=80&w=1080?w=200",
+    "author": "Shamina Cody",
+    "authorSlug": "shamina-cody"
+  },
+  {
+    "title": "Falling in Love with Rome: A Local Experience Beyond Crowds",
+    "url": "/articles/falling-in-love-with-rome-local-experience-beyond-crowds.html",
+    "imageAlt": "Colosseum in Rome at golden hour",
+    "description": "Did you know that early mornings at the Colosseum offer a serene atmosphere rare to most visitors? Discover how to navigate Rome’s iconic sights and uncover hidden neighborhoods that reveal authentic local life beyond the tourist crowds.",
+    "publishDate": "2026-02-01",
+    "imageUrl": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200",
+    "author": "Shamina Cody",
+    "authorSlug": "shamina-cody"
   },
   {
     "title": "Navigating Japan’s Rising Tourism: How to Avoid the Crowds",
