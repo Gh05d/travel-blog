@@ -6,6 +6,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Static HTML travel blog for exitfloridakeys.com, hosted on GitHub Pages. Uses vanilla HTML/CSS/JavaScript with Node.js automation scripts.
 
+**Content Focus:** Travel-only (no finance, health, entertainment, or hobbies topics).
+
+**Content Pipeline:** n8n workflows (local, gitignored) → Airtable → GitHub → GitHub Pages
+
 ## Common Commands
 
 All automation runs via GitHub Actions when pushing to `articles/**`. To run scripts locally:
@@ -40,6 +44,19 @@ No local package.json is tracked. CI workflows install dependencies inline (Post
 - `assets/styles/` - CSS (minified in CI)
 - `assets/scripts/` - Client-side JS modules (minified in CI)
 - `assets/search.json` - Auto-generated search index consumed by Fuse.js
+- `workflows/` - n8n workflow JSON files (gitignored, local only)
+
+### n8n Workflows (Local)
+Two main workflows handle content generation:
+
+1. **Topic Generator** - Fetches Google Trends, generates travel topics, creates Airtable records
+2. **Earnest HemmingwAI** - Full article pipeline:
+   - Research phase: Scrapes Reddit, Google Maps reviews, Wikivoyage for real traveler data
+   - AI generates chapters using research insights (specific places, prices, honest warnings)
+   - Builds HTML article from template
+   - Sets status to "Review" for human approval before publishing
+
+**Required APIs:** SerpAPI (Google Maps reviews), OpenAI, Airtable. Reddit and Wikivoyage are free.
 
 ### Automation Scripts (`/scripts`)
 Build scripts use ES Modules (`.mjs`) with Node.js native APIs. They perform regex-based HTML manipulation to inject content:
@@ -78,6 +95,7 @@ Scripts extract metadata from HTML using regex:
 - Automated branches: `automated/sitemap-update`
 - All scripts use ES Modules syntax
 - HTML manipulation uses regex patterns (no DOM parsers)
+- Article workflow status: Todo → In Progress → Review → Done (human review required)
 
 ## Deployment
 

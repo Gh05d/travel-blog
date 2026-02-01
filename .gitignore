@@ -1,1 +1,3 @@
 workflows/
+.env
+.mcp.json
