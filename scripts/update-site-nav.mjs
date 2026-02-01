@@ -3,9 +3,12 @@ import { join } from "node:path";
 
 const root = process.cwd();
 const articlesDir = join(root, "articles");
-const extraFiles = ["index.html", "search-results.html"].map((f) =>
-  join(root, f)
-);
+const extraFiles = [
+  "index.html",
+  "search-results.html",
+  "latest-articles.html",
+  "most-read-articles.html",
+].map((f) => join(root, f));
 
 const navBlock = `      <nav aria-label="Main site navigation">
         <a rel="home" href="/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/assets/logo.avif" type="image/avif" /><img src="/assets/logo.png" alt="Travel Guide logo" class="logo" /></picture></a>
@@ -17,10 +20,10 @@ const navBlock = `      <nav aria-label="Main site navigation">
             <a href="/most-read-articles.html">Most Read Articles</a>
           </li>
           <li>
-            <a href="/articles/top-10-hidden-gems-europe.html">Top Destinations</a>
+            <a href="/articles/exploring-amsterdams-charm-beyond-typical-tourist-spots.html">Top Destinations</a>
           </li>
           <li>
-            <a href="/articles/navigating-night-markets-food-lovers-guide.html">Editor’s Pick</a>
+            <a href="/articles/navigating-japans-rising-tourism-avoid-crowds.html">Editor's Pick</a>
           </li>
         </ul>
       </nav>`;

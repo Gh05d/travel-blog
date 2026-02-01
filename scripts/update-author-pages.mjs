@@ -15,10 +15,10 @@ const navBlock = `      <nav aria-label="Main site navigation">
             <a href="/most-read-articles.html">Most Read Articles</a>
           </li>
           <li>
-            <a href="/articles/top-10-hidden-gems-europe.html">Top Destinations</a>
+            <a href="/articles/exploring-amsterdams-charm-beyond-typical-tourist-spots.html">Top Destinations</a>
           </li>
           <li>
-            <a href="/articles/navigating-night-markets-food-lovers-guide.html">Editor’s Pick</a>
+            <a href="/articles/navigating-japans-rising-tourism-avoid-crowds.html">Editor's Pick</a>
           </li>
         </ul>
       </nav>`;

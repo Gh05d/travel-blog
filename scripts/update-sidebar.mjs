@@ -35,28 +35,18 @@ ${latestList}
           <h2>Hot Articles</h2>
           <ul>
             <li>
-              <a href="/articles/eco-friendly-traveling-world-sustainably.html"
-                >Eco-Friendly Traveling: Exploring the World Sustainably</a
+              <a href="/articles/exploring-amsterdams-charm-beyond-typical-tourist-spots.html"
+                >Exploring Amsterdam's Charm: Beyond the Typical Tourist Spots</a
               >
             </li>
             <li>
-              <a href="/articles/top-surfing-destinations-world.html"
-                >Top Surfing Destinations in the World</a
+              <a href="/articles/navigating-japans-rising-tourism-avoid-crowds.html"
+                >Navigating Japan's Rising Tourism: How to Avoid the Crowds</a
               >
             </li>
             <li>
-              <a href="/articles/travel-budget-tips.html"
-                >Essential Travel Budget Tips</a
-              >
-            </li>
-            <li>
-              <a href="/articles/exploring-unesco-sites.html"
-                >Exploring UNESCO Sites</a
-              >
-            </li>
-            <li>
-              <a href="/articles/solo-travel-safety-guide.html"
-                >Solo Travel Safety Guide</a
+              <a href="/articles/what-makes-nice-memorable-stop-european-trips.html"
+                >What Makes Nice a Memorable Stop on European Trips</a
               >
             </li>
           </ul>

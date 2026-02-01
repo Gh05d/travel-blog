@@ -84,4 +84,5 @@ const updatedLatestHtml = latestHtml.replace(
 await writeFile(latestArticlesFile, updatedLatestHtml);
 
 await import("./update-random-articles.mjs");
+await import("./update-homepage-featured.mjs");
 
