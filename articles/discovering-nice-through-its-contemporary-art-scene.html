@@ -140,6 +140,7 @@
   />
 
   <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/styles/sidebar.css" />
 
   <title>Travel Guide | Discovering Nice Through Its Contemporary Art Scene</title>
 </head>
@@ -147,37 +148,20 @@
 <body>
 
    <header>
-      <nav aria-label="Main site navigation">
-      <a rel="home" href="/" id="title" aria-label="Travel Guide Home"
-          ><picture class="logo"
-            ><source
-              srcset="/assets/logo.avif"
-              type="image/avif" />
-            <img
-              src="/assets/logo.png"
-              alt="Travel Guide logo"
-              class="logo" /></picture
-        ></a>
+            <nav aria-label="Main site navigation">
+        <a rel="home" href="/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/assets/logo.avif" type="image/avif" /><img src="/assets/logo.png" alt="Travel Guide logo" class="logo" /></picture></a>
         <ul class="site-nav">
           <li>
-            <a href="/articles/latest-articles.html"
-              >Latest Articles</a
-            >
+            <a href="/latest-articles.html">Latest Articles</a>
           </li>
           <li>
-            <a href="/articles/most-read-articles.html"
-              >Most-Read Articles</a
-            >
+            <a href="/most-read-articles.html">Most Read Articles</a>
           </li>
           <li>
-            <a href="/articles/south-africa-finest-luxury-safari-lodges-exclusive-experiences.html"
-              >Top Destinations</a
-            >
+            <a href="/articles/exploring-amsterdams-charm-beyond-typical-tourist-spots.html">Top Destinations</a>
           </li>
           <li>
-            <a href="/articles/navigating-japans-rising-tourism-avoid-crowds.html"
-              >Editor's Pick</a
-            >
+            <a href="/articles/navigating-japans-rising-tourism-avoid-crowds.html">Editor's Pick</a>
           </li>
         </ul>
       </nav>
@@ -375,7 +359,73 @@
     While some contemporary art venues in Nice can be tucked away and easy to miss, they reveal a rewarding depth to the city's culture. Plan your visit using gallery opening hours and guided art tours to make the most of your experience.
   </section>
   </article>
-</main>
+      <aside id="sidebar">
+        <section>
+          <h2>Search</h2>
+          <form action="/search-results" method="get">
+            <input
+              type="search"
+              name="query"
+              placeholder="Search articles..."
+              aria-label="Search articles"
+            />
+          </form>
+        </section>
+        <section>
+            <h2>Recent Articles</h2>
+                <ul>
+            <li>
+              <a href="/articles/discovering-nice-through-its-contemporary-art-scene.html">Discovering Nice Through Its Contemporary Art Scene</a>
+            </li>
+            <li>
+              <a href="/articles/exploring-japan-futuristic-technology-innovation-hubs.html">Exploring Japan’s Futuristic Technology and Innovation Hubs</a>
+            </li>
+            <li>
+              <a href="/articles/exploring-nice-coastal-marine-life-divers-perspective.html">Exploring Nice’s Coastal Marine Life: A Diver’s Perspective</a>
+            </li>
+            <li>
+              <a href="/articles/luxurious-waterfront-stays-and-premium-experiences-in-sydney.html">Luxurious Waterfront Stays and Premium Experiences in Sydney</a>
+            </li>
+            <li>
+              <a href="/articles/discovering-south-africas-remarkable-historical-landmarks.html">Discovering South Africa’s Remarkable Historical Landmarks</a>
+            </li>
+                </ul>
+                </section>
+        <section>
+          <h2>Hot Articles</h2>
+          <ul>
+            <li>
+              <a href="/articles/exploring-amsterdams-charm-beyond-typical-tourist-spots.html"
+                >Exploring Amsterdam's Charm: Beyond the Typical Tourist Spots</a
+              >
+            </li>
+            <li>
+              <a href="/articles/navigating-japans-rising-tourism-avoid-crowds.html"
+                >Navigating Japan's Rising Tourism: How to Avoid the Crowds</a
+              >
+            </li>
+            <li>
+              <a href="/articles/what-makes-nice-memorable-stop-european-trips.html"
+                >What Makes Nice a Memorable Stop on European Trips</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section id="random-image">
+          <img
+            src="https://picsum.photos/200"
+            alt="Random travel photo from Picsum.photos"
+          />
+        </section>
+        <section>
+          <h2>Travel Quote</h2>
+          <blockquote>
+            Traveling – it leaves you speechless, then turns you into a
+            storyteller.
+          </blockquote>
+        </section>
+      </aside>
+    </main>
 
 
 <footer>
