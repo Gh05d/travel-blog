@@ -140,6 +140,7 @@
   />
 
   <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/styles/sidebar.css" />
 
   <title>Travel Guide | Luxurious Waterfront Stays and Premium Experiences in Sydney</title>
 </head>
@@ -147,37 +148,20 @@
 <body>
 
    <header>
-      <nav aria-label="Main site navigation">
-      <a rel="home" href="/" id="title" aria-label="Travel Guide Home"
-          ><picture class="logo"
-            ><source
-              srcset="/assets/logo.avif"
-              type="image/avif" />
-            <img
-              src="/assets/logo.png"
-              alt="Travel Guide logo"
-              class="logo" /></picture
-        ></a>
+            <nav aria-label="Main site navigation">
+        <a rel="home" href="/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/assets/logo.avif" type="image/avif" /><img src="/assets/logo.png" alt="Travel Guide logo" class="logo" /></picture></a>
         <ul class="site-nav">
           <li>
-            <a href="/articles/latest-articles.html"
-              >Latest Articles</a
-            >
+            <a href="/latest-articles.html">Latest Articles</a>
           </li>
           <li>
-            <a href="/articles/most-read-articles.html"
-              >Most-Read Articles</a
-            >
+            <a href="/most-read-articles.html">Most Read Articles</a>
           </li>
           <li>
-            <a href="/articles/experiencing-nepals-rich-cultural-festivals-and-traditions.html"
-              >Top Destinations</a
-            >
+            <a href="/articles/exploring-amsterdams-charm-beyond-typical-tourist-spots.html">Top Destinations</a>
           </li>
           <li>
-            <a href="/articles/south-africa-finest-luxury-safari-lodges-exclusive-experiences.html"
-              >Editor's Pick</a
-            >
+            <a href="/articles/navigating-japans-rising-tourism-avoid-crowds.html">Editor's Pick</a>
           </li>
         </ul>
       </nav>
@@ -324,7 +308,73 @@
     While waterfront luxury in Sydney promises exquisite experiences, it often comes with higher prices and limited availability. Research carefully and book early to ensure an exceptional stay tailored to your preferences.
   </section>
   </article>
-</main>
+      <aside id="sidebar">
+        <section>
+          <h2>Search</h2>
+          <form action="/search-results" method="get">
+            <input
+              type="search"
+              name="query"
+              placeholder="Search articles..."
+              aria-label="Search articles"
+            />
+          </form>
+        </section>
+        <section>
+            <h2>Recent Articles</h2>
+                <ul>
+            <li>
+              <a href="/articles/luxurious-waterfront-stays-and-premium-experiences-in-sydney.html">Luxurious Waterfront Stays and Premium Experiences in Sydney</a>
+            </li>
+            <li>
+              <a href="/articles/discovering-south-africas-remarkable-historical-landmarks.html">Discovering South Africa’s Remarkable Historical Landmarks</a>
+            </li>
+            <li>
+              <a href="/articles/budget-travel-japan-affordable-experiences-beyond-tokyo.html">Budget Travel in Japan: Affordable Experiences Beyond Tokyo</a>
+            </li>
+            <li>
+              <a href="/articles/exploring-japan-ecological-parks-conservation-wildlife-insights.html">Exploring Japan’s Ecological Parks: Conservation and Wildlife Insights</a>
+            </li>
+            <li>
+              <a href="/articles/exploring-nice-lesser-known-sides-beyond-promenade.html">Exploring Nice’s Lesser-Known Sides Beyond the Promenade</a>
+            </li>
+                </ul>
+                </section>
+        <section>
+          <h2>Hot Articles</h2>
+          <ul>
+            <li>
+              <a href="/articles/exploring-amsterdams-charm-beyond-typical-tourist-spots.html"
+                >Exploring Amsterdam's Charm: Beyond the Typical Tourist Spots</a
+              >
+            </li>
+            <li>
+              <a href="/articles/navigating-japans-rising-tourism-avoid-crowds.html"
+                >Navigating Japan's Rising Tourism: How to Avoid the Crowds</a
+              >
+            </li>
+            <li>
+              <a href="/articles/what-makes-nice-memorable-stop-european-trips.html"
+                >What Makes Nice a Memorable Stop on European Trips</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section id="random-image">
+          <img
+            src="https://picsum.photos/200"
+            alt="Random travel photo from Picsum.photos"
+          />
+        </section>
+        <section>
+          <h2>Travel Quote</h2>
+          <blockquote>
+            Traveling – it leaves you speechless, then turns you into a
+            storyteller.
+          </blockquote>
+        </section>
+      </aside>
+    </main>
 
 
 <footer>
