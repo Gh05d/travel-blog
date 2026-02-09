@@ -55,6 +55,8 @@ ${latestList}
           <img
             src="https://picsum.photos/200"
             alt="Random travel photo from Picsum.photos"
+            width="200" height="200"
+            loading="lazy"
           />
         </section>
         <section>
