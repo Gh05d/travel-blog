@@ -310,6 +310,16 @@
     "authorSlug": "shamina-cody"
   },
   {
+    "title": "Exploring Sydney’s Urban Nature: Parks and Coastal Walks",
+    "url": "/articles/exploring-sydneys-urban-nature-parks-coastal-walks.html",
+    "imageAlt": "black metal bridge over the sea during sunset",
+    "description": "Did you know that Sydney's sprawling urban parks hide quiet pockets of native wildlife just minutes from the city buzz? By exploring lesser-known coastal walks, you can uncover tranquil views and insider tips on the best times to visit for a truly immersive outdoor experience.",
+    "publishDate": "2026-02-09",
+    "imageUrl": "https://images.unsplash.com/photo-1608590732572-fe70159a3157?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwyfHxTeWRuZXklMjBIYXJib3VyJTIwQnJpZGdlJTIwc3Vuc2V0JTIwb3ZlciUyMHRoZSUyMGNpdHl8ZW58MHwwfHx8MTc3MDY0MTI5Mnww&ixlib=rb-4.1.0&q=80&w=200",
+    "author": "Davina Blake",
+    "authorSlug": "davina-blake"
+  },
+  {
     "title": "Falling in Love with Rome: A Local Experience Beyond Crowds",
     "url": "/articles/falling-in-love-with-rome-local-experience-beyond-crowds.html",
     "imageAlt": "Colosseum in Rome at golden hour",
@@ -408,6 +418,16 @@
     "imageUrl": "https://images.unsplash.com/photo-1659277352020-1af9fe708f80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwyfHxTaXRlcyUyMG9mJTIwSmFwYW4lRTIlODAlOTlzJTIwTWVpamklMjBJbmR1c3RyaWFsJTIwUmV2b2x1dGlvbiUyMGluZHVzdHJpYWwlMjBoZXJpdGFnZSUyMHNpdGUlMjBKYXBhbiUyMHRyYXZlbHxlbnwwfDB8fHwxNzY5OTMwNjY3fDA&ixlib=rb-4.1.0&q=80&w=200",
     "author": "Lisa Crow",
     "authorSlug": "lisa-crow"
+  },
+  {
+    "title": "Navigating London’s Public Transport: Insider Tips for Tourists",
+    "url": "/articles/navigating-london-public-transport-insider-tips-tourists.html",
+    "imageAlt": "Red double-decker bus on a city street.",
+    "description": "Did you know that London’s public transport fares are determined by a complex zonal system that can save you pounds if navigated wisely? From avoiding rush-hour crowds to discovering affordable bus routes to hidden attractions, these insider tips will help you travel smart across the city.",
+    "publishDate": "2026-02-09",
+    "imageUrl": "https://images.unsplash.com/photo-1765015389156-4313eb93422f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxMb25kb24lMjByZWQlMjBkb3VibGUtZGVja2VyJTIwYnVzJTIwc3RyZWV0JTIwc2NlbmUlMjBwcmFjdGljYWx8ZW58MHwwfHx8MTc3MDYzOTM0NXww&ixlib=rb-4.1.0&q=80&w=200",
+    "author": "Susanna Lem",
+    "authorSlug": "susanna-lem"
   },
   {
     "title": "Navigating Nice: Essential Practical Tips for Stress-Free Travel",
