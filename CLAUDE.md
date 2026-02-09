@@ -32,6 +32,10 @@ node scripts/inject-secondary-figures.mjs
 
 # Update site navigation
 node scripts/update-site-nav.mjs
+
+# Fix Schema.org date format in articles (idempotent, skips already-fixed files)
+node scripts/fix-schema-dates.mjs            # dry-run
+node scripts/fix-schema-dates.mjs --apply    # apply
 ```
 
 No local package.json is tracked. CI workflows install dependencies inline (PostCSS, Terser, Fuse.js).
@@ -110,10 +114,11 @@ Master branch deploys to GitHub Pages. Custom domain configured via CNAME file.
 - **Duplicate angle detection:** Validate Angle node (Code) compares extracted angle categories against existing articles. Angles: food, hidden_gems, budget, crowds, culture, adventure, luxury, practical, history, nature. Overrides AI's `isDifferentFromExisting` if angle already covered.
 - **Empty images:** Earnest HemmingwAI Build Article node needs FALLBACK_IMAGE for when Unsplash returns no results
 - Use `mcp__n8n__n8n_get_workflow` with `mode: "full"` to inspect node parameters
+- n8n MCP workflow output is very large (~150KB). Use `mode: "structure"` for overview, or parse the saved JSON file with `python3`/`jq`. Response structure: `[{type: "text", text: "{success, data: {nodes: [...]}}"}]`
 
 ### SEO Requirements
 Articles must include:
-- Schema.org Article JSON-LD with `publisher`, `dateModified`, and `author.url`
+- Schema.org Article JSON-LD with `publisher`, `dateModified`, and `author.url`. Dates must use full ISO 8601 with timezone (e.g., `2025-10-11T20:01:48.364Z`), not date-only (`2025-10-11`)
 - BreadcrumbList JSON-LD (Home → Articles → Article Title)
 - Open Graph `article:published_time`, `article:modified_time`, `article:author`
 - Twitter handle: `@Memopolis228816`
