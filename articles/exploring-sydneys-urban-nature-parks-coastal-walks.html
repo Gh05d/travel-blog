@@ -153,6 +153,7 @@
   />
 
   <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/styles/sidebar.css" />
 
   <title>Travel Guide | Exploring Sydney’s Urban Nature: Parks and Coastal Walks</title>
 </head>
@@ -160,38 +161,20 @@
 <body>
 
    <header>
-      <nav aria-label="Main site navigation">
-      <a rel="home" href="/" id="title" aria-label="Travel Guide Home"
-          ><picture class="logo"
-            ><source
-              srcset="/assets/logo.avif"
-              type="image/avif" />
-            <img
-              src="/assets/logo.png"
-              alt="Travel Guide logo"
-              class="logo"
-              width="114" height="64" /></picture
-        ></a>
+            <nav aria-label="Main site navigation">
+        <a rel="home" href="/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/assets/logo.avif" type="image/avif" /><img src="/assets/logo.png" alt="Travel Guide logo" class="logo" width="114" height="64" /></picture></a>
         <ul class="site-nav">
           <li>
-            <a href="/articles/latest-articles.html"
-              >Latest Articles</a
-            >
+            <a href="/latest-articles.html">Latest Articles</a>
           </li>
           <li>
-            <a href="/articles/most-read-articles.html"
-              >Most-Read Articles</a
-            >
+            <a href="/most-read-articles.html">Most Read Articles</a>
           </li>
           <li>
-            <a href="/articles/exploring-japan-futuristic-technology-innovation-hubs.html"
-              >Top Destinations</a
-            >
+            <a href="/articles/exploring-amsterdams-charm-beyond-typical-tourist-spots.html">Top Destinations</a>
           </li>
           <li>
-            <a href="/articles/luxurious-waterfront-stays-and-premium-experiences-in-sydney.html"
-              >Editor's Pick</a
-            >
+            <a href="/articles/navigating-japans-rising-tourism-avoid-crowds.html">Editor's Pick</a>
           </li>
         </ul>
       </nav>
@@ -362,7 +345,75 @@
     While Sydney’s urban nature offers serene escapes, unpredictable weather can affect your plans. Reviewing seasonal conditions and local advice helps you make the most of your outdoor explorations.
   </section>
   </article>
-</main>
+      <aside id="sidebar">
+        <section>
+          <h2>Search</h2>
+          <form action="/search-results" method="get">
+            <input
+              type="search"
+              name="query"
+              placeholder="Search articles..."
+              aria-label="Search articles"
+            />
+          </form>
+        </section>
+        <section>
+            <h2>Recent Articles</h2>
+                <ul>
+            <li>
+              <a href="/articles/experiencing-japan-iconic-castles-architecture-stories.html">Experiencing Japan’s Iconic Castles: Architecture and Stories</a>
+            </li>
+            <li>
+              <a href="/articles/exploring-japans-contemporary-art-scene-and-galleries.html">Exploring Japan’s Contemporary Art Scene and Galleries</a>
+            </li>
+            <li>
+              <a href="/articles/exploring-japans-unique-traditional-crafts-and-artisans.html">Exploring Japan’s Unique Traditional Crafts and Artisans</a>
+            </li>
+            <li>
+              <a href="/articles/exploring-londons-historic-walking-tours-beyond-mainstream.html">Exploring London</a>
+            </li>
+            <li>
+              <a href="/articles/exploring-sydneys-urban-nature-parks-coastal-walks.html">Exploring Sydney’s Urban Nature: Parks and Coastal Walks</a>
+            </li>
+                </ul>
+                </section>
+        <section>
+          <h2>Hot Articles</h2>
+          <ul>
+            <li>
+              <a href="/articles/exploring-amsterdams-charm-beyond-typical-tourist-spots.html"
+                >Exploring Amsterdam's Charm: Beyond the Typical Tourist Spots</a
+              >
+            </li>
+            <li>
+              <a href="/articles/navigating-japans-rising-tourism-avoid-crowds.html"
+                >Navigating Japan's Rising Tourism: How to Avoid the Crowds</a
+              >
+            </li>
+            <li>
+              <a href="/articles/what-makes-nice-memorable-stop-european-trips.html"
+                >What Makes Nice a Memorable Stop on European Trips</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section id="random-image">
+          <img
+            src="https://picsum.photos/200"
+            alt="Random travel photo from Picsum.photos"
+            width="200" height="200"
+            loading="lazy"
+          />
+        </section>
+        <section>
+          <h2>Travel Quote</h2>
+          <blockquote>
+            Traveling – it leaves you speechless, then turns you into a
+            storyteller.
+          </blockquote>
+        </section>
+      </aside>
+    </main>
 
 
 <footer>
