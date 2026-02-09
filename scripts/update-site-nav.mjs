@@ -11,7 +11,7 @@ const extraFiles = [
 ].map((f) => join(root, f));
 
 const navBlock = `      <nav aria-label="Main site navigation">
-        <a rel="home" href="/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/assets/logo.avif" type="image/avif" /><img src="/assets/logo.png" alt="Travel Guide logo" class="logo" /></picture></a>
+        <a rel="home" href="/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/assets/logo.avif" type="image/avif" /><img src="/assets/logo.png" alt="Travel Guide logo" class="logo" width="114" height="64" /></picture></a>
         <ul class="site-nav">
           <li>
             <a href="/latest-articles.html">Latest Articles</a>
