@@ -36,6 +36,14 @@ node scripts/update-site-nav.mjs
 # Fix Schema.org date format in articles (idempotent, skips already-fixed files)
 node scripts/fix-schema-dates.mjs            # dry-run
 node scripts/fix-schema-dates.mjs --apply    # apply
+
+# Replace fallback hero images with relevant Unsplash photos
+node scripts/fix-fallback-images.mjs            # dry-run
+node scripts/fix-fallback-images.mjs --apply    # apply
+
+# Make Google Fonts non-render-blocking in articles
+node scripts/fix-font-loading.mjs               # dry-run
+node scripts/fix-font-loading.mjs --apply       # apply
 ```
 
 No local package.json is tracked. CI workflows install dependencies inline (PostCSS, Terser, Fuse.js).
@@ -47,6 +55,7 @@ No local package.json is tracked. CI workflows install dependencies inline (Post
 - `authors/` - Author profile pages
 - `assets/styles/` - CSS (minified in CI)
 - `assets/scripts/` - Client-side JS modules (minified in CI)
+- `assets/team/` - Author avatar images (96x96 WebP, displayed at 24x24 CSS pixels with 4x retina). Must have `width="24" height="24"` in HTML.
 - `assets/search.json` - Auto-generated search index consumed by Fuse.js
 - `workflows/` - n8n workflow JSON files (gitignored, local only)
 
@@ -101,6 +110,7 @@ Scripts extract metadata from HTML using regex:
 - Automated branches: `automated/sitemap-update`
 - All scripts use ES Modules syntax
 - HTML manipulation uses regex patterns (no DOM parsers)
+- Bulk HTML edits across all articles: use `perl -i -0pe` (slurp mode) via Bash, not the Edit tool
 - Article workflow status: Todo → In Progress → Review → Done (human review required)
 
 ## Deployment
@@ -113,6 +123,8 @@ Master branch deploys to GitHub Pages. Custom domain configured via CNAME file.
 - **Duplicate articles:** Check Get Articles node filter - must include all statuses and fetch Destination field
 - **Duplicate angle detection:** Validate Angle node (Code) compares extracted angle categories against existing articles. Angles: food, hidden_gems, budget, crowds, culture, adventure, luxury, practical, history, nature. Overrides AI's `isDifferentFromExisting` if angle already covered.
 - **Empty images:** Earnest HemmingwAI Build Article node needs FALLBACK_IMAGE for when Unsplash returns no results
+- **n8n Code nodes:** `fetch()` is not available in the sandbox. Use `$http.request()` instead.
+- **Unsplash image dimensions:** `urls.regular` serves `?w=1080`. HTML `width`/`height` must use display dimensions (e.g., 1080x720), NOT native photo dimensions (e.g., 6000x4000).
 - Use `mcp__n8n__n8n_get_workflow` with `mode: "full"` to inspect node parameters
 - n8n MCP workflow output is very large (~150KB). Use `mode: "structure"` for overview, or parse the saved JSON file with `python3`/`jq`. Response structure: `[{type: "text", text: "{success, data: {nodes: [...]}}"}]`
 
@@ -122,3 +134,12 @@ Articles must include:
 - BreadcrumbList JSON-LD (Home → Articles → Article Title)
 - Open Graph `article:published_time`, `article:modified_time`, `article:author`
 - Twitter handle: `@Memopolis228816`
+
+### Performance Requirements
+
+- Author avatars: 96x96 WebP (~2-5 KB), `width="24" height="24" loading="lazy"` in HTML
+- Logo: `width="114" height="64"` in HTML
+- Sidebar random image: `width="200" height="200" loading="lazy"` in HTML
+- Hero images: `width="1080" height="720"` in HTML, `fetchpriority="high"`
+- Google Fonts: non-blocking (`preload` + `media="print"` + `onload="this.media='all'"` pattern)
+- Footer links: `#4da3ff` on black for 4.5:1+ contrast; in-article links must have `text-decoration: underline`
