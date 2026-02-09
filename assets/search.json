@@ -70,6 +70,16 @@
     "authorSlug": "daniil-kharms"
   },
   {
+    "title": "Experiencing Japan’s Iconic Castles: Architecture and Stories",
+    "url": "/articles/experiencing-japan-iconic-castles-architecture-stories.html",
+    "imageAlt": "a building on top of a hill",
+    "description": "Did you know that Japan’s castles were not only defensive structures but also symbols of power and artistry, with intricate designs blending wood, stone, and landscape? By visiting Himeji, Matsumoto, and Kumamoto Castles, you'll uncover architectural brilliance and hidden stories that reveal the soul of Japan’s feudal era.",
+    "publishDate": "2026-02-09",
+    "imageUrl": "https://images.unsplash.com/photo-1664000744550-a9c705c6ed69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwyfHxNYXRzdW1vdG8lMjBDYXN0bGUlMjBKYXBhbiUyMHJ1Z2dlZCUyMGV4dGVyaW9yJTIwbW91bnRhaW4lMjBiYWNrZHJvcHxlbnwwfDB8fHwxNzcwNjIzOTI2fDA&ixlib=rb-4.1.0&q=80&w=200",
+    "author": "Daniil Kharms",
+    "authorSlug": "daniil-kharms"
+  },
+  {
     "title": "Experiencing Japan’s Hidden Wellness and Onsen Culture",
     "url": "/articles/experiencing-japans-hidden-wellness-and-onsen-culture.html",
     "imageAlt": "a couple of monkeys sitting on top of a hill",
@@ -218,6 +228,16 @@
     "imageUrl": "https://images.unsplash.com/photo-1706594311685-c35f41e2278a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxKYXBhbiUyMHRyYWRpdGlvbmFsJTIwY3JhZnRzJTIwYXJ0aXNhbnN8ZW58MHwwfHx8MTc3MDYxOTI2OXww&ixlib=rb-4.1.0&q=80&w=200",
     "author": "Susanna Lem",
     "authorSlug": "susanna-lem"
+  },
+  {
+    "title": "Exploring London's Historic Walking Tours Beyond the Mainstream",
+    "url": "/articles/exploring-londons-historic-walking-tours-beyond-mainstream.html",
+    "imageAlt": "Historic tower of london with modern skyscraper at dusk",
+    "description": "Did you know London hides centuries-old sites just a short walk from crowded landmarks, yet barely feature in mainstream tours? Exploring these lesser-known spots reveals stories and secrets that deepen your connection to the city beyond the usual postcards.",
+    "publishDate": "2026-02-09",
+    "imageUrl": "https://images.unsplash.com/photo-1758441705987-5ef4485a1f1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNTJ8MHwxfHNlYXJjaHwxfHxMb25kb24lMjBUb3dlciUyMG9mJTIwTG9uZG9uJTIwaGlzdG9yaWMlMjBmb3J0cmVzcyUyMGRyYW1hdGljJTIwbGlnaHRpbmd8ZW58MHwwfHx8MTc3MDYyNDI1M3ww&ixlib=rb-4.1.0&q=80&w=200",
+    "author": "David Agnew",
+    "authorSlug": "david-agnew"
   },
   {
     "title": "Exploring Nice’s Coastal Marine Life: A Diver’s Perspective",
