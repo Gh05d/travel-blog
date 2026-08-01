@@ -153,6 +153,7 @@
   />
 
   <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/styles/sidebar.css" />
 
   <title>Travel Guide | Navigating Japan’s Unique Train Etiquette and Travel Customs</title>
 </head>
@@ -160,38 +161,20 @@
 <body>
 
    <header>
-      <nav aria-label="Main site navigation">
-      <a rel="home" href="/travel-blog/" id="title" aria-label="Travel Guide Home"
-          ><picture class="logo"
-            ><source
-              srcset="/travel-blog/assets/logo.avif"
-              type="image/avif" />
-            <img
-              src="/travel-blog/assets/logo.png"
-              alt="Travel Guide logo"
-              class="logo"
-              width="114" height="64" /></picture
-        ></a>
+            <nav aria-label="Main site navigation">
+        <a rel="home" href="/travel-blog/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/travel-blog/assets/logo.avif" type="image/avif" /><img src="/travel-blog/assets/logo.png" alt="Travel Guide logo" class="logo" width="114" height="64" /></picture></a>
         <ul class="site-nav">
           <li>
-            <a href="/travel-blog/articles/latest-articles.html"
-              >Latest Articles</a
-            >
+            <a href="/travel-blog/latest-articles.html">Latest Articles</a>
           </li>
           <li>
-            <a href="/travel-blog/articles/most-read-articles.html"
-              >Most-Read Articles</a
-            >
+            <a href="/travel-blog/most-read-articles.html">Most Read Articles</a>
           </li>
           <li>
-            <a href="/travel-blog/articles/exploring-hidden-culinary-gems-paris.html"
-              >Top Destinations</a
-            >
+            <a href="/travel-blog/articles/exploring-amsterdams-charm-beyond-typical-tourist-spots.html">Top Destinations</a>
           </li>
           <li>
-            <a href="/travel-blog/articles/experiencing-nepals-rich-cultural-festivals-and-traditions.html"
-              >Editor's Pick</a
-            >
+            <a href="/travel-blog/articles/navigating-japans-rising-tourism-avoid-crowds.html">Editor's Pick</a>
           </li>
         </ul>
       </nav>
@@ -360,7 +343,75 @@
     Navigating Japan’s detailed train etiquette may feel restrictive at first, yet it offers a smoother, more respectful travel experience. Prepare by familiarizing yourself with key customs and choose the right rail passes to optimize your journey.
   </section>
   </article>
-</main>
+      <aside id="sidebar">
+        <section>
+          <h2>Search</h2>
+          <form action="/travel-blog/search-results" method="get">
+            <input
+              type="search"
+              name="query"
+              placeholder="Search articles..."
+              aria-label="Search articles"
+            />
+          </form>
+        </section>
+        <section>
+            <h2>Recent Articles</h2>
+                <ul>
+            <li>
+              <a href="/articles/navigating-japan-unique-train-etiquette-travel-customs.html">Navigating Japan’s Unique Train Etiquette and Travel Customs</a>
+            </li>
+            <li>
+              <a href="/articles/experiencing-japan-iconic-castles-architecture-stories.html">Experiencing Japan’s Iconic Castles: Architecture and Stories</a>
+            </li>
+            <li>
+              <a href="/articles/exploring-japans-contemporary-art-scene-and-galleries.html">Exploring Japan’s Contemporary Art Scene and Galleries</a>
+            </li>
+            <li>
+              <a href="/articles/exploring-japans-unique-traditional-crafts-and-artisans.html">Exploring Japan’s Unique Traditional Crafts and Artisans</a>
+            </li>
+            <li>
+              <a href="/articles/exploring-londons-historic-walking-tours-beyond-mainstream.html">Exploring London</a>
+            </li>
+                </ul>
+                </section>
+        <section>
+          <h2>Hot Articles</h2>
+          <ul>
+            <li>
+              <a href="/travel-blog/articles/exploring-amsterdams-charm-beyond-typical-tourist-spots.html"
+                >Exploring Amsterdam's Charm: Beyond the Typical Tourist Spots</a
+              >
+            </li>
+            <li>
+              <a href="/travel-blog/articles/navigating-japans-rising-tourism-avoid-crowds.html"
+                >Navigating Japan's Rising Tourism: How to Avoid the Crowds</a
+              >
+            </li>
+            <li>
+              <a href="/travel-blog/articles/what-makes-nice-memorable-stop-european-trips.html"
+                >What Makes Nice a Memorable Stop on European Trips</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section id="random-image">
+          <img
+            src="https://picsum.photos/200"
+            alt="Random travel photo from Picsum.photos"
+            width="200" height="200"
+            loading="lazy"
+          />
+        </section>
+        <section>
+          <h2>Travel Quote</h2>
+          <blockquote>
+            Traveling – it leaves you speechless, then turns you into a
+            storyteller.
+          </blockquote>
+        </section>
+      </aside>
+    </main>
 
 
 <footer>
