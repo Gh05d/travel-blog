@@ -94,7 +94,7 @@ function buildTopStoryHtml(article) {
         <div class="card">
           <a
             aria-label="${article.title}"
-            href="/travel-blog${article.url}"
+            href="/travel-blog/travel-blog${article.url}"
           >
             <picture>
               <img
@@ -115,7 +115,7 @@ function buildTopStoryHtml(article) {
           </a>
 
           <h3>
-            <a href="/travel-blog${article.url}"
+            <a href="/travel-blog/travel-blog${article.url}"
               >${article.title}
             </a>
           </h3>
@@ -153,7 +153,7 @@ function buildTrendingCardHtml(article) {
   return `          <div class="card">
             <a
               aria-label="${article.title}"
-              href="/travel-blog${article.url}"
+              href="/travel-blog/travel-blog${article.url}"
             >
               <picture>
                 <img
@@ -173,7 +173,7 @@ function buildTrendingCardHtml(article) {
             </a>
 
             <h3>
-              <a href="/travel-blog${article.url}"
+              <a href="/travel-blog/travel-blog${article.url}"
                 >${article.title}
               </a>
             </h3>
