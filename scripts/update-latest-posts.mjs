@@ -5,7 +5,7 @@ import { getLatestArticles } from "./lib/get-latest-articles.mjs";
 
 const indexFile = join(process.cwd(), "index.html");
 const latestArticlesFile = join(process.cwd(), "latest-articles.html");
-const placeholderImg = "/assets/images/hero-image-fallback.jpg";
+const placeholderImg = "/travel-blog/assets/images/hero-image-fallback.jpg";
 
 const latest = await getLatestArticles(12);
 
@@ -18,12 +18,12 @@ const parts = latest.map((article, index) => {
     const alt = imageAlt || title;
     const w = Number.isFinite(width) ? width : 220;
     const h = Number.isFinite(height) ? height : 120;
-    content += `          <a href="${url}">\n`;
+    content += `          <a href="/travel-blog${url}">\n`;
     content += `            <img src="${src}" alt="${alt}" width="${w}" height="${h}" loading="lazy" decoding="async" />\n`;
     content += "          </a>\n";
   }
   content += `          <h3>\n`;
-  content += `            <a href="${url}">${title}</a>\n`;
+  content += `            <a href="/travel-blog${url}">${title}</a>\n`;
   content += "          </h3>\n";
   content += "          <p>\n";
   content += `            ${description}\n`;
