@@ -2,7 +2,7 @@ import { readdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 
 const articlesDir = join(process.cwd(), "articles");
-const siteUrl = "https://exitfloridakeys.com";
+const siteUrl = "https://gh05d.github.io/travel-blog";
 const siteName = "Travel Guide";
 const twitterHandle = "Memopolis228816";
 

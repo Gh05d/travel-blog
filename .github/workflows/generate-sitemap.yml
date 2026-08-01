@@ -18,7 +18,7 @@ jobs:
         id: sitemap
         uses: cicirello/generate-sitemap@v1
         with:
-          base-url-path: https://exitfloridakeys.com/
+          base-url-path: https://gh05d.github.io/travel-blog/
           path-to-root: .
           include-pdf: false
           drop-html-extension: false
@@ -48,7 +48,7 @@ jobs:
               if [ -n "$datetime" ]; then
                   xmlstarlet ed -L \
                     -N sm="http://www.sitemaps.org/schemas/sitemap/0.9" \
-                    -u "/sm:urlset/sm:url[sm:loc='https://exitfloridakeys.com/articles/$slug.html']/sm:lastmod" \
+                    -u "/sm:urlset/sm:url[sm:loc='https://gh05d.github.io/travel-blog/articles/$slug.html']/sm:lastmod" \
                     -v "$datetime" \
                     sitemap.xml
               else

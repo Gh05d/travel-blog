@@ -2,7 +2,7 @@
 User-agent: *
 # explizit alles erlauben (de facto ohnehin so, außer der einen Datei)
 Disallow:
-Sitemap: https://exitfloridakeys.com/sitemap.xml
+Sitemap: https://gh05d.github.io/travel-blog/sitemap.xml
 
 # On-demand Browsing von ChatGPT erlauben
 User-agent: ChatGPT-User

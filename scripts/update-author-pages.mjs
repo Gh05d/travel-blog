@@ -6,19 +6,19 @@ const articlesDir = join(root, "articles");
 const authorsDir = join(root, "authors");
 
 const navBlock = `      <nav aria-label="Main site navigation">
-        <a rel="home" href="/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/assets/logo.avif" type="image/avif" /><img src="/assets/logo.png" alt="Travel Guide logo" class="logo" /></picture></a>
+        <a rel="home" href="/travel-blog/" id="title" aria-label="Travel Guide home"><picture class="logo"><source srcset="/travel-blog/assets/logo.avif" type="image/avif" /><img src="/travel-blog/assets/logo.png" alt="Travel Guide logo" class="logo" /></picture></a>
         <ul class="site-nav">
           <li>
-            <a href="/latest-articles.html">Latest Articles</a>
+            <a href="/travel-blog/latest-articles.html">Latest Articles</a>
           </li>
           <li>
-            <a href="/most-read-articles.html">Most Read Articles</a>
+            <a href="/travel-blog/most-read-articles.html">Most Read Articles</a>
           </li>
           <li>
-            <a href="/articles/exploring-amsterdams-charm-beyond-typical-tourist-spots.html">Top Destinations</a>
+            <a href="/travel-blog/articles/exploring-amsterdams-charm-beyond-typical-tourist-spots.html">Top Destinations</a>
           </li>
           <li>
-            <a href="/articles/navigating-japans-rising-tourism-avoid-crowds.html">Editor's Pick</a>
+            <a href="/travel-blog/articles/navigating-japans-rising-tourism-avoid-crowds.html">Editor's Pick</a>
           </li>
         </ul>
       </nav>`;
@@ -74,7 +74,7 @@ for (const [author, articles] of authorMap.entries()) {
   const listItems = articles
     .map(
       (a) =>
-        `        <li><a href="/articles/${a.file}" rel="author">${a.title}</a></li>`
+        `        <li><a href="/travel-blog/articles/${a.file}" rel="author">${a.title}</a></li>`
     )
     .join("\n");
 
@@ -85,8 +85,8 @@ for (const [author, articles] of authorMap.entries()) {
     `\n${listHtml}`
   );
   html = html.replace(
-    '<p><a href="/about-us.html">Back to About Us</a></p>',
-    '<p><a rel="nofollow" href="/about-us.html">Back to About Us</a></p>'
+    '<p><a href="/travel-blog/about-us.html">Back to About Us</a></p>',
+    '<p><a rel="nofollow" href="/travel-blog/about-us.html">Back to About Us</a></p>'
   );
 
   await writeFile(authorFile, html);

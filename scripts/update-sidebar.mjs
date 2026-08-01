@@ -16,7 +16,7 @@ const latestList = (await getLatestArticles(5))
 const sidebarMarkup = `      <aside id="sidebar">
         <section>
           <h2>Search</h2>
-          <form action="/search-results" method="get">
+          <form action="/travel-blog/search-results" method="get">
             <input
               type="search"
               name="query"
@@ -35,17 +35,17 @@ ${latestList}
           <h2>Hot Articles</h2>
           <ul>
             <li>
-              <a href="/articles/exploring-amsterdams-charm-beyond-typical-tourist-spots.html"
+              <a href="/travel-blog/articles/exploring-amsterdams-charm-beyond-typical-tourist-spots.html"
                 >Exploring Amsterdam's Charm: Beyond the Typical Tourist Spots</a
               >
             </li>
             <li>
-              <a href="/articles/navigating-japans-rising-tourism-avoid-crowds.html"
+              <a href="/travel-blog/articles/navigating-japans-rising-tourism-avoid-crowds.html"
                 >Navigating Japan's Rising Tourism: How to Avoid the Crowds</a
               >
             </li>
             <li>
-              <a href="/articles/what-makes-nice-memorable-stop-european-trips.html"
+              <a href="/travel-blog/articles/what-makes-nice-memorable-stop-european-trips.html"
                 >What Makes Nice a Memorable Stop on European Trips</a
               >
             </li>
