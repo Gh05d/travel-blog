@@ -55,14 +55,14 @@ function buildMarkup(posts) {
         .replace(/h=\d+/g, "h=500");
       return (
         `    <div class="card">\n` +
-        `      <a aria-label="${alt}" href="${post.url}">\n` +
+        `      <a aria-label="${alt}" href="/travel-blog${post.url}">\n` +
         `        <picture>\n` +
         `          <img src="${image}" srcset="${image}&dpr=2 2x,\n                ${image} 1x" sizes="(min-width:38rem) 38rem, 100vw" alt="${alt}" loading="lazy" decoding="async" width="1300" height="500" />\n` +
         `        </picture>\n` +
         `      </a>\n\n` +
-        `      <h3><a href="${post.url}">${post.title}</a></h3>\n\n` +
+        `      <h3><a href="/travel-blog${post.url}">${post.title}</a></h3>\n\n` +
         `      <div id="published">\n` +
-        `        <div class="author">By <a href="/authors/${post.authorSlug}.html"><img src="/assets/team/${post.authorSlug}.webp" alt="${post.author}" class="author-thumb" /> ${post.author}</a></div>\n` +
+        `        <div class="author">By <a href="/travel-blog/authors/${post.authorSlug}.html"><img src="/travel-blog/assets/team/${post.authorSlug}.webp" alt="${post.author}" class="author-thumb" /> ${post.author}</a></div>\n` +
         `        <div class="published">Published:\n` +
         `          <em><time itemprop="datePublished" datetime="${post.publishDate}">\n` +
         `            ${date}</time></em>\n` +

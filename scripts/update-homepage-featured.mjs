@@ -94,7 +94,7 @@ function buildTopStoryHtml(article) {
         <div class="card">
           <a
             aria-label="${article.title}"
-            href="${article.url}"
+            href="/travel-blog${article.url}"
           >
             <picture>
               <img
@@ -115,13 +115,13 @@ function buildTopStoryHtml(article) {
           </a>
 
           <h3>
-            <a href="${article.url}"
+            <a href="/travel-blog${article.url}"
               >${article.title}
             </a>
           </h3>
 
           <div id="published">
-            <div class="author">By <a href="/authors/${article.authorSlug}.html"><img src="/assets/team/${article.authorSlug}.webp" alt="${article.author}" class="author-thumb" /> ${article.author}</a></div>
+            <div class="author">By <a href="/travel-blog/authors/${article.authorSlug}.html"><img src="/travel-blog/assets/team/${article.authorSlug}.webp" alt="${article.author}" class="author-thumb" /> ${article.author}</a></div>
             <div class="published">Published:
               <em><time itemprop="datePublished" datetime="${article.publishDate}">${date}</time></em>
             </div>
@@ -153,7 +153,7 @@ function buildTrendingCardHtml(article) {
   return `          <div class="card">
             <a
               aria-label="${article.title}"
-              href="${article.url}"
+              href="/travel-blog${article.url}"
             >
               <picture>
                 <img
@@ -173,13 +173,13 @@ function buildTrendingCardHtml(article) {
             </a>
 
             <h3>
-              <a href="${article.url}"
+              <a href="/travel-blog${article.url}"
                 >${article.title}
               </a>
             </h3>
 
             <div id="published">
-              <div class="author">By <a href="/authors/${article.authorSlug}.html"><img src="/assets/team/${article.authorSlug}.webp" alt="${article.author}" class="author-thumb" /> ${article.author}</a></div>
+              <div class="author">By <a href="/travel-blog/authors/${article.authorSlug}.html"><img src="/travel-blog/assets/team/${article.authorSlug}.webp" alt="${article.author}" class="author-thumb" /> ${article.author}</a></div>
               <div class="published">Published:
                 <em><time itemprop="datePublished" datetime="${article.publishDate}">${date}</time></em>
               </div>
