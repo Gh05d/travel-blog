@@ -16,7 +16,11 @@ const ARTICLES_DIR = join(import.meta.dirname, "..", "articles");
 const dryRun = !process.argv.includes("--apply");
 
 const FALLBACK_ID = "photo-1488646953014-85cb44e25828";
-const API_KEY = "YOUR_UNSPLASH_ACCESS_KEY";
+const API_KEY = process.env.UNSPLASH_ACCESS_KEY;
+if (!API_KEY) {
+  console.error("Missing UNSPLASH_ACCESS_KEY environment variable");
+  process.exit(1);
+}
 
 // Rate-limit: small delay between API calls to stay within Unsplash free tier
 const delay = (ms) => new Promise((r) => setTimeout(r, ms));
